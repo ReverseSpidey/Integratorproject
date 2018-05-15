@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.ppnlHeader = new System.Windows.Forms.Panel();
-            this.pnlBody = new System.Windows.Forms.Panel();
             this.pnlCerrar = new System.Windows.Forms.Panel();
-            this.lblCerrar = new System.Windows.Forms.Label();
-            this.LBLmINIMI = new System.Windows.Forms.Label();
+            this.lblSesión = new System.Windows.Forms.Label();
             this.ucUser = new Imagenes.UserControl1();
+            this.LBLmINIMI = new System.Windows.Forms.Label();
+            this.lblCerrar = new System.Windows.Forms.Label();
             this.ucConfiguracion = new Imagenes.UserControl1();
             this.UcInicio = new Imagenes.UserControl1();
-            this.lblSesión = new System.Windows.Forms.Label();
+            this.pnlBody = new System.Windows.Forms.Panel();
             this.ppnlHeader.SuspendLayout();
             this.pnlCerrar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ucUser)).BeginInit();
@@ -56,16 +56,6 @@
             this.ppnlHeader.Size = new System.Drawing.Size(875, 104);
             this.ppnlHeader.TabIndex = 0;
             // 
-            // pnlBody
-            // 
-            this.pnlBody.BackColor = System.Drawing.Color.MediumTurquoise;
-            this.pnlBody.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlBody.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pnlBody.Location = new System.Drawing.Point(0, 104);
-            this.pnlBody.Name = "pnlBody";
-            this.pnlBody.Size = new System.Drawing.Size(875, 383);
-            this.pnlBody.TabIndex = 1;
-            // 
             // pnlCerrar
             // 
             this.pnlCerrar.Controls.Add(this.lblSesión);
@@ -77,21 +67,35 @@
             this.pnlCerrar.Size = new System.Drawing.Size(162, 26);
             this.pnlCerrar.TabIndex = 2;
             // 
-            // lblCerrar
+            // lblSesión
             // 
-            this.lblCerrar.AutoSize = true;
-            this.lblCerrar.Dock = System.Windows.Forms.DockStyle.Right;
-            this.lblCerrar.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCerrar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
-            this.lblCerrar.Location = new System.Drawing.Point(139, 0);
-            this.lblCerrar.Name = "lblCerrar";
-            this.lblCerrar.Size = new System.Drawing.Size(23, 23);
-            this.lblCerrar.TabIndex = 3;
-            this.lblCerrar.Text = "X";
-            this.lblCerrar.Click += new System.EventHandler(this.lblCerrar_Click);
-            this.lblCerrar.MouseLeave += new System.EventHandler(this.lblCerrar_MouseLeave);
-            this.lblCerrar.MouseHover += new System.EventHandler(this.lblCerrar_MouseHover);
-            this.lblCerrar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lblCerrar_MouseMove);
+            this.lblSesión.AutoSize = true;
+            this.lblSesión.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSesión.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
+            this.lblSesión.Location = new System.Drawing.Point(31, 9);
+            this.lblSesión.Name = "lblSesión";
+            this.lblSesión.Size = new System.Drawing.Size(89, 17);
+            this.lblSesión.TabIndex = 5;
+            this.lblSesión.Text = "Iniciar Sesión";
+            this.lblSesión.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.lblSesión.MouseLeave += new System.EventHandler(this.lblSesión_MouseLeave);
+            this.lblSesión.MouseHover += new System.EventHandler(this.lblSesión_MouseHover);
+            this.lblSesión.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lblSesión_MouseMove);
+            // 
+            // ucUser
+            // 
+            this.ucUser.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ucUser.Dock = System.Windows.Forms.DockStyle.Left;
+            this.ucUser.Image = global::AppDesktop.Properties.Resources.UserNormal;
+            this.ucUser.Location = new System.Drawing.Point(0, 0);
+            this.ucUser.Name = "ucUser";
+            this.ucUser.Size = new System.Drawing.Size(36, 26);
+            this.ucUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ucUser.TabIndex = 3;
+            this.ucUser.TabStop = false;
+            this.ucUser.MouseLeave += new System.EventHandler(this.userControl11_MouseLeave);
+            this.ucUser.MouseHover += new System.EventHandler(this.userControl11_MouseHover);
+            this.ucUser.MouseMove += new System.Windows.Forms.MouseEventHandler(this.userControl11_MouseMove);
             // 
             // LBLmINIMI
             // 
@@ -109,20 +113,21 @@
             this.LBLmINIMI.MouseHover += new System.EventHandler(this.LBLmINIMI_MouseHover);
             this.LBLmINIMI.MouseMove += new System.Windows.Forms.MouseEventHandler(this.LBLmINIMI_MouseMove);
             // 
-            // ucUser
+            // lblCerrar
             // 
-            this.ucUser.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ucUser.Dock = System.Windows.Forms.DockStyle.Left;
-            this.ucUser.Image = global::AppDesktop.Properties.Resources.UserNormal;
-            this.ucUser.Location = new System.Drawing.Point(0, 0);
-            this.ucUser.Name = "ucUser";
-            this.ucUser.Size = new System.Drawing.Size(36, 26);
-            this.ucUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ucUser.TabIndex = 3;
-            this.ucUser.TabStop = false;
-            this.ucUser.MouseLeave += new System.EventHandler(this.userControl11_MouseLeave);
-            this.ucUser.MouseHover += new System.EventHandler(this.userControl11_MouseHover);
-            this.ucUser.MouseMove += new System.Windows.Forms.MouseEventHandler(this.userControl11_MouseMove);
+            this.lblCerrar.AutoSize = true;
+            this.lblCerrar.Dock = System.Windows.Forms.DockStyle.Right;
+            this.lblCerrar.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCerrar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
+            this.lblCerrar.Location = new System.Drawing.Point(139, 0);
+            this.lblCerrar.Name = "lblCerrar";
+            this.lblCerrar.Size = new System.Drawing.Size(23, 23);
+            this.lblCerrar.TabIndex = 3;
+            this.lblCerrar.Text = "X";
+            this.lblCerrar.Click += new System.EventHandler(this.lblCerrar_Click);
+            this.lblCerrar.MouseLeave += new System.EventHandler(this.lblCerrar_MouseLeave);
+            this.lblCerrar.MouseHover += new System.EventHandler(this.lblCerrar_MouseHover);
+            this.lblCerrar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lblCerrar_MouseMove);
             // 
             // ucConfiguracion
             // 
@@ -152,20 +157,15 @@
             this.UcInicio.MouseHover += new System.EventHandler(this.UcInicio_MouseHover);
             this.UcInicio.MouseMove += new System.Windows.Forms.MouseEventHandler(this.UcInicio_MouseMove);
             // 
-            // lblSesión
+            // pnlBody
             // 
-            this.lblSesión.AutoSize = true;
-            this.lblSesión.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSesión.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
-            this.lblSesión.Location = new System.Drawing.Point(31, 9);
-            this.lblSesión.Name = "lblSesión";
-            this.lblSesión.Size = new System.Drawing.Size(89, 17);
-            this.lblSesión.TabIndex = 5;
-            this.lblSesión.Text = "Iniciar Sesión";
-            this.lblSesión.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.lblSesión.MouseLeave += new System.EventHandler(this.lblSesión_MouseLeave);
-            this.lblSesión.MouseHover += new System.EventHandler(this.lblSesión_MouseHover);
-            this.lblSesión.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lblSesión_MouseMove);
+            this.pnlBody.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.pnlBody.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlBody.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pnlBody.Location = new System.Drawing.Point(0, 104);
+            this.pnlBody.Name = "pnlBody";
+            this.pnlBody.Size = new System.Drawing.Size(875, 383);
+            this.pnlBody.TabIndex = 1;
             // 
             // frmApp
             // 
