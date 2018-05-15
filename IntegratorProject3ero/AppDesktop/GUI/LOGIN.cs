@@ -81,5 +81,16 @@ namespace AppDesktop.GUI
         {
             this.Hide();
         }
+
+        private void lblusuario_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frm_PERSONA obj = new frm_PERSONA();
+            obj.Show();
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
     }
 }

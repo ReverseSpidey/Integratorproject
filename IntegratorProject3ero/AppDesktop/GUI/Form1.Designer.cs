@@ -31,12 +31,12 @@
             this.ppnlHeader = new System.Windows.Forms.Panel();
             this.pnlCerrar = new System.Windows.Forms.Panel();
             this.lblSesión = new System.Windows.Forms.Label();
+            this.ucUser = new Imagenes.UserControl1();
             this.LBLmINIMI = new System.Windows.Forms.Label();
             this.lblCerrar = new System.Windows.Forms.Label();
-            this.pnlBody = new System.Windows.Forms.Panel();
-            this.ucUser = new Imagenes.UserControl1();
             this.ucConfiguracion = new Imagenes.UserControl1();
             this.UcInicio = new Imagenes.UserControl1();
+            this.pnlBody = new System.Windows.Forms.Panel();
             this.ppnlHeader.SuspendLayout();
             this.pnlCerrar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ucUser)).BeginInit();
@@ -83,6 +83,21 @@
             this.lblSesión.MouseHover += new System.EventHandler(this.lblSesión_MouseHover);
             this.lblSesión.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lblSesión_MouseMove);
             // 
+            // ucUser
+            // 
+            this.ucUser.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ucUser.Dock = System.Windows.Forms.DockStyle.Left;
+            this.ucUser.Image = global::AppDesktop.Properties.Resources.UserNormal;
+            this.ucUser.Location = new System.Drawing.Point(0, 0);
+            this.ucUser.Name = "ucUser";
+            this.ucUser.Size = new System.Drawing.Size(36, 26);
+            this.ucUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ucUser.TabIndex = 3;
+            this.ucUser.TabStop = false;
+            this.ucUser.MouseLeave += new System.EventHandler(this.userControl11_MouseLeave);
+            this.ucUser.MouseHover += new System.EventHandler(this.userControl11_MouseHover);
+            this.ucUser.MouseMove += new System.Windows.Forms.MouseEventHandler(this.userControl11_MouseMove);
+            // 
             // LBLmINIMI
             // 
             this.LBLmINIMI.AutoSize = true;
@@ -115,31 +130,6 @@
             this.lblCerrar.MouseHover += new System.EventHandler(this.lblCerrar_MouseHover);
             this.lblCerrar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lblCerrar_MouseMove);
             // 
-            // pnlBody
-            // 
-            this.pnlBody.BackColor = System.Drawing.Color.MediumTurquoise;
-            this.pnlBody.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlBody.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pnlBody.Location = new System.Drawing.Point(0, 104);
-            this.pnlBody.Name = "pnlBody";
-            this.pnlBody.Size = new System.Drawing.Size(875, 383);
-            this.pnlBody.TabIndex = 1;
-            // 
-            // ucUser
-            // 
-            this.ucUser.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ucUser.Dock = System.Windows.Forms.DockStyle.Left;
-            this.ucUser.Image = global::AppDesktop.Properties.Resources.UserNormal;
-            this.ucUser.Location = new System.Drawing.Point(0, 0);
-            this.ucUser.Name = "ucUser";
-            this.ucUser.Size = new System.Drawing.Size(36, 26);
-            this.ucUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ucUser.TabIndex = 3;
-            this.ucUser.TabStop = false;
-            this.ucUser.MouseLeave += new System.EventHandler(this.userControl11_MouseLeave);
-            this.ucUser.MouseHover += new System.EventHandler(this.userControl11_MouseHover);
-            this.ucUser.MouseMove += new System.Windows.Forms.MouseEventHandler(this.userControl11_MouseMove);
-            // 
             // ucConfiguracion
             // 
             this.ucConfiguracion.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -167,6 +157,16 @@
             this.UcInicio.MouseLeave += new System.EventHandler(this.UcInicio_MouseLeave);
             this.UcInicio.MouseHover += new System.EventHandler(this.UcInicio_MouseHover);
             this.UcInicio.MouseMove += new System.Windows.Forms.MouseEventHandler(this.UcInicio_MouseMove);
+            // 
+            // pnlBody
+            // 
+            this.pnlBody.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.pnlBody.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlBody.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pnlBody.Location = new System.Drawing.Point(0, 104);
+            this.pnlBody.Name = "pnlBody";
+            this.pnlBody.Size = new System.Drawing.Size(875, 383);
+            this.pnlBody.TabIndex = 1;
             // 
             // frmApp
             // 
