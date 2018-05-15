@@ -58,17 +58,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -77,6 +78,42 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SettingHover.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Imagenes\Imagenes.csproj">
+      <Project>{6E247D3F-928D-4919-BE50-7E6962089D75}</Project>
+      <Name>Imagenes</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HomeHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HomeNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SettingsNormal.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CloseHover.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CloseNormal.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MinimizaeHover.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MinimizarNormal.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UserHover.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UserNormal.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
