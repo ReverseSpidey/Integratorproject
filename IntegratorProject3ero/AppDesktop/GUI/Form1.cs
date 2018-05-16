@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using AppDesktop.GUI;
 
 namespace AppDesktop
 {
@@ -124,6 +125,12 @@ namespace AppDesktop
         private void lblSesión_MouseHover(object sender, EventArgs e)
         {
             lblSesión.ForeColor = Color.White;
+        }
+
+        private void lblSesión_Click(object sender, EventArgs e)
+        {
+            LOGIN obj = new LOGIN();
+            obj.ShowDialog();
         }
     }
 }

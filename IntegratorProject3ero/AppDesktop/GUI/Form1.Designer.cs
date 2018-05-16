@@ -78,6 +78,7 @@
             this.lblSesión.TabIndex = 5;
             this.lblSesión.Text = "Iniciar Sesión";
             this.lblSesión.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.lblSesión.Click += new System.EventHandler(this.lblSesión_Click);
             this.lblSesión.MouseLeave += new System.EventHandler(this.lblSesión_MouseLeave);
             this.lblSesión.MouseHover += new System.EventHandler(this.lblSesión_MouseHover);
             this.lblSesión.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lblSesión_MouseMove);

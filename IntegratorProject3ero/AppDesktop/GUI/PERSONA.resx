@@ -117,47 +117,39 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="UserHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\UserHover.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnGuardar.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAFMAAAApCAYAAABJCxWnAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKGSURBVGhD7ZrNaxNBGMYrioKo6MWDBxF6EoqlNVrxoIh/
+        gXgQ8aIgWPC7UKHQUlSE0kKtlqopMZqm1ARrG03RFoldpCrqQVT86qGCkIOKKNJD0cNjn9lp4poRk3Fu
+        eX/wQPJuEtgfuzuTeaeiwvMgcRRjUWIXY1FiF2NRYhdjUWIXY1FiF2NRZ969DJYPRVAVa8X6SCNCPQew
+        rmNXWYXnzHOvvtqMFYNhzM+MGV2pGIuzWXqzDxsv1KM+1Yk7bx7g6YdXyH77hHKD58xzz0w+wfGRbmya
+        dbLyRq/RWYFMmq+Kn8LuxGl8nv6qf1KY4/vMNI6kz6Mm2oQFd28H3AVkUmRd7zFcfzGuvyr8jYmpZ9gS
+        bcTCsbRZJq9IEVk8vP35PC2QyWckb22hNM6Mx7E6eS4vk6M2Bxt5RpbOzM8f2B5pwKLRlC+TQz5HKsGO
+        8KNhrBlo92VyDsWhX7Dj7cf3CIWP+jI3XDyIqS9ZfUgoFd7qNZ17fJm1XXvV/Emwh/+WlEy+EP4PkekQ
+        kekQkekQkekQkekQkekQkemQnEzO3jmLF+zJyWSfoxxbEi7JX5nRJrVyLNjBdQ2ubyiZqxJdaPP69SGh
+        VFIvPaztO+nLZB9ja/iwPDct2TfYhmXDV3yZTGXyLNrvJ/RhoVhuvZ5Adaw12ANi66Lu8gk8z07qjwn/
+        gm2ezZcO5TcmzMlk2MfYFmmQheIioMgd8WYsSQ/k/AVkMotHkqp33vNwSH9N+JPRd4/VFRkQyQTe6PCW
+        r7zWgZ39LWqkkq6lv5OD24S4Xag21mLec1RQ+C00zyE/1L1fTUrLOWztcAMbN7KZXKkYixK7GIsSuxiL
+        ErsYixK7GIsSi3j4BXb8a+zPYrt9AAAAAElFTkSuQmCC
+</value>
   </data>
-  <data name="CloseHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\CloseHover.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="MinimizarNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MinimizarNormal.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="SettingsNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SettingsNormal.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="HomeHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\HomeHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icon minimizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon minimizar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="CloseNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\CloseNormal.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="HomeNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\HomeNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icon cerrar2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon cerrar2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="UserNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\UserNormal.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="linita shida1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\linita shida1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="MinimizaeHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MinimizaeHover.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="SettingHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SettingHover.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="logo5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logo5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="btnCancelar.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAFMAAAApCAYAAABJCxWnAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKGSURBVGhD7ZrNaxNBGMYrioKo6MWDBxF6EoqlNVrxoIh/
+        gXgQ8aIgWPC7UKHQUlSE0kKtlqopMZqm1ARrG03RFoldpCrqQVT86qGCkIOKKNJD0cNjn9lp4poRk3Fu
+        eX/wQPJuEtgfuzuTeaeiwvMgcRRjUWIXY1FiF2NRYhdjUWIXY1FiF2NRZ969DJYPRVAVa8X6SCNCPQew
+        rmNXWYXnzHOvvtqMFYNhzM+MGV2pGIuzWXqzDxsv1KM+1Yk7bx7g6YdXyH77hHKD58xzz0w+wfGRbmya
+        dbLyRq/RWYFMmq+Kn8LuxGl8nv6qf1KY4/vMNI6kz6Mm2oQFd28H3AVkUmRd7zFcfzGuvyr8jYmpZ9gS
+        bcTCsbRZJq9IEVk8vP35PC2QyWckb22hNM6Mx7E6eS4vk6M2Bxt5RpbOzM8f2B5pwKLRlC+TQz5HKsGO
+        8KNhrBlo92VyDsWhX7Dj7cf3CIWP+jI3XDyIqS9ZfUgoFd7qNZ17fJm1XXvV/Emwh/+WlEy+EP4PkekQ
+        kekQkekQkekQkekQkekQkemQnEzO3jmLF+zJyWSfoxxbEi7JX5nRJrVyLNjBdQ2ubyiZqxJdaPP69SGh
+        VFIvPaztO+nLZB9ja/iwPDct2TfYhmXDV3yZTGXyLNrvJ/RhoVhuvZ5Adaw12ANi66Lu8gk8z07qjwn/
+        gm2ezZcO5TcmzMlk2MfYFmmQheIioMgd8WYsSQ/k/AVkMotHkqp33vNwSH9N+JPRd4/VFRkQyQTe6PCW
+        r7zWgZ39LWqkkq6lv5OD24S4Xag21mLec1RQ+C00zyE/1L1fTUrLOWztcAMbN7KZXKkYixK7GIsSuxiL
+        ErsYixK7GIsSi3j4BXb8a+zPYrt9AAAAAElFTkSuQmCC
+</value>
   </data>
 </root>
