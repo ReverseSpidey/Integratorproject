@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.txtContraseña = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -38,13 +39,13 @@
             this.picCerrar = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.LBLINSTRUCCION = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -56,6 +57,16 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(250, 330);
             this.panel1.TabIndex = 0;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::AppDesktop.Properties.Resources.logo5;
+            this.pictureBox5.Location = new System.Drawing.Point(67, 94);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(127, 109);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 0;
+            this.pictureBox5.TabStop = false;
             // 
             // txtUsuario
             // 
@@ -117,12 +128,12 @@
             this.lblusuario.AutoSize = true;
             this.lblusuario.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblusuario.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.lblusuario.Location = new System.Drawing.Point(490, 295);
+            this.lblusuario.Location = new System.Drawing.Point(556, 295);
             this.lblusuario.Name = "lblusuario";
-            this.lblusuario.Size = new System.Drawing.Size(76, 17);
+            this.lblusuario.Size = new System.Drawing.Size(72, 17);
             this.lblusuario.TabIndex = 10;
             this.lblusuario.TabStop = true;
-            this.lblusuario.Text = "Registrarse";
+            this.lblusuario.Text = "Regístrate\r\n";
             this.lblusuario.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblusuario_LinkClicked);
             // 
             // pictureBox4
@@ -165,15 +176,18 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // pictureBox5
+            // LBLINSTRUCCION
             // 
-            this.pictureBox5.Image = global::AppDesktop.Properties.Resources.logo5;
-            this.pictureBox5.Location = new System.Drawing.Point(67, 94);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(127, 109);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 0;
-            this.pictureBox5.TabStop = false;
+            this.LBLINSTRUCCION.AutoSize = true;
+            this.LBLINSTRUCCION.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.LBLINSTRUCCION.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBLINSTRUCCION.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
+            this.LBLINSTRUCCION.Location = new System.Drawing.Point(387, 295);
+            this.LBLINSTRUCCION.Name = "LBLINSTRUCCION";
+            this.LBLINSTRUCCION.Size = new System.Drawing.Size(163, 17);
+            this.LBLINSTRUCCION.TabIndex = 11;
+            this.LBLINSTRUCCION.Text = "¿No tienes una cuenta?";
+            this.LBLINSTRUCCION.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             // 
             // LOGIN
             // 
@@ -181,6 +195,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(780, 330);
+            this.Controls.Add(this.LBLINSTRUCCION);
             this.Controls.Add(this.lblusuario);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.picCerrar);
@@ -198,11 +213,11 @@
             this.Text = "LOGIN";
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.LOGIN_MouseMove);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCerrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -221,5 +236,6 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.LinkLabel lblusuario;
+        private System.Windows.Forms.Label LBLINSTRUCCION;
     }
 }

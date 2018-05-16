@@ -110,7 +110,7 @@ namespace AppDesktop
             
         }
 
-        #endregion
+        
 
         private void lblSesión_MouseMove(object sender, MouseEventArgs e)
         {
@@ -126,11 +126,36 @@ namespace AppDesktop
         {
             lblSesión.ForeColor = Color.White;
         }
+        #endregion
+
 
         private void lblSesión_Click(object sender, EventArgs e)
         {
             LOGIN obj = new LOGIN();
             obj.ShowDialog();
+        }
+        
+        private void AbrirFormHija(object formhija)
+        {
+            if (this.pnl_Contenedor.Controls.Count > 0)
+                this.pnl_Contenedor.Controls.RemoveAt(0);
+            Form fhe = formhija as Form;
+            fhe.TopLevel = false;
+            fhe.Dock = DockStyle.Fill;
+            this.pnl_Contenedor.Controls.Add(fhe);
+            this.pnl_Contenedor.Tag = fhe;
+            fhe.Show();
+        }
+
+        private void ucUser_Click(object sender, EventArgs e)
+        {
+            LOGIN obj = new LOGIN();
+            obj.ShowDialog();
+        }
+
+        private void ucConfiguracion_Click(object sender, EventArgs e)
+        {
+            AbrirFormHija(new frmConfiguración());
         }
     }
 }

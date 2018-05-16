@@ -16,6 +16,8 @@ namespace AppDesktop.GUI
         public frm_PERSONA()
         {
             InitializeComponent();
+
+            
         }
 
         int posY = 0;
@@ -61,7 +63,7 @@ namespace AppDesktop.GUI
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("¿Estás seguro de guardar los datos?", "Se requiere confirmación", MessageBoxButtons.YesNo) == System.Windows.Forms.DialogResult.Yes)
+            if (MessageBox.Show("¿Estás seguro de guardar los datos?", "Se requiere confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == System.Windows.Forms.DialogResult.Yes)
             {
                 this.Hide();
                 MessageBox.Show("Datos guardados con exito!!!");

@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.ppnlHeader = new System.Windows.Forms.Panel();
+            this.pnlName = new System.Windows.Forms.Panel();
+            this.lblTitle = new System.Windows.Forms.Label();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pnlCerrar = new System.Windows.Forms.Panel();
             this.lblSesión = new System.Windows.Forms.Label();
             this.ucUser = new Imagenes.UserControl1();
@@ -37,16 +40,21 @@
             this.ucConfiguracion = new Imagenes.UserControl1();
             this.UcInicio = new Imagenes.UserControl1();
             this.pnlBody = new System.Windows.Forms.Panel();
+            this.pnl_Contenedor = new System.Windows.Forms.Panel();
             this.ppnlHeader.SuspendLayout();
+            this.pnlName.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.pnlCerrar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ucUser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ucConfiguracion)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UcInicio)).BeginInit();
+            this.pnlBody.SuspendLayout();
             this.SuspendLayout();
             // 
             // ppnlHeader
             // 
             this.ppnlHeader.BackColor = System.Drawing.Color.Turquoise;
+            this.ppnlHeader.Controls.Add(this.pnlName);
             this.ppnlHeader.Controls.Add(this.pnlCerrar);
             this.ppnlHeader.Controls.Add(this.ucConfiguracion);
             this.ppnlHeader.Controls.Add(this.UcInicio);
@@ -55,6 +63,39 @@
             this.ppnlHeader.Name = "ppnlHeader";
             this.ppnlHeader.Size = new System.Drawing.Size(875, 104);
             this.ppnlHeader.TabIndex = 0;
+            // 
+            // pnlName
+            // 
+            this.pnlName.Controls.Add(this.lblTitle);
+            this.pnlName.Controls.Add(this.pictureBox5);
+            this.pnlName.Location = new System.Drawing.Point(12, 6);
+            this.pnlName.Name = "pnlName";
+            this.pnlName.Size = new System.Drawing.Size(115, 23);
+            this.pnlName.TabIndex = 2;
+            // 
+            // lblTitle
+            // 
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.Dock = System.Windows.Forms.DockStyle.Left;
+            this.lblTitle.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
+            this.lblTitle.Location = new System.Drawing.Point(27, 0);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(89, 16);
+            this.lblTitle.TabIndex = 6;
+            this.lblTitle.Text = "FRIENDWARE";
+            this.lblTitle.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox5.Image = global::AppDesktop.Properties.Resources.logo5;
+            this.pictureBox5.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(27, 23);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 1;
+            this.pictureBox5.TabStop = false;
             // 
             // pnlCerrar
             // 
@@ -70,6 +111,7 @@
             // lblSesión
             // 
             this.lblSesión.AutoSize = true;
+            this.lblSesión.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblSesión.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSesión.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
             this.lblSesión.Location = new System.Drawing.Point(31, 9);
@@ -94,6 +136,7 @@
             this.ucUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ucUser.TabIndex = 3;
             this.ucUser.TabStop = false;
+            this.ucUser.Click += new System.EventHandler(this.ucUser_Click);
             this.ucUser.MouseLeave += new System.EventHandler(this.userControl11_MouseLeave);
             this.ucUser.MouseHover += new System.EventHandler(this.userControl11_MouseHover);
             this.ucUser.MouseMove += new System.Windows.Forms.MouseEventHandler(this.userControl11_MouseMove);
@@ -140,6 +183,7 @@
             this.ucConfiguracion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ucConfiguracion.TabIndex = 1;
             this.ucConfiguracion.TabStop = false;
+            this.ucConfiguracion.Click += new System.EventHandler(this.ucConfiguracion_Click);
             this.ucConfiguracion.MouseLeave += new System.EventHandler(this.ucConfiguracion_MouseLeave);
             this.ucConfiguracion.MouseHover += new System.EventHandler(this.ucConfiguracion_MouseHover);
             this.ucConfiguracion.MouseMove += new System.Windows.Forms.MouseEventHandler(this.ucConfiguracion_MouseMove);
@@ -161,12 +205,21 @@
             // pnlBody
             // 
             this.pnlBody.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.pnlBody.Controls.Add(this.pnl_Contenedor);
             this.pnlBody.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlBody.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.pnlBody.Location = new System.Drawing.Point(0, 104);
             this.pnlBody.Name = "pnlBody";
             this.pnlBody.Size = new System.Drawing.Size(875, 383);
             this.pnlBody.TabIndex = 1;
+            // 
+            // pnl_Contenedor
+            // 
+            this.pnl_Contenedor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnl_Contenedor.Location = new System.Drawing.Point(0, 0);
+            this.pnl_Contenedor.Name = "pnl_Contenedor";
+            this.pnl_Contenedor.Size = new System.Drawing.Size(875, 383);
+            this.pnl_Contenedor.TabIndex = 0;
             // 
             // frmApp
             // 
@@ -179,11 +232,15 @@
             this.Name = "frmApp";
             this.Text = "App";
             this.ppnlHeader.ResumeLayout(false);
+            this.pnlName.ResumeLayout(false);
+            this.pnlName.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.pnlCerrar.ResumeLayout(false);
             this.pnlCerrar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ucUser)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ucConfiguracion)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.UcInicio)).EndInit();
+            this.pnlBody.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -199,6 +256,10 @@
         private System.Windows.Forms.Label lblCerrar;
         private Imagenes.UserControl1 ucUser;
         private System.Windows.Forms.Label lblSesión;
+        private System.Windows.Forms.Panel pnlName;
+        private System.Windows.Forms.Label lblTitle;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.Panel pnl_Contenedor;
     }
 }
 
