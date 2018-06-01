@@ -131,7 +131,7 @@ namespace AppDesktop
 
         private void lblSesión_Click(object sender, EventArgs e)
         {
-            LOGIN obj = new LOGIN();
+            frm_PERSONA obj = new frm_PERSONA();
             obj.ShowDialog();
         }
         
@@ -156,6 +156,86 @@ namespace AppDesktop
         private void ucConfiguracion_Click(object sender, EventArgs e)
         {
             AbrirFormHija(new frmConfiguración());
+        }
+
+        private void ucCompra_MouseLeave(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void picUsuario_MouseMove(object sender, MouseEventArgs e)
+        {
+           picUsuario.Image = Properties.Resources.usuario2;
+        }
+
+        private void picUsuario_MouseLeave(object sender, EventArgs e)
+        {
+            picUsuario.Image = Properties.Resources.usuario;
+        }
+
+        private void picUsuario_MouseHover(object sender, EventArgs e)
+        {
+            picUsuario.Image = Properties.Resources.usuario2;
+        }
+
+        private void picTicktekt_MouseLeave(object sender, EventArgs e)
+        {
+            picTicktekt.Image = Properties.Resources.Ticket2;
+        }
+
+        private void picTicktekt_MouseMove(object sender, MouseEventArgs e)
+        {
+            picTicktekt.Image = Properties.Resources.Ticket1;
+        }
+
+        private void picTicktekt_MouseHover(object sender, EventArgs e)
+        {
+            picTicktekt.Image = Properties.Resources.Ticket1;
+        }
+
+        private void picReserva_MouseLeave(object sender, EventArgs e)
+        {
+            picReserva.Image = Properties.Resources.Detective_50px;
+        }
+
+        private void picReserva_MouseMove(object sender, MouseEventArgs e)
+        {
+            picReserva.Image = Properties.Resources.Detective2_50px;
+        }
+
+        private void picReserva_MouseHover(object sender, EventArgs e)
+        {
+            picReserva.Image = Properties.Resources.Detective2_50px;
+        }
+
+        private void lblReserva_MouseLeave(object sender, EventArgs e)
+        {
+            lblReserva.ForeColor = Color.FromArgb(33, 33, 33);
+        }
+
+        private void lblReserva_MouseHover(object sender, EventArgs e)
+        {
+            lblReserva.ForeColor = Color.White;
+        }
+
+        private void lblReserva_MouseMove(object sender, MouseEventArgs e)
+        {
+            lblReserva.ForeColor = Color.White;
+        }
+
+        private void lblBoleto_MouseLeave(object sender, EventArgs e)
+        {
+            lblBoleto.ForeColor = Color.FromArgb(33, 33, 33);
+        }
+
+        private void lblBoleto_MouseMove(object sender, MouseEventArgs e)
+        {
+            lblBoleto.ForeColor = Color.White;
+        }
+
+        private void lblBoleto_MouseHover(object sender, EventArgs e)
+        {
+            lblBoleto.ForeColor = Color.White;
         }
     }
 }
