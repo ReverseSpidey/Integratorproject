@@ -237,5 +237,15 @@ namespace AppDesktop
         {
             lblBoleto.ForeColor = Color.White;
         }
+
+        private void picTicktekt_Click(object sender, EventArgs e)
+        {
+            AbrirFormHija(new frmConfiguración());
+        }
+
+        private void pnl_Contenedor_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

@@ -128,6 +128,7 @@
             this.picTicktekt.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picTicktekt.TabIndex = 5;
             this.picTicktekt.TabStop = false;
+            this.picTicktekt.Click += new System.EventHandler(this.picTicktekt_Click);
             this.picTicktekt.MouseLeave += new System.EventHandler(this.picTicktekt_MouseLeave);
             this.picTicktekt.MouseHover += new System.EventHandler(this.picTicktekt_MouseHover);
             this.picTicktekt.MouseMove += new System.Windows.Forms.MouseEventHandler(this.picTicktekt_MouseMove);
@@ -250,6 +251,7 @@
             this.pnl_Contenedor.Name = "pnl_Contenedor";
             this.pnl_Contenedor.Size = new System.Drawing.Size(875, 383);
             this.pnl_Contenedor.TabIndex = 0;
+            this.pnl_Contenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_Contenedor_Paint);
             // 
             // frmApp
             // 
