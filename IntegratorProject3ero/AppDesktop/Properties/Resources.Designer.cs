@@ -63,6 +63,16 @@ namespace AppDesktop.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Ciudades {
+            get {
+                object obj = ResourceManager.GetObject("Ciudades", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap CloseHover {
             get {
                 object obj = ResourceManager.GetObject("CloseHover", resourceCulture);
@@ -76,6 +86,46 @@ namespace AppDesktop.Properties {
         internal static System.Drawing.Bitmap CloseNormal {
             get {
                 object obj = ResourceManager.GetObject("CloseNormal", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Detective_50px {
+            get {
+                object obj = ResourceManager.GetObject("Detective_50px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Detective2_50px {
+            get {
+                object obj = ResourceManager.GetObject("Detective2_50px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Empleado {
+            get {
+                object obj = ResourceManager.GetObject("Empleado", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Flash {
+            get {
+                object obj = ResourceManager.GetObject("Flash", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -163,6 +213,16 @@ namespace AppDesktop.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Sala {
+            get {
+                object obj = ResourceManager.GetObject("Sala", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap SettingHover {
             get {
                 object obj = ResourceManager.GetObject("SettingHover", resourceCulture);
@@ -183,6 +243,26 @@ namespace AppDesktop.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Ticket1 {
+            get {
+                object obj = ResourceManager.GetObject("Ticket1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Ticket2 {
+            get {
+                object obj = ResourceManager.GetObject("Ticket2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap UserHover {
             get {
                 object obj = ResourceManager.GetObject("UserHover", resourceCulture);
@@ -196,6 +276,26 @@ namespace AppDesktop.Properties {
         internal static System.Drawing.Bitmap UserNormal {
             get {
                 object obj = ResourceManager.GetObject("UserNormal", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap usuario {
+            get {
+                object obj = ResourceManager.GetObject("usuario", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap usuario2 {
+            get {
+                object obj = ResourceManager.GetObject("usuario2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

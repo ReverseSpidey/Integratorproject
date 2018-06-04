@@ -32,8 +32,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Bunifu_UI_v1.5.3">
-      <HintPath>..\Bunifu_UI_v1.5.3.dll</HintPath>
+    <Reference Include="Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\ProyectoFinal\IntegratorProject3ero\Bunifu_UI_v1.5.3.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic.PowerPacks">
       <HintPath>..\Microsoft.VisualBasic.PowerPacks.dll</HintPath>
@@ -54,6 +55,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GUI\Datos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Datos.Designer.cs">
+      <DependentUpon>Datos.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\frmConfiguración.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,14 +79,41 @@
     <Compile Include="GUI\LOGIN.Designer.cs">
       <DependentUpon>LOGIN.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\MenuAdministrador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\MenuAdministrador.Designer.cs">
+      <DependentUpon>MenuAdministrador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Peliculas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Peliculas.Designer.cs">
+      <DependentUpon>Peliculas.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\PERSONA.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GUI\PERSONA.Designer.cs">
       <DependentUpon>PERSONA.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\Probando.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Probando.Designer.cs">
+      <DependentUpon>Probando.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\SALA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\SALA.Designer.cs">
+      <DependentUpon>SALA.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GUI\Datos.resx">
+      <DependentUpon>Datos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmConfiguración.resx">
       <DependentUpon>frmConfiguración.cs</DependentUpon>
     </EmbeddedResource>
@@ -89,8 +123,20 @@
     <EmbeddedResource Include="GUI\LOGIN.resx">
       <DependentUpon>LOGIN.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\MenuAdministrador.resx">
+      <DependentUpon>MenuAdministrador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Peliculas.resx">
+      <DependentUpon>Peliculas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\PERSONA.resx">
       <DependentUpon>PERSONA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Probando.resx">
+      <DependentUpon>Probando.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\SALA.resx">
+      <DependentUpon>SALA.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -166,6 +212,33 @@
   <ItemGroup>
     <Folder Include="BO\" />
     <Folder Include="DAO\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Detective_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Detective2_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ticket1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ticket2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usuario2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Flash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Empleado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sala.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
