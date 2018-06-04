@@ -53,11 +53,11 @@
             this.label10 = new System.Windows.Forms.Label();
             this.pciMinimizar = new System.Windows.Forms.PictureBox();
             this.pnlHeader = new System.Windows.Forms.Panel();
-            this.pnlOpciones = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
+            this.pnlOpciones = new System.Windows.Forms.Panel();
             this.gpbDatosUsuario = new System.Windows.Forms.GroupBox();
-            this.dtmFechaNac = new System.Windows.Forms.DateTimePicker();
             this.lblFechaNac = new System.Windows.Forms.Label();
+            this.dtmFechaNac = new System.Windows.Forms.DateTimePicker();
             this.gpbContacto = new System.Windows.Forms.GroupBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnGuardar = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -315,15 +315,6 @@
             this.pnlHeader.Size = new System.Drawing.Size(1098, 38);
             this.pnlHeader.TabIndex = 37;
             // 
-            // pnlOpciones
-            // 
-            this.pnlOpciones.Controls.Add(this.picCerrar);
-            this.pnlOpciones.Controls.Add(this.pciMinimizar);
-            this.pnlOpciones.Location = new System.Drawing.Point(912, 0);
-            this.pnlOpciones.Name = "pnlOpciones";
-            this.pnlOpciones.Size = new System.Drawing.Size(186, 20);
-            this.pnlOpciones.TabIndex = 38;
-            // 
             // label11
             // 
             this.label11.AutoSize = true;
@@ -335,6 +326,15 @@
             this.label11.Size = new System.Drawing.Size(153, 33);
             this.label11.TabIndex = 39;
             this.label11.Text = "Tu Registro\r\n";
+            // 
+            // pnlOpciones
+            // 
+            this.pnlOpciones.Controls.Add(this.picCerrar);
+            this.pnlOpciones.Controls.Add(this.pciMinimizar);
+            this.pnlOpciones.Location = new System.Drawing.Point(912, 0);
+            this.pnlOpciones.Name = "pnlOpciones";
+            this.pnlOpciones.Size = new System.Drawing.Size(186, 20);
+            this.pnlOpciones.TabIndex = 38;
             // 
             // gpbDatosUsuario
             // 
@@ -357,6 +357,17 @@
             this.gpbDatosUsuario.TabStop = false;
             this.gpbDatosUsuario.Text = "Acerca de ti";
             // 
+            // lblFechaNac
+            // 
+            this.lblFechaNac.AutoSize = true;
+            this.lblFechaNac.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblFechaNac.ForeColor = System.Drawing.Color.White;
+            this.lblFechaNac.Location = new System.Drawing.Point(469, 78);
+            this.lblFechaNac.Name = "lblFechaNac";
+            this.lblFechaNac.Size = new System.Drawing.Size(120, 42);
+            this.lblFechaNac.TabIndex = 34;
+            this.lblFechaNac.Text = "FECHA DE \r\nNACIMIENTO:\r\n";
+            // 
             // dtmFechaNac
             // 
             this.dtmFechaNac.CalendarForeColor = System.Drawing.Color.Black;
@@ -370,17 +381,6 @@
             this.dtmFechaNac.Name = "dtmFechaNac";
             this.dtmFechaNac.Size = new System.Drawing.Size(200, 27);
             this.dtmFechaNac.TabIndex = 33;
-            // 
-            // lblFechaNac
-            // 
-            this.lblFechaNac.AutoSize = true;
-            this.lblFechaNac.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblFechaNac.ForeColor = System.Drawing.Color.White;
-            this.lblFechaNac.Location = new System.Drawing.Point(469, 78);
-            this.lblFechaNac.Name = "lblFechaNac";
-            this.lblFechaNac.Size = new System.Drawing.Size(120, 42);
-            this.lblFechaNac.TabIndex = 34;
-            this.lblFechaNac.Text = "FECHA DE \r\nNACIMIENTO:\r\n";
             // 
             // gpbContacto
             // 
