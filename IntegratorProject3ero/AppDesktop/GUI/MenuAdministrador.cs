@@ -14,10 +14,13 @@ namespace AppDesktop.GUI
     {
         int posY = 0;
         int posX = 0;
+        int cont = 0;
 
         public MenuAdministrador()
         {
             InitializeComponent();
+
+            pnlCatalogos.Visible = false;
         }
 
 
@@ -83,9 +86,23 @@ namespace AppDesktop.GUI
 
         private void button1_Click(object sender, EventArgs e)
         {
+            
             panellfet.Height = btnPelicula.Height;
             panellfet.Top = btnPelicula.Top;
             pnlCatalogos.Visible = false;
+
+
+            if(cont%2==0)
+            {
+                pnlCatalogos.Visible = false;
+
+            }
+            else
+            {
+                pnlCatalogos.Visible = true;
+            }
+
+            cont++;
 
 
         }
