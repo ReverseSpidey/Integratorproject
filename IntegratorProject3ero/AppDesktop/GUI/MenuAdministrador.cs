@@ -90,14 +90,14 @@ namespace AppDesktop.GUI
             panellfet.Height = btnPelicula.Height;
             panellfet.Top = btnPelicula.Top;
             pnlCatalogos.Visible = false;
+            
 
-
-            if(cont%2==0)
+            if(cont%2 > 0)
             {
                 pnlCatalogos.Visible = false;
 
             }
-            else
+            else if(cont % 2 == 0)
             {
                 pnlCatalogos.Visible = true;
             }

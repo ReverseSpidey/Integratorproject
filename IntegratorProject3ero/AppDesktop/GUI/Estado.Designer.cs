@@ -30,16 +30,15 @@
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Estado));
             this.dgvEstado = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.txtEstado = new System.Windows.Forms.TextBox();
-            this.btnGuardarEstado = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btnModificarEstado = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btnEliminarEstado = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btnLimpiarEstado = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btnConsultarEstado = new Bunifu.Framework.UI.BunifuThinButton2();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEstado)).BeginInit();
             this.SuspendLayout();
             // 
@@ -63,150 +62,25 @@
             this.dgvEstado.EnableHeadersVisualStyles = false;
             this.dgvEstado.HeaderBgColor = System.Drawing.Color.SeaGreen;
             this.dgvEstado.HeaderForeColor = System.Drawing.Color.SeaGreen;
-            this.dgvEstado.Location = new System.Drawing.Point(95, 111);
+            this.dgvEstado.Location = new System.Drawing.Point(85, 126);
             this.dgvEstado.Name = "dgvEstado";
             this.dgvEstado.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dgvEstado.Size = new System.Drawing.Size(365, 145);
+            this.dgvEstado.Size = new System.Drawing.Size(375, 165);
             this.dgvEstado.TabIndex = 20;
             // 
             // txtEstado
             // 
-            this.txtEstado.Location = new System.Drawing.Point(221, 65);
+            this.txtEstado.Location = new System.Drawing.Point(199, 76);
             this.txtEstado.Name = "txtEstado";
             this.txtEstado.Size = new System.Drawing.Size(139, 20);
             this.txtEstado.TabIndex = 19;
-            // 
-            // btnGuardarEstado
-            // 
-            this.btnGuardarEstado.ActiveBorderThickness = 1;
-            this.btnGuardarEstado.ActiveCornerRadius = 20;
-            this.btnGuardarEstado.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.btnGuardarEstado.ActiveForecolor = System.Drawing.Color.White;
-            this.btnGuardarEstado.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.btnGuardarEstado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(10)))), ((int)(((byte)(18)))));
-            this.btnGuardarEstado.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnGuardarEstado.BackgroundImage")));
-            this.btnGuardarEstado.ButtonText = "Guardar";
-            this.btnGuardarEstado.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnGuardarEstado.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardarEstado.ForeColor = System.Drawing.Color.SeaGreen;
-            this.btnGuardarEstado.IdleBorderThickness = 1;
-            this.btnGuardarEstado.IdleCornerRadius = 20;
-            this.btnGuardarEstado.IdleFillColor = System.Drawing.Color.White;
-            this.btnGuardarEstado.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.btnGuardarEstado.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btnGuardarEstado.Location = new System.Drawing.Point(61, 275);
-            this.btnGuardarEstado.Margin = new System.Windows.Forms.Padding(5);
-            this.btnGuardarEstado.Name = "btnGuardarEstado";
-            this.btnGuardarEstado.Size = new System.Drawing.Size(88, 34);
-            this.btnGuardarEstado.TabIndex = 18;
-            this.btnGuardarEstado.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btnModificarEstado
-            // 
-            this.btnModificarEstado.ActiveBorderThickness = 1;
-            this.btnModificarEstado.ActiveCornerRadius = 20;
-            this.btnModificarEstado.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.btnModificarEstado.ActiveForecolor = System.Drawing.Color.White;
-            this.btnModificarEstado.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.btnModificarEstado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(10)))), ((int)(((byte)(18)))));
-            this.btnModificarEstado.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnModificarEstado.BackgroundImage")));
-            this.btnModificarEstado.ButtonText = "Modificar";
-            this.btnModificarEstado.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnModificarEstado.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModificarEstado.ForeColor = System.Drawing.Color.SeaGreen;
-            this.btnModificarEstado.IdleBorderThickness = 1;
-            this.btnModificarEstado.IdleCornerRadius = 20;
-            this.btnModificarEstado.IdleFillColor = System.Drawing.Color.White;
-            this.btnModificarEstado.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.btnModificarEstado.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btnModificarEstado.Location = new System.Drawing.Point(179, 275);
-            this.btnModificarEstado.Margin = new System.Windows.Forms.Padding(5);
-            this.btnModificarEstado.Name = "btnModificarEstado";
-            this.btnModificarEstado.Size = new System.Drawing.Size(88, 34);
-            this.btnModificarEstado.TabIndex = 17;
-            this.btnModificarEstado.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btnEliminarEstado
-            // 
-            this.btnEliminarEstado.ActiveBorderThickness = 1;
-            this.btnEliminarEstado.ActiveCornerRadius = 20;
-            this.btnEliminarEstado.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.btnEliminarEstado.ActiveForecolor = System.Drawing.Color.White;
-            this.btnEliminarEstado.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.btnEliminarEstado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(10)))), ((int)(((byte)(18)))));
-            this.btnEliminarEstado.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEliminarEstado.BackgroundImage")));
-            this.btnEliminarEstado.ButtonText = "Eliminar";
-            this.btnEliminarEstado.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEliminarEstado.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminarEstado.ForeColor = System.Drawing.Color.SeaGreen;
-            this.btnEliminarEstado.IdleBorderThickness = 1;
-            this.btnEliminarEstado.IdleCornerRadius = 20;
-            this.btnEliminarEstado.IdleFillColor = System.Drawing.Color.White;
-            this.btnEliminarEstado.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.btnEliminarEstado.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btnEliminarEstado.Location = new System.Drawing.Point(293, 275);
-            this.btnEliminarEstado.Margin = new System.Windows.Forms.Padding(5);
-            this.btnEliminarEstado.Name = "btnEliminarEstado";
-            this.btnEliminarEstado.Size = new System.Drawing.Size(88, 34);
-            this.btnEliminarEstado.TabIndex = 16;
-            this.btnEliminarEstado.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btnLimpiarEstado
-            // 
-            this.btnLimpiarEstado.ActiveBorderThickness = 1;
-            this.btnLimpiarEstado.ActiveCornerRadius = 20;
-            this.btnLimpiarEstado.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.btnLimpiarEstado.ActiveForecolor = System.Drawing.Color.White;
-            this.btnLimpiarEstado.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.btnLimpiarEstado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(10)))), ((int)(((byte)(18)))));
-            this.btnLimpiarEstado.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnLimpiarEstado.BackgroundImage")));
-            this.btnLimpiarEstado.ButtonText = "Limpiar";
-            this.btnLimpiarEstado.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLimpiarEstado.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpiarEstado.ForeColor = System.Drawing.Color.SeaGreen;
-            this.btnLimpiarEstado.IdleBorderThickness = 1;
-            this.btnLimpiarEstado.IdleCornerRadius = 20;
-            this.btnLimpiarEstado.IdleFillColor = System.Drawing.Color.White;
-            this.btnLimpiarEstado.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.btnLimpiarEstado.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btnLimpiarEstado.Location = new System.Drawing.Point(408, 275);
-            this.btnLimpiarEstado.Margin = new System.Windows.Forms.Padding(5);
-            this.btnLimpiarEstado.Name = "btnLimpiarEstado";
-            this.btnLimpiarEstado.Size = new System.Drawing.Size(88, 34);
-            this.btnLimpiarEstado.TabIndex = 15;
-            this.btnLimpiarEstado.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btnConsultarEstado
-            // 
-            this.btnConsultarEstado.ActiveBorderThickness = 1;
-            this.btnConsultarEstado.ActiveCornerRadius = 20;
-            this.btnConsultarEstado.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.btnConsultarEstado.ActiveForecolor = System.Drawing.Color.White;
-            this.btnConsultarEstado.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.btnConsultarEstado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(10)))), ((int)(((byte)(18)))));
-            this.btnConsultarEstado.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnConsultarEstado.BackgroundImage")));
-            this.btnConsultarEstado.ButtonText = "Consultar";
-            this.btnConsultarEstado.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnConsultarEstado.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConsultarEstado.ForeColor = System.Drawing.Color.SeaGreen;
-            this.btnConsultarEstado.IdleBorderThickness = 1;
-            this.btnConsultarEstado.IdleCornerRadius = 20;
-            this.btnConsultarEstado.IdleFillColor = System.Drawing.Color.White;
-            this.btnConsultarEstado.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.btnConsultarEstado.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btnConsultarEstado.Location = new System.Drawing.Point(372, 61);
-            this.btnConsultarEstado.Margin = new System.Windows.Forms.Padding(5);
-            this.btnConsultarEstado.Name = "btnConsultarEstado";
-            this.btnConsultarEstado.Size = new System.Drawing.Size(88, 34);
-            this.btnConsultarEstado.TabIndex = 14;
-            this.btnConsultarEstado.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(131, 61);
+            this.label2.Location = new System.Drawing.Point(109, 72);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(84, 22);
             this.label2.TabIndex = 24;
@@ -223,21 +97,91 @@
             this.label1.TabIndex = 23;
             this.label1.Text = "Estado";
             // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(72)))), ((int)(((byte)(21)))));
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Trebuchet MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(180, 316);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 44;
+            this.button2.Text = "Modificar";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(72)))), ((int)(((byte)(21)))));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Trebuchet MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(68, 316);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 43;
+            this.button1.Text = "Agregar";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(72)))), ((int)(((byte)(21)))));
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Trebuchet MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(409, 316);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 46;
+            this.button3.Text = "Limpiar";
+            this.button3.UseVisualStyleBackColor = false;
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(72)))), ((int)(((byte)(21)))));
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Trebuchet MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Location = new System.Drawing.Point(297, 316);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.TabIndex = 45;
+            this.button4.Text = "Eliminar";
+            this.button4.UseVisualStyleBackColor = false;
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(72)))), ((int)(((byte)(21)))));
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Trebuchet MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.Color.White;
+            this.button5.Location = new System.Drawing.Point(363, 75);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(75, 23);
+            this.button5.TabIndex = 47;
+            this.button5.Text = "Consultar";
+            this.button5.UseVisualStyleBackColor = false;
+            // 
             // Estado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(10)))), ((int)(((byte)(18)))));
             this.ClientSize = new System.Drawing.Size(556, 371);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvEstado);
             this.Controls.Add(this.txtEstado);
-            this.Controls.Add(this.btnGuardarEstado);
-            this.Controls.Add(this.btnModificarEstado);
-            this.Controls.Add(this.btnEliminarEstado);
-            this.Controls.Add(this.btnLimpiarEstado);
-            this.Controls.Add(this.btnConsultarEstado);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Estado";
             this.Text = "Estado";
@@ -251,12 +195,12 @@
 
         private Bunifu.Framework.UI.BunifuCustomDataGrid dgvEstado;
         private System.Windows.Forms.TextBox txtEstado;
-        private Bunifu.Framework.UI.BunifuThinButton2 btnGuardarEstado;
-        private Bunifu.Framework.UI.BunifuThinButton2 btnModificarEstado;
-        private Bunifu.Framework.UI.BunifuThinButton2 btnEliminarEstado;
-        private Bunifu.Framework.UI.BunifuThinButton2 btnLimpiarEstado;
-        private Bunifu.Framework.UI.BunifuThinButton2 btnConsultarEstado;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
     }
 }

@@ -55,6 +55,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EmpleadoCinema.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmpleadoCinema.Designer.cs">
+      <DependentUpon>EmpleadoCinema.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\Ciudad.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +78,12 @@
     </Compile>
     <Compile Include="GUI\Idioma.Designer.cs">
       <DependentUpon>Idioma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\NuevaCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\NuevaCompra.Designer.cs">
+      <DependentUpon>NuevaCompra.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\Sucursal.cs">
       <SubType>Form</SubType>
@@ -129,6 +141,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="EmpleadoCinema.resx">
+      <DependentUpon>EmpleadoCinema.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\Ciudad.resx">
       <DependentUpon>Ciudad.cs</DependentUpon>
     </EmbeddedResource>
@@ -137,6 +152,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Idioma.resx">
       <DependentUpon>Idioma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\NuevaCompra.resx">
+      <DependentUpon>NuevaCompra.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Sucursal.resx">
       <DependentUpon>Sucursal.cs</DependentUpon>
@@ -266,6 +284,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Sala.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ticket_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AGUA.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DIDPUL.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\INFINITY.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SUPER.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -63,6 +63,16 @@ namespace AppDesktop.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap AGUA {
+            get {
+                object obj = ResourceManager.GetObject("AGUA", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Ciudades {
             get {
                 object obj = ResourceManager.GetObject("Ciudades", resourceCulture);
@@ -106,6 +116,16 @@ namespace AppDesktop.Properties {
         internal static System.Drawing.Bitmap Detective2_50px {
             get {
                 object obj = ResourceManager.GetObject("Detective2_50px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DIDPUL {
+            get {
+                object obj = ResourceManager.GetObject("DIDPUL", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -166,6 +186,16 @@ namespace AppDesktop.Properties {
         internal static System.Drawing.Bitmap icon_minimizar {
             get {
                 object obj = ResourceManager.GetObject("icon minimizar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap INFINITY {
+            get {
+                object obj = ResourceManager.GetObject("INFINITY", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -236,6 +266,26 @@ namespace AppDesktop.Properties {
         internal static System.Drawing.Bitmap SettingsNormal {
             get {
                 object obj = ResourceManager.GetObject("SettingsNormal", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SUPER {
+            get {
+                object obj = ResourceManager.GetObject("SUPER", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ticket_32 {
+            get {
+                object obj = ResourceManager.GetObject("ticket_32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
