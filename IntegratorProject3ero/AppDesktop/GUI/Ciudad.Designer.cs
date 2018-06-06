@@ -1,6 +1,6 @@
 ﻿namespace AppDesktop.GUI
 {
-    partial class SALA
+    partial class Ciudad
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,7 @@
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SALA));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Ciudad));
             this.dgvEstado = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.txtEstado = new System.Windows.Forms.TextBox();
             this.btnGuardarEstado = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -69,7 +69,7 @@
             // 
             // txtEstado
             // 
-            this.txtEstado.Location = new System.Drawing.Point(143, 69);
+            this.txtEstado.Location = new System.Drawing.Point(161, 69);
             this.txtEstado.Name = "txtEstado";
             this.txtEstado.Size = new System.Drawing.Size(187, 20);
             this.txtEstado.TabIndex = 19;
@@ -199,7 +199,7 @@
             this.btnConsultarEstado.TabIndex = 14;
             this.btnConsultarEstado.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // SALA
+            // Ciudad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -213,8 +213,8 @@
             this.Controls.Add(this.btnLimpiarEstado);
             this.Controls.Add(this.btnConsultarEstado);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "SALA";
-            this.Text = "SALA";
+            this.Name = "Ciudad";
+            this.Text = "Ciudad";
             ((System.ComponentModel.ISupportInitialize)(this.dgvEstado)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

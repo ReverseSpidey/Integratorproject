@@ -1,6 +1,6 @@
 ﻿namespace AppDesktop.GUI
 {
-    partial class SALA
+    partial class Idioma
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,7 @@
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SALA));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Idioma));
             this.dgvEstado = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.txtEstado = new System.Windows.Forms.TextBox();
             this.btnGuardarEstado = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -65,14 +65,14 @@
             this.dgvEstado.Name = "dgvEstado";
             this.dgvEstado.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dgvEstado.Size = new System.Drawing.Size(365, 145);
-            this.dgvEstado.TabIndex = 20;
+            this.dgvEstado.TabIndex = 34;
             // 
             // txtEstado
             // 
-            this.txtEstado.Location = new System.Drawing.Point(143, 69);
+            this.txtEstado.Location = new System.Drawing.Point(161, 69);
             this.txtEstado.Name = "txtEstado";
             this.txtEstado.Size = new System.Drawing.Size(187, 20);
-            this.txtEstado.TabIndex = 19;
+            this.txtEstado.TabIndex = 33;
             // 
             // btnGuardarEstado
             // 
@@ -96,7 +96,7 @@
             this.btnGuardarEstado.Margin = new System.Windows.Forms.Padding(5);
             this.btnGuardarEstado.Name = "btnGuardarEstado";
             this.btnGuardarEstado.Size = new System.Drawing.Size(88, 34);
-            this.btnGuardarEstado.TabIndex = 18;
+            this.btnGuardarEstado.TabIndex = 32;
             this.btnGuardarEstado.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnModificarEstado
@@ -121,7 +121,7 @@
             this.btnModificarEstado.Margin = new System.Windows.Forms.Padding(5);
             this.btnModificarEstado.Name = "btnModificarEstado";
             this.btnModificarEstado.Size = new System.Drawing.Size(88, 34);
-            this.btnModificarEstado.TabIndex = 17;
+            this.btnModificarEstado.TabIndex = 31;
             this.btnModificarEstado.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnEliminarEstado
@@ -146,7 +146,7 @@
             this.btnEliminarEstado.Margin = new System.Windows.Forms.Padding(5);
             this.btnEliminarEstado.Name = "btnEliminarEstado";
             this.btnEliminarEstado.Size = new System.Drawing.Size(88, 34);
-            this.btnEliminarEstado.TabIndex = 16;
+            this.btnEliminarEstado.TabIndex = 30;
             this.btnEliminarEstado.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnLimpiarEstado
@@ -171,7 +171,7 @@
             this.btnLimpiarEstado.Margin = new System.Windows.Forms.Padding(5);
             this.btnLimpiarEstado.Name = "btnLimpiarEstado";
             this.btnLimpiarEstado.Size = new System.Drawing.Size(88, 34);
-            this.btnLimpiarEstado.TabIndex = 15;
+            this.btnLimpiarEstado.TabIndex = 29;
             this.btnLimpiarEstado.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnConsultarEstado
@@ -196,10 +196,10 @@
             this.btnConsultarEstado.Margin = new System.Windows.Forms.Padding(5);
             this.btnConsultarEstado.Name = "btnConsultarEstado";
             this.btnConsultarEstado.Size = new System.Drawing.Size(88, 34);
-            this.btnConsultarEstado.TabIndex = 14;
+            this.btnConsultarEstado.TabIndex = 28;
             this.btnConsultarEstado.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // SALA
+            // Idioma
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -213,8 +213,8 @@
             this.Controls.Add(this.btnLimpiarEstado);
             this.Controls.Add(this.btnConsultarEstado);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "SALA";
-            this.Text = "SALA";
+            this.Name = "Idioma";
+            this.Text = "Idioma";
             ((System.ComponentModel.ISupportInitialize)(this.dgvEstado)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

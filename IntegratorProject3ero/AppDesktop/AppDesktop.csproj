@@ -55,11 +55,41 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GUI\Datos.cs">
+    <Compile Include="GUI\Ciudad.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\Datos.Designer.cs">
-      <DependentUpon>Datos.cs</DependentUpon>
+    <Compile Include="GUI\Ciudad.Designer.cs">
+      <DependentUpon>Ciudad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Clasificacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Clasificacion.Designer.cs">
+      <DependentUpon>Clasificacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Idioma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Idioma.Designer.cs">
+      <DependentUpon>Idioma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Sucursal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Sucursal.Designer.cs">
+      <DependentUpon>Sucursal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Estado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Estado.Designer.cs">
+      <DependentUpon>Estado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Genero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Genero.Designer.cs">
+      <DependentUpon>Genero.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\LOGIN.cs">
       <SubType>Form</SubType>
@@ -91,10 +121,31 @@
     <Compile Include="GUI\SALA.Designer.cs">
       <DependentUpon>SALA.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\TipoFuncion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\TipoFuncion.Designer.cs">
+      <DependentUpon>TipoFuncion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="GUI\Datos.resx">
-      <DependentUpon>Datos.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\Ciudad.resx">
+      <DependentUpon>Ciudad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Clasificacion.resx">
+      <DependentUpon>Clasificacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Idioma.resx">
+      <DependentUpon>Idioma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Sucursal.resx">
+      <DependentUpon>Sucursal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Estado.resx">
+      <DependentUpon>Estado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Genero.resx">
+      <DependentUpon>Genero.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\LOGIN.resx">
       <DependentUpon>LOGIN.cs</DependentUpon>
@@ -110,6 +161,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\SALA.resx">
       <DependentUpon>SALA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\TipoFuncion.resx">
+      <DependentUpon>TipoFuncion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

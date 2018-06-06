@@ -1,6 +1,6 @@
 ﻿namespace AppDesktop.GUI
 {
-    partial class SALA
+    partial class Sucursal
     {
         /// <summary>
         /// Required designer variable.
@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SALA));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Sucursal));
             this.dgvEstado = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.txtEstado = new System.Windows.Forms.TextBox();
             this.btnGuardarEstado = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -38,24 +38,28 @@
             this.btnEliminarEstado = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnLimpiarEstado = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnConsultarEstado = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEstado)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvEstado
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dgvEstado.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dgvEstado.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvEstado.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.dgvEstado.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvEstado.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvEstado.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvEstado.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvEstado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvEstado.DoubleBuffered = true;
             this.dgvEstado.EnableHeadersVisualStyles = false;
@@ -65,14 +69,14 @@
             this.dgvEstado.Name = "dgvEstado";
             this.dgvEstado.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dgvEstado.Size = new System.Drawing.Size(365, 145);
-            this.dgvEstado.TabIndex = 20;
+            this.dgvEstado.TabIndex = 27;
             // 
             // txtEstado
             // 
-            this.txtEstado.Location = new System.Drawing.Point(143, 69);
+            this.txtEstado.Location = new System.Drawing.Point(102, 69);
             this.txtEstado.Name = "txtEstado";
-            this.txtEstado.Size = new System.Drawing.Size(187, 20);
-            this.txtEstado.TabIndex = 19;
+            this.txtEstado.Size = new System.Drawing.Size(115, 20);
+            this.txtEstado.TabIndex = 26;
             // 
             // btnGuardarEstado
             // 
@@ -96,7 +100,7 @@
             this.btnGuardarEstado.Margin = new System.Windows.Forms.Padding(5);
             this.btnGuardarEstado.Name = "btnGuardarEstado";
             this.btnGuardarEstado.Size = new System.Drawing.Size(88, 34);
-            this.btnGuardarEstado.TabIndex = 18;
+            this.btnGuardarEstado.TabIndex = 25;
             this.btnGuardarEstado.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnModificarEstado
@@ -121,7 +125,7 @@
             this.btnModificarEstado.Margin = new System.Windows.Forms.Padding(5);
             this.btnModificarEstado.Name = "btnModificarEstado";
             this.btnModificarEstado.Size = new System.Drawing.Size(88, 34);
-            this.btnModificarEstado.TabIndex = 17;
+            this.btnModificarEstado.TabIndex = 24;
             this.btnModificarEstado.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnEliminarEstado
@@ -146,7 +150,7 @@
             this.btnEliminarEstado.Margin = new System.Windows.Forms.Padding(5);
             this.btnEliminarEstado.Name = "btnEliminarEstado";
             this.btnEliminarEstado.Size = new System.Drawing.Size(88, 34);
-            this.btnEliminarEstado.TabIndex = 16;
+            this.btnEliminarEstado.TabIndex = 23;
             this.btnEliminarEstado.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnLimpiarEstado
@@ -171,7 +175,7 @@
             this.btnLimpiarEstado.Margin = new System.Windows.Forms.Padding(5);
             this.btnLimpiarEstado.Name = "btnLimpiarEstado";
             this.btnLimpiarEstado.Size = new System.Drawing.Size(88, 34);
-            this.btnLimpiarEstado.TabIndex = 15;
+            this.btnLimpiarEstado.TabIndex = 22;
             this.btnLimpiarEstado.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnConsultarEstado
@@ -192,19 +196,64 @@
             this.btnConsultarEstado.IdleFillColor = System.Drawing.Color.White;
             this.btnConsultarEstado.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.btnConsultarEstado.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btnConsultarEstado.Location = new System.Drawing.Point(356, 61);
+            this.btnConsultarEstado.Location = new System.Drawing.Point(444, 65);
             this.btnConsultarEstado.Margin = new System.Windows.Forms.Padding(5);
             this.btnConsultarEstado.Name = "btnConsultarEstado";
             this.btnConsultarEstado.Size = new System.Drawing.Size(88, 34);
-            this.btnConsultarEstado.TabIndex = 14;
+            this.btnConsultarEstado.TabIndex = 21;
             this.btnConsultarEstado.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // SALA
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(12, 69);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(84, 22);
+            this.label2.TabIndex = 29;
+            this.label2.Text = "Nombre";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(187, 21);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(119, 33);
+            this.label1.TabIndex = 28;
+            this.label1.Text = "Sucursal";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(315, 70);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 30;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(230, 69);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(79, 22);
+            this.label3.TabIndex = 31;
+            this.label3.Text = "Ciudad";
+            // 
+            // Sucursal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(10)))), ((int)(((byte)(18)))));
             this.ClientSize = new System.Drawing.Size(556, 371);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvEstado);
             this.Controls.Add(this.txtEstado);
             this.Controls.Add(this.btnGuardarEstado);
@@ -213,8 +262,8 @@
             this.Controls.Add(this.btnLimpiarEstado);
             this.Controls.Add(this.btnConsultarEstado);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "SALA";
-            this.Text = "SALA";
+            this.Name = "Sucursal";
+            this.Text = "Datos";
             ((System.ComponentModel.ISupportInitialize)(this.dgvEstado)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -230,5 +279,9 @@
         private Bunifu.Framework.UI.BunifuThinButton2 btnEliminarEstado;
         private Bunifu.Framework.UI.BunifuThinButton2 btnLimpiarEstado;
         private Bunifu.Framework.UI.BunifuThinButton2 btnConsultarEstado;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label3;
     }
 }

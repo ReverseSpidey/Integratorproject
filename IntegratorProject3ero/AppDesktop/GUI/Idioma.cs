@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace AppDesktop.GUI
 {
-    public partial class Datos : Form
+    public partial class Idioma : Form
     {
-        public Datos()
+        public Idioma()
         {
             InitializeComponent();
         }
