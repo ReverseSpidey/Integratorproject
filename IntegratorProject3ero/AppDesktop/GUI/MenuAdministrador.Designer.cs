@@ -32,6 +32,7 @@
             this.pan = new System.Windows.Forms.Panel();
             this.layout_Contenido = new System.Windows.Forms.FlowLayoutPanel();
             this.pnlCatalogos = new System.Windows.Forms.Panel();
+            this.btnClasificacion = new System.Windows.Forms.Button();
             this.btnSucursal = new System.Windows.Forms.Button();
             this.btnCiudad = new System.Windows.Forms.Button();
             this.btnEstado = new System.Windows.Forms.Button();
@@ -40,13 +41,12 @@
             this.btnGenero = new System.Windows.Forms.Button();
             this.btnSala = new System.Windows.Forms.Button();
             this.btnPelicula2 = new System.Windows.Forms.Button();
+            this.btnUsuarios = new System.Windows.Forms.Button();
             this.panellfet = new System.Windows.Forms.Panel();
+            this.btnPelicula = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panelcine = new System.Windows.Forms.Panel();
-            this.btnClasificacion = new System.Windows.Forms.Button();
-            this.btnUsuarios = new System.Windows.Forms.Button();
-            this.btnPelicula = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -93,6 +93,19 @@
             this.pnlCatalogos.Name = "pnlCatalogos";
             this.pnlCatalogos.Size = new System.Drawing.Size(127, 349);
             this.pnlCatalogos.TabIndex = 1;
+            // 
+            // btnClasificacion
+            // 
+            this.btnClasificacion.FlatAppearance.BorderSize = 0;
+            this.btnClasificacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClasificacion.ForeColor = System.Drawing.Color.White;
+            this.btnClasificacion.Location = new System.Drawing.Point(0, 306);
+            this.btnClasificacion.Name = "btnClasificacion";
+            this.btnClasificacion.Size = new System.Drawing.Size(127, 30);
+            this.btnClasificacion.TabIndex = 8;
+            this.btnClasificacion.Text = "Clasificación";
+            this.btnClasificacion.UseVisualStyleBackColor = true;
+            this.btnClasificacion.Click += new System.EventHandler(this.btnClasificacion_Click);
             // 
             // btnSucursal
             // 
@@ -197,6 +210,24 @@
             this.btnPelicula2.UseVisualStyleBackColor = true;
             this.btnPelicula2.Click += new System.EventHandler(this.button1_Click_1);
             // 
+            // btnUsuarios
+            // 
+            this.btnUsuarios.FlatAppearance.BorderSize = 0;
+            this.btnUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUsuarios.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnUsuarios.ForeColor = System.Drawing.Color.White;
+            this.btnUsuarios.Image = global::AppDesktop.Properties.Resources.Empleado;
+            this.btnUsuarios.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUsuarios.Location = new System.Drawing.Point(3, 358);
+            this.btnUsuarios.Name = "btnUsuarios";
+            this.btnUsuarios.Size = new System.Drawing.Size(133, 71);
+            this.btnUsuarios.TabIndex = 3;
+            this.btnUsuarios.Text = "Usuarios";
+            this.btnUsuarios.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnUsuarios.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnUsuarios.UseVisualStyleBackColor = true;
+            this.btnUsuarios.Click += new System.EventHandler(this.btnUsuarios_Click);
+            // 
             // panellfet
             // 
             this.panellfet.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(72)))), ((int)(((byte)(21)))));
@@ -204,6 +235,24 @@
             this.panellfet.Name = "panellfet";
             this.panellfet.Size = new System.Drawing.Size(10, 74);
             this.panellfet.TabIndex = 1;
+            // 
+            // btnPelicula
+            // 
+            this.btnPelicula.FlatAppearance.BorderSize = 0;
+            this.btnPelicula.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPelicula.Font = new System.Drawing.Font("Century Gothic", 8F);
+            this.btnPelicula.ForeColor = System.Drawing.Color.White;
+            this.btnPelicula.Image = global::AppDesktop.Properties.Resources.Flash;
+            this.btnPelicula.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPelicula.Location = new System.Drawing.Point(3, 117);
+            this.btnPelicula.Name = "btnPelicula";
+            this.btnPelicula.Size = new System.Drawing.Size(133, 71);
+            this.btnPelicula.TabIndex = 1;
+            this.btnPelicula.Text = "Catálogos";
+            this.btnPelicula.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnPelicula.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnPelicula.UseVisualStyleBackColor = true;
+            this.btnPelicula.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel3
             // 
@@ -236,55 +285,6 @@
             this.panelcine.TabIndex = 0;
             this.panelcine.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panelcine_MouseMove);
             // 
-            // btnClasificacion
-            // 
-            this.btnClasificacion.FlatAppearance.BorderSize = 0;
-            this.btnClasificacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClasificacion.ForeColor = System.Drawing.Color.White;
-            this.btnClasificacion.Location = new System.Drawing.Point(0, 306);
-            this.btnClasificacion.Name = "btnClasificacion";
-            this.btnClasificacion.Size = new System.Drawing.Size(127, 30);
-            this.btnClasificacion.TabIndex = 8;
-            this.btnClasificacion.Text = "Clasificación";
-            this.btnClasificacion.UseVisualStyleBackColor = true;
-            this.btnClasificacion.Click += new System.EventHandler(this.btnClasificacion_Click);
-            // 
-            // btnUsuarios
-            // 
-            this.btnUsuarios.FlatAppearance.BorderSize = 0;
-            this.btnUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUsuarios.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnUsuarios.ForeColor = System.Drawing.Color.White;
-            this.btnUsuarios.Image = global::AppDesktop.Properties.Resources.Empleado;
-            this.btnUsuarios.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUsuarios.Location = new System.Drawing.Point(3, 358);
-            this.btnUsuarios.Name = "btnUsuarios";
-            this.btnUsuarios.Size = new System.Drawing.Size(133, 71);
-            this.btnUsuarios.TabIndex = 3;
-            this.btnUsuarios.Text = "Usuarios";
-            this.btnUsuarios.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnUsuarios.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnUsuarios.UseVisualStyleBackColor = true;
-            this.btnUsuarios.Click += new System.EventHandler(this.btnUsuarios_Click);
-            // 
-            // btnPelicula
-            // 
-            this.btnPelicula.FlatAppearance.BorderSize = 0;
-            this.btnPelicula.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPelicula.Font = new System.Drawing.Font("Century Gothic", 8F);
-            this.btnPelicula.ForeColor = System.Drawing.Color.White;
-            this.btnPelicula.Image = global::AppDesktop.Properties.Resources.Flash;
-            this.btnPelicula.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPelicula.Location = new System.Drawing.Point(3, 117);
-            this.btnPelicula.Name = "btnPelicula";
-            this.btnPelicula.Size = new System.Drawing.Size(133, 71);
-            this.btnPelicula.TabIndex = 1;
-            this.btnPelicula.Text = "Catálogos";
-            this.btnPelicula.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnPelicula.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnPelicula.UseVisualStyleBackColor = true;
-            this.btnPelicula.Click += new System.EventHandler(this.button1_Click);
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -314,9 +314,9 @@
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(154, 26);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(108, 33);
+            this.label4.Size = new System.Drawing.Size(79, 33);
             this.label4.TabIndex = 16;
-            this.label4.Text = "Usuario";
+            this.label4.Text = "PENE";
             // 
             // MenuAdministrador
             // 
