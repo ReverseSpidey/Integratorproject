@@ -72,7 +72,7 @@
             this.txtUsuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtUsuario.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.txtUsuario.ForeColor = System.Drawing.Color.White;
-            this.txtUsuario.Location = new System.Drawing.Point(293, 91);
+            this.txtUsuario.Location = new System.Drawing.Point(293, 74);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(450, 20);
             this.txtUsuario.TabIndex = 2;
