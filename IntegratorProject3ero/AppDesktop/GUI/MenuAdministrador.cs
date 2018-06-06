@@ -47,8 +47,7 @@ namespace AppDesktop.GUI
 
         private void btnDatos_Click(object sender, EventArgs e)
         {
-            panellfet.Height = btnDatos.Height;
-            panellfet.Top = btnDatos.Top;
+
             AbrirFormHija(new Datos());
         }
 
@@ -86,16 +85,29 @@ namespace AppDesktop.GUI
         {
             panellfet.Height = btnPelicula.Height;
             panellfet.Top = btnPelicula.Top;
-            AbrirFormHija(new Peliculas());
+            pnlCatalogos.Visible = false;
 
 
         }
 
         private void btnSalas_Click(object sender, EventArgs e)
         {
-            panellfet.Height = btnSalas.Height;
-            panellfet.Top = btnSalas.Top;
+
             AbrirFormHija(new SALA());
+        }
+
+        private void btnPelicula_MouseEnter(object sender, EventArgs e)
+        {
+        }
+
+        private void panellfet_MouseEnter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

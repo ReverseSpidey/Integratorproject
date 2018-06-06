@@ -348,8 +348,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.ClientSize = new System.Drawing.Size(556, 371);
+            this.ClientSize = new System.Drawing.Size(539, 363);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.gpbContacto);
             this.Controls.Add(this.gpbDatosUsuario);

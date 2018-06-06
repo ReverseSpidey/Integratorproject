@@ -61,18 +61,6 @@
     <Compile Include="GUI\Datos.Designer.cs">
       <DependentUpon>Datos.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\frmConfiguración.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\frmConfiguración.Designer.cs">
-      <DependentUpon>frmConfiguración.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\Menu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\Menu.Designer.cs">
-      <DependentUpon>Menu.cs</DependentUpon>
-    </Compile>
     <Compile Include="GUI\LOGIN.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,12 +85,6 @@
     <Compile Include="GUI\PERSONA.Designer.cs">
       <DependentUpon>PERSONA.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\Probando.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="GUI\Probando.Designer.cs">
-      <DependentUpon>Probando.cs</DependentUpon>
-    </Compile>
     <Compile Include="GUI\SALA.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,12 +95,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="GUI\Datos.resx">
       <DependentUpon>Datos.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\frmConfiguración.resx">
-      <DependentUpon>frmConfiguración.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\Menu.resx">
-      <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\LOGIN.resx">
       <DependentUpon>LOGIN.cs</DependentUpon>
@@ -131,9 +107,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\PERSONA.resx">
       <DependentUpon>PERSONA.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\Probando.resx">
-      <DependentUpon>Probando.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\SALA.resx">
       <DependentUpon>SALA.cs</DependentUpon>

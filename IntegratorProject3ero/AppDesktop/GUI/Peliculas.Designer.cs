@@ -28,46 +28,65 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Peliculas));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.txtClasificacion = new System.Windows.Forms.TextBox();
-            this.dgvClasificacion = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.dgvSubtitulos = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.txtSubtitulos = new System.Windows.Forms.TextBox();
-            this.txtGenero = new System.Windows.Forms.TextBox();
             this.dgvGenero = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.txtGenero = new System.Windows.Forms.TextBox();
             this.btnLimpiarGenero = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnEliminarGenero = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnModificarGenero = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnGuardarGenero = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnConsultarGenero = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.btnConsultarClasificacion = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.dgvClasificacion = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.btnLimpiarClasificacion = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnElminarClasificacion = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnGuardarClasificacion = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnModificarClasificacion = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.txtClasificacion = new System.Windows.Forms.TextBox();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
             this.btnLimpiarSubtitulos = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnEliminarSubtitulos = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnModificarSubtitulos = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton25 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnGuardarSubtitulos = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.txtSubtitulos = new System.Windows.Forms.TextBox();
+            this.dgvSubtitulos = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.tabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.tabPage2.SuspendLayout();
-            this.tabPage3.SuspendLayout();
-            this.tabPage4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvClasificacion)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvSubtitulos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvGenero)).BeginInit();
+            this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvClasificacion)).BeginInit();
+            this.tabPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSubtitulos)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -76,21 +95,172 @@
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
-            this.tabControl1.Location = new System.Drawing.Point(12, 12);
+            this.tabControl1.Location = new System.Drawing.Point(0, 62);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(518, 347);
+            this.tabControl1.Size = new System.Drawing.Size(906, 657);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
             // 
+            this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(10)))), ((int)(((byte)(18)))));
+            this.tabPage1.Controls.Add(this.groupBox2);
+            this.tabPage1.Controls.Add(this.groupBox1);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(510, 321);
+            this.tabPage1.Size = new System.Drawing.Size(898, 631);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Pelicula";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.ForeColor = System.Drawing.Color.White;
+            this.groupBox2.Location = new System.Drawing.Point(641, 24);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(249, 463);
+            this.groupBox2.TabIndex = 8;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Disponibilidad de salas";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.comboBox3);
+            this.groupBox1.Controls.Add(this.comboBox2);
+            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.textBox3);
+            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.ForeColor = System.Drawing.Color.White;
+            this.groupBox1.Location = new System.Drawing.Point(50, 120);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(598, 463);
+            this.groupBox1.TabIndex = 7;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Datos de película";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(43, 330);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(80, 18);
+            this.label6.TabIndex = 12;
+            this.label6.Text = "Clasificación:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(76, 287);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(47, 18);
+            this.label5.TabIndex = 11;
+            this.label5.Text = "Idioma:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(74, 244);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(53, 18);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "Género:";
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(135, 327);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(153, 26);
+            this.comboBox3.TabIndex = 9;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(135, 284);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(153, 26);
+            this.comboBox2.TabIndex = 8;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(135, 241);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(153, 26);
+            this.comboBox1.TabIndex = 7;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.Location = new System.Drawing.Point(135, 123);
+            this.textBox3.Multiline = true;
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(445, 100);
+            this.textBox3.TabIndex = 6;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(135, 44);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(137, 21);
+            this.textBox1.TabIndex = 0;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(68, 161);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(55, 18);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Sinopsis:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(9, 44);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(120, 18);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Nombre de película:";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(135, 84);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(137, 21);
+            this.textBox2.TabIndex = 4;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(68, 87);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(61, 18);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Duración:\r\n";
             // 
             // tabPage2
             // 
@@ -104,134 +274,26 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(510, 321);
+            this.tabPage2.Size = new System.Drawing.Size(898, 631);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Género";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // tabPage3
-            // 
-            this.tabPage3.Controls.Add(this.btnConsultarClasificacion);
-            this.tabPage3.Controls.Add(this.dgvClasificacion);
-            this.tabPage3.Controls.Add(this.btnLimpiarClasificacion);
-            this.tabPage3.Controls.Add(this.btnElminarClasificacion);
-            this.tabPage3.Controls.Add(this.btnGuardarClasificacion);
-            this.tabPage3.Controls.Add(this.btnModificarClasificacion);
-            this.tabPage3.Controls.Add(this.txtClasificacion);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(510, 321);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Clasificación";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.Controls.Add(this.btnLimpiarSubtitulos);
-            this.tabPage4.Controls.Add(this.btnEliminarSubtitulos);
-            this.tabPage4.Controls.Add(this.btnModificarSubtitulos);
-            this.tabPage4.Controls.Add(this.bunifuThinButton25);
-            this.tabPage4.Controls.Add(this.btnGuardarSubtitulos);
-            this.tabPage4.Controls.Add(this.txtSubtitulos);
-            this.tabPage4.Controls.Add(this.dgvSubtitulos);
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(510, 321);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Subtitulos";
-            this.tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // txtClasificacion
-            // 
-            this.txtClasificacion.Location = new System.Drawing.Point(134, 58);
-            this.txtClasificacion.Name = "txtClasificacion";
-            this.txtClasificacion.Size = new System.Drawing.Size(187, 20);
-            this.txtClasificacion.TabIndex = 0;
-            this.txtClasificacion.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // dgvClasificacion
-            // 
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dgvClasificacion.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
-            this.dgvClasificacion.BackgroundColor = System.Drawing.Color.Gainsboro;
-            this.dgvClasificacion.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgvClasificacion.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvClasificacion.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.dgvClasificacion.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvClasificacion.DoubleBuffered = true;
-            this.dgvClasificacion.EnableHeadersVisualStyles = false;
-            this.dgvClasificacion.HeaderBgColor = System.Drawing.Color.SeaGreen;
-            this.dgvClasificacion.HeaderForeColor = System.Drawing.Color.SeaGreen;
-            this.dgvClasificacion.Location = new System.Drawing.Point(68, 100);
-            this.dgvClasificacion.Name = "dgvClasificacion";
-            this.dgvClasificacion.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dgvClasificacion.Size = new System.Drawing.Size(365, 145);
-            this.dgvClasificacion.TabIndex = 5;
-            // 
-            // dgvSubtitulos
-            // 
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dgvSubtitulos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
-            this.dgvSubtitulos.BackgroundColor = System.Drawing.Color.Gainsboro;
-            this.dgvSubtitulos.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgvSubtitulos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvSubtitulos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
-            this.dgvSubtitulos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvSubtitulos.DoubleBuffered = true;
-            this.dgvSubtitulos.EnableHeadersVisualStyles = false;
-            this.dgvSubtitulos.HeaderBgColor = System.Drawing.Color.SeaGreen;
-            this.dgvSubtitulos.HeaderForeColor = System.Drawing.Color.SeaGreen;
-            this.dgvSubtitulos.Location = new System.Drawing.Point(68, 100);
-            this.dgvSubtitulos.Name = "dgvSubtitulos";
-            this.dgvSubtitulos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dgvSubtitulos.Size = new System.Drawing.Size(365, 145);
-            this.dgvSubtitulos.TabIndex = 0;
-            // 
-            // txtSubtitulos
-            // 
-            this.txtSubtitulos.Location = new System.Drawing.Point(134, 58);
-            this.txtSubtitulos.Name = "txtSubtitulos";
-            this.txtSubtitulos.Size = new System.Drawing.Size(187, 20);
-            this.txtSubtitulos.TabIndex = 1;
-            // 
-            // txtGenero
-            // 
-            this.txtGenero.Location = new System.Drawing.Point(134, 58);
-            this.txtGenero.Name = "txtGenero";
-            this.txtGenero.Size = new System.Drawing.Size(187, 20);
-            this.txtGenero.TabIndex = 0;
-            // 
             // dgvGenero
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dgvGenero.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dgvGenero.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.dgvGenero.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.dgvGenero.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvGenero.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvGenero.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvGenero.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dgvGenero.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvGenero.DoubleBuffered = true;
             this.dgvGenero.EnableHeadersVisualStyles = false;
@@ -242,6 +304,13 @@
             this.dgvGenero.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dgvGenero.Size = new System.Drawing.Size(365, 145);
             this.dgvGenero.TabIndex = 6;
+            // 
+            // txtGenero
+            // 
+            this.txtGenero.Location = new System.Drawing.Point(134, 58);
+            this.txtGenero.Name = "txtGenero";
+            this.txtGenero.Size = new System.Drawing.Size(187, 20);
+            this.txtGenero.TabIndex = 0;
             // 
             // btnLimpiarGenero
             // 
@@ -368,6 +437,23 @@
             this.btnConsultarGenero.TabIndex = 1;
             this.btnConsultarGenero.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.btnConsultarClasificacion);
+            this.tabPage3.Controls.Add(this.dgvClasificacion);
+            this.tabPage3.Controls.Add(this.btnLimpiarClasificacion);
+            this.tabPage3.Controls.Add(this.btnElminarClasificacion);
+            this.tabPage3.Controls.Add(this.btnGuardarClasificacion);
+            this.tabPage3.Controls.Add(this.btnModificarClasificacion);
+            this.tabPage3.Controls.Add(this.txtClasificacion);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(898, 631);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Clasificación";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
             // btnConsultarClasificacion
             // 
             this.btnConsultarClasificacion.ActiveBorderThickness = 1;
@@ -393,6 +479,32 @@
             this.btnConsultarClasificacion.TabIndex = 6;
             this.btnConsultarClasificacion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnConsultarClasificacion.Click += new System.EventHandler(this.btnConsultarClasificacion_Click);
+            // 
+            // dgvClasificacion
+            // 
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dgvClasificacion.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
+            this.dgvClasificacion.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.dgvClasificacion.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvClasificacion.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvClasificacion.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            this.dgvClasificacion.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvClasificacion.DoubleBuffered = true;
+            this.dgvClasificacion.EnableHeadersVisualStyles = false;
+            this.dgvClasificacion.HeaderBgColor = System.Drawing.Color.SeaGreen;
+            this.dgvClasificacion.HeaderForeColor = System.Drawing.Color.SeaGreen;
+            this.dgvClasificacion.Location = new System.Drawing.Point(68, 100);
+            this.dgvClasificacion.Name = "dgvClasificacion";
+            this.dgvClasificacion.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgvClasificacion.Size = new System.Drawing.Size(365, 145);
+            this.dgvClasificacion.TabIndex = 5;
             // 
             // btnLimpiarClasificacion
             // 
@@ -493,6 +605,31 @@
             this.btnModificarClasificacion.Size = new System.Drawing.Size(88, 34);
             this.btnModificarClasificacion.TabIndex = 1;
             this.btnModificarClasificacion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // txtClasificacion
+            // 
+            this.txtClasificacion.Location = new System.Drawing.Point(134, 58);
+            this.txtClasificacion.Name = "txtClasificacion";
+            this.txtClasificacion.Size = new System.Drawing.Size(187, 20);
+            this.txtClasificacion.TabIndex = 0;
+            this.txtClasificacion.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.btnLimpiarSubtitulos);
+            this.tabPage4.Controls.Add(this.btnEliminarSubtitulos);
+            this.tabPage4.Controls.Add(this.btnModificarSubtitulos);
+            this.tabPage4.Controls.Add(this.bunifuThinButton25);
+            this.tabPage4.Controls.Add(this.btnGuardarSubtitulos);
+            this.tabPage4.Controls.Add(this.txtSubtitulos);
+            this.tabPage4.Controls.Add(this.dgvSubtitulos);
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(898, 631);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Subtitulos";
+            this.tabPage4.UseVisualStyleBackColor = true;
             // 
             // btnLimpiarSubtitulos
             // 
@@ -619,26 +756,81 @@
             this.btnGuardarSubtitulos.TabIndex = 5;
             this.btnGuardarSubtitulos.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // txtSubtitulos
+            // 
+            this.txtSubtitulos.Location = new System.Drawing.Point(134, 58);
+            this.txtSubtitulos.Name = "txtSubtitulos";
+            this.txtSubtitulos.Size = new System.Drawing.Size(187, 20);
+            this.txtSubtitulos.TabIndex = 1;
+            // 
+            // dgvSubtitulos
+            // 
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dgvSubtitulos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle11;
+            this.dgvSubtitulos.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.dgvSubtitulos.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvSubtitulos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvSubtitulos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            this.dgvSubtitulos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvSubtitulos.DoubleBuffered = true;
+            this.dgvSubtitulos.EnableHeadersVisualStyles = false;
+            this.dgvSubtitulos.HeaderBgColor = System.Drawing.Color.SeaGreen;
+            this.dgvSubtitulos.HeaderForeColor = System.Drawing.Color.SeaGreen;
+            this.dgvSubtitulos.Location = new System.Drawing.Point(68, 100);
+            this.dgvSubtitulos.Name = "dgvSubtitulos";
+            this.dgvSubtitulos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgvSubtitulos.Size = new System.Drawing.Size(365, 145);
+            this.dgvSubtitulos.TabIndex = 0;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(10)))), ((int)(((byte)(18)))));
+            this.panel2.Controls.Add(this.panel1);
+            this.panel2.Controls.Add(this.tabControl1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(906, 657);
+            this.panel2.TabIndex = 2;
+            // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(4, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(906, 40);
+            this.panel1.TabIndex = 3;
+            // 
             // Peliculas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
-            this.ClientSize = new System.Drawing.Size(556, 371);
-            this.Controls.Add(this.tabControl1);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(10)))), ((int)(((byte)(18)))));
+            this.ClientSize = new System.Drawing.Size(906, 657);
+            this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Peliculas";
             this.Text = "Peliculas";
             this.tabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvGenero)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvClasificacion)).EndInit();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvClasificacion)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSubtitulos)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvGenero)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -671,5 +863,21 @@
         private Bunifu.Framework.UI.BunifuThinButton2 btnGuardarGenero;
         private Bunifu.Framework.UI.BunifuThinButton2 btnConsultarGenero;
         private System.Windows.Forms.TextBox txtGenero;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Panel panel1;
     }
 }
