@@ -92,5 +92,10 @@ namespace AppDesktop.GUI
         {
             WindowState = FormWindowState.Minimized;
         }
+
+        private void txtUsuario_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
