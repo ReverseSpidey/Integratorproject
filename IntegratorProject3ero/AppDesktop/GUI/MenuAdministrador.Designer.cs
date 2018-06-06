@@ -314,9 +314,9 @@
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(154, 26);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(79, 33);
+            this.label4.Size = new System.Drawing.Size(266, 33);
             this.label4.TabIndex = 16;
-            this.label4.Text = "PENE";
+            this.label4.Text = "Nombre de usuario";
             // 
             // MenuAdministrador
             // 
