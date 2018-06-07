@@ -55,11 +55,53 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GUI\Datos.cs">
+    <Compile Include="EmpleadoCinema.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\Datos.Designer.cs">
-      <DependentUpon>Datos.cs</DependentUpon>
+    <Compile Include="EmpleadoCinema.Designer.cs">
+      <DependentUpon>EmpleadoCinema.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Ciudad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Ciudad.Designer.cs">
+      <DependentUpon>Ciudad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Clasificacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Clasificacion.Designer.cs">
+      <DependentUpon>Clasificacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Idioma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Idioma.Designer.cs">
+      <DependentUpon>Idioma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\NuevaCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\NuevaCompra.Designer.cs">
+      <DependentUpon>NuevaCompra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Sucursal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Sucursal.Designer.cs">
+      <DependentUpon>Sucursal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Estado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Estado.Designer.cs">
+      <DependentUpon>Estado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Genero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Genero.Designer.cs">
+      <DependentUpon>Genero.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\LOGIN.cs">
       <SubType>Form</SubType>
@@ -91,10 +133,37 @@
     <Compile Include="GUI\SALA.Designer.cs">
       <DependentUpon>SALA.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\TipoFuncion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\TipoFuncion.Designer.cs">
+      <DependentUpon>TipoFuncion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="GUI\Datos.resx">
-      <DependentUpon>Datos.cs</DependentUpon>
+    <EmbeddedResource Include="EmpleadoCinema.resx">
+      <DependentUpon>EmpleadoCinema.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Ciudad.resx">
+      <DependentUpon>Ciudad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Clasificacion.resx">
+      <DependentUpon>Clasificacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Idioma.resx">
+      <DependentUpon>Idioma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\NuevaCompra.resx">
+      <DependentUpon>NuevaCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Sucursal.resx">
+      <DependentUpon>Sucursal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Estado.resx">
+      <DependentUpon>Estado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Genero.resx">
+      <DependentUpon>Genero.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\LOGIN.resx">
       <DependentUpon>LOGIN.cs</DependentUpon>
@@ -111,17 +180,14 @@
     <EmbeddedResource Include="GUI\SALA.resx">
       <DependentUpon>SALA.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\TipoFuncion.resx">
+      <DependentUpon>TipoFuncion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="bin\Debug\AppDesktop.exe.config" />
-    <None Include="bin\Debug\appdesktop.InstallLog" />
-    <None Include="bin\Debug\InstallUtil.InstallLog" />
-    <None Include="bin_\Debug\AppDesktop.exe.config" />
-    <None Include="bin_\Debug\appdesktop.InstallLog" />
-    <None Include="bin_\Debug\InstallUtil.InstallLog" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -189,7 +255,6 @@
     <None Include="Resources\logo5.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="bin_\Release\" />
     <Folder Include="BO\" />
     <Folder Include="DAO\" />
   </ItemGroup>
@@ -221,18 +286,19 @@
     <None Include="Resources\Sala.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="bin\Debug\AppDesktop.exe" />
-    <Content Include="bin\Debug\Bunifu_UI_v1.5.3.dll" />
-    <Content Include="bin\Debug\Imagenes.dll" />
-    <Content Include="bin\Debug\Imagenes.pdb" />
-    <Content Include="bin\Debug\Microsoft.VisualBasic.PowerPacks.Design.dll" />
-    <Content Include="bin\Debug\Microsoft.VisualBasic.PowerPacks.dll" />
-    <Content Include="bin_\Debug\AppDesktop.exe" />
-    <Content Include="bin_\Debug\Bunifu_UI_v1.5.3.dll" />
-    <Content Include="bin_\Debug\Imagenes.dll" />
-    <Content Include="bin_\Debug\Imagenes.pdb" />
-    <Content Include="bin_\Debug\Microsoft.VisualBasic.PowerPacks.Design.dll" />
-    <Content Include="bin_\Debug\Microsoft.VisualBasic.PowerPacks.dll" />
+    <None Include="Resources\ticket_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AGUA.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DIDPUL.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\INFINITY.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SUPER.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

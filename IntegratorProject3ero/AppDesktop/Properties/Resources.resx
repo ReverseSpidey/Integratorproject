@@ -127,8 +127,8 @@
   <data name="MinimizarNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MinimizarNormal.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Ciudades" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Ciudades.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="MinimizaeHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MinimizaeHover.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="SettingsNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SettingsNormal.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -138,6 +138,9 @@
   </data>
   <data name="icon minimizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon minimizar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ticket_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ticket_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="CloseNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CloseNormal.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -157,8 +160,8 @@
   <data name="logo5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logo5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Ticket1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Ticket1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Sala" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sala.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="usuario" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\usuario.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -166,8 +169,11 @@
   <data name="Detective2_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Detective2_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="MinimizaeHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MinimizaeHover.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Ticket1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ticket1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ciudades" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ciudades.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Flash" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Flash.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -187,7 +193,16 @@
   <data name="usuario2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\usuario2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Sala" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sala.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="AGUA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AGUA.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DIDPUL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DIDPUL.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="INFINITY" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\INFINITY.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SUPER" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SUPER.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

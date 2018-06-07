@@ -19,6 +19,8 @@ namespace AppDesktop.GUI
         public MenuAdministrador()
         {
             InitializeComponent();
+
+            pnlCatalogos.Visible = false;
         }
 
 
@@ -49,7 +51,7 @@ namespace AppDesktop.GUI
         private void btnDatos_Click(object sender, EventArgs e)
         {
 
-            AbrirFormHija(new Datos());
+            AbrirFormHija(new Sucursal());
         }
 
         private void MenuAdministrador_MouseMove(object sender, MouseEventArgs e)
@@ -84,17 +86,24 @@ namespace AppDesktop.GUI
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (cont % 2 == 0)
+            
+            panellfet.Height = btnPelicula.Height;
+            panellfet.Top = btnPelicula.Top;
+            pnlCatalogos.Visible = false;
+            
+
+            if(cont%2 > 0)
             {
                 pnlCatalogos.Visible = false;
 
             }
-            else
+            else if(cont % 2 == 0)
             {
                 pnlCatalogos.Visible = true;
-
             }
+
             cont++;
+
 
         }
 
@@ -114,6 +123,41 @@ namespace AppDesktop.GUI
         }
 
         private void button1_Click_1(object sender, EventArgs e)
+        {
+            AbrirFormHija(new Peliculas());
+        }
+
+        private void btnIdioma_Click(object sender, EventArgs e)
+        {
+            AbrirFormHija(new Idioma());
+        }
+
+        private void btnClasificacion_Click(object sender, EventArgs e)
+        {
+            AbrirFormHija(new Clasificacion());
+        }
+
+        private void btnGenero_Click(object sender, EventArgs e)
+        {
+            AbrirFormHija(new Genero());
+        }
+
+        private void btnSucursal_Click(object sender, EventArgs e)
+        {
+            AbrirFormHija(new Sucursal());
+        }
+
+        private void btnCiudad_Click(object sender, EventArgs e)
+        {
+            AbrirFormHija(new Ciudad());
+        }
+
+        private void btnEstado_Click(object sender, EventArgs e)
+        {
+            AbrirFormHija(new Estado());
+        }
+
+        private void btnSala_Click(object sender, EventArgs e)
         {
 
         }

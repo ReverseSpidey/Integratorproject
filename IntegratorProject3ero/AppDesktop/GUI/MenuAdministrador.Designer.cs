@@ -28,27 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.pan = new System.Windows.Forms.Panel();
+            this.layout_Contenido = new System.Windows.Forms.FlowLayoutPanel();
+            this.pnlCatalogos = new System.Windows.Forms.Panel();
+            this.btnClasificacion = new System.Windows.Forms.Button();
+            this.btnSucursal = new System.Windows.Forms.Button();
+            this.btnCiudad = new System.Windows.Forms.Button();
+            this.btnEstado = new System.Windows.Forms.Button();
+            this.btnIdioma = new System.Windows.Forms.Button();
+            this.btnAsiento = new System.Windows.Forms.Button();
+            this.btnGenero = new System.Windows.Forms.Button();
+            this.btnSala = new System.Windows.Forms.Button();
+            this.btnPelicula2 = new System.Windows.Forms.Button();
             this.panellfet = new System.Windows.Forms.Panel();
-            this.btnUsuarios = new System.Windows.Forms.Button();
-            this.btnPelicula = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panelcine = new System.Windows.Forms.Panel();
-            this.pnlCatalogos = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.layout_Contenido = new System.Windows.Forms.FlowLayoutPanel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.btnUsuarios = new System.Windows.Forms.Button();
+            this.btnPelicula = new System.Windows.Forms.Button();
             this.pan.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.pnlCatalogos.SuspendLayout();
             this.layout_Contenido.SuspendLayout();
+            this.pnlCatalogos.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // pan
@@ -63,6 +69,147 @@
             this.pan.Size = new System.Drawing.Size(133, 657);
             this.pan.TabIndex = 0;
             // 
+            // layout_Contenido
+            // 
+            this.layout_Contenido.Controls.Add(this.pnlCatalogos);
+            this.layout_Contenido.Controls.Add(this.btnUsuarios);
+            this.layout_Contenido.Location = new System.Drawing.Point(3, 187);
+            this.layout_Contenido.Name = "layout_Contenido";
+            this.layout_Contenido.Size = new System.Drawing.Size(158, 458);
+            this.layout_Contenido.TabIndex = 0;
+            // 
+            // pnlCatalogos
+            // 
+            this.pnlCatalogos.Controls.Add(this.btnClasificacion);
+            this.pnlCatalogos.Controls.Add(this.btnSucursal);
+            this.pnlCatalogos.Controls.Add(this.btnCiudad);
+            this.pnlCatalogos.Controls.Add(this.btnEstado);
+            this.pnlCatalogos.Controls.Add(this.btnIdioma);
+            this.pnlCatalogos.Controls.Add(this.btnAsiento);
+            this.pnlCatalogos.Controls.Add(this.btnGenero);
+            this.pnlCatalogos.Controls.Add(this.btnSala);
+            this.pnlCatalogos.Controls.Add(this.btnPelicula2);
+            this.pnlCatalogos.Location = new System.Drawing.Point(3, 3);
+            this.pnlCatalogos.Name = "pnlCatalogos";
+            this.pnlCatalogos.Size = new System.Drawing.Size(127, 349);
+            this.pnlCatalogos.TabIndex = 1;
+            // 
+            // btnClasificacion
+            // 
+            this.btnClasificacion.FlatAppearance.BorderSize = 0;
+            this.btnClasificacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClasificacion.ForeColor = System.Drawing.Color.White;
+            this.btnClasificacion.Location = new System.Drawing.Point(0, 306);
+            this.btnClasificacion.Name = "btnClasificacion";
+            this.btnClasificacion.Size = new System.Drawing.Size(127, 30);
+            this.btnClasificacion.TabIndex = 8;
+            this.btnClasificacion.Text = "Clasificación";
+            this.btnClasificacion.UseVisualStyleBackColor = true;
+            this.btnClasificacion.Click += new System.EventHandler(this.btnClasificacion_Click);
+            // 
+            // btnSucursal
+            // 
+            this.btnSucursal.FlatAppearance.BorderSize = 0;
+            this.btnSucursal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSucursal.ForeColor = System.Drawing.Color.White;
+            this.btnSucursal.Location = new System.Drawing.Point(0, 261);
+            this.btnSucursal.Name = "btnSucursal";
+            this.btnSucursal.Size = new System.Drawing.Size(127, 30);
+            this.btnSucursal.TabIndex = 7;
+            this.btnSucursal.Text = "Sucursal";
+            this.btnSucursal.UseVisualStyleBackColor = true;
+            this.btnSucursal.Click += new System.EventHandler(this.btnSucursal_Click);
+            // 
+            // btnCiudad
+            // 
+            this.btnCiudad.FlatAppearance.BorderSize = 0;
+            this.btnCiudad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCiudad.ForeColor = System.Drawing.Color.White;
+            this.btnCiudad.Location = new System.Drawing.Point(0, 216);
+            this.btnCiudad.Name = "btnCiudad";
+            this.btnCiudad.Size = new System.Drawing.Size(127, 30);
+            this.btnCiudad.TabIndex = 6;
+            this.btnCiudad.Text = "Ciudad";
+            this.btnCiudad.UseVisualStyleBackColor = true;
+            this.btnCiudad.Click += new System.EventHandler(this.btnCiudad_Click);
+            // 
+            // btnEstado
+            // 
+            this.btnEstado.FlatAppearance.BorderSize = 0;
+            this.btnEstado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEstado.ForeColor = System.Drawing.Color.White;
+            this.btnEstado.Location = new System.Drawing.Point(-3, 180);
+            this.btnEstado.Name = "btnEstado";
+            this.btnEstado.Size = new System.Drawing.Size(127, 30);
+            this.btnEstado.TabIndex = 5;
+            this.btnEstado.Text = "Estado";
+            this.btnEstado.UseVisualStyleBackColor = true;
+            this.btnEstado.Click += new System.EventHandler(this.btnEstado_Click);
+            // 
+            // btnIdioma
+            // 
+            this.btnIdioma.FlatAppearance.BorderSize = 0;
+            this.btnIdioma.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnIdioma.ForeColor = System.Drawing.Color.White;
+            this.btnIdioma.Location = new System.Drawing.Point(-3, 144);
+            this.btnIdioma.Name = "btnIdioma";
+            this.btnIdioma.Size = new System.Drawing.Size(127, 30);
+            this.btnIdioma.TabIndex = 4;
+            this.btnIdioma.Text = "Idioma";
+            this.btnIdioma.UseVisualStyleBackColor = true;
+            this.btnIdioma.Click += new System.EventHandler(this.btnIdioma_Click);
+            // 
+            // btnAsiento
+            // 
+            this.btnAsiento.FlatAppearance.BorderSize = 0;
+            this.btnAsiento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAsiento.ForeColor = System.Drawing.Color.White;
+            this.btnAsiento.Location = new System.Drawing.Point(-3, 108);
+            this.btnAsiento.Name = "btnAsiento";
+            this.btnAsiento.Size = new System.Drawing.Size(127, 30);
+            this.btnAsiento.TabIndex = 3;
+            this.btnAsiento.Text = "Asiento";
+            this.btnAsiento.UseVisualStyleBackColor = true;
+            // 
+            // btnGenero
+            // 
+            this.btnGenero.FlatAppearance.BorderSize = 0;
+            this.btnGenero.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGenero.ForeColor = System.Drawing.Color.White;
+            this.btnGenero.Location = new System.Drawing.Point(-3, 72);
+            this.btnGenero.Name = "btnGenero";
+            this.btnGenero.Size = new System.Drawing.Size(127, 30);
+            this.btnGenero.TabIndex = 2;
+            this.btnGenero.Text = "Género";
+            this.btnGenero.UseVisualStyleBackColor = true;
+            this.btnGenero.Click += new System.EventHandler(this.btnGenero_Click);
+            // 
+            // btnSala
+            // 
+            this.btnSala.FlatAppearance.BorderSize = 0;
+            this.btnSala.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSala.ForeColor = System.Drawing.Color.White;
+            this.btnSala.Location = new System.Drawing.Point(-3, 36);
+            this.btnSala.Name = "btnSala";
+            this.btnSala.Size = new System.Drawing.Size(127, 30);
+            this.btnSala.TabIndex = 1;
+            this.btnSala.Text = "Sala";
+            this.btnSala.UseVisualStyleBackColor = true;
+            this.btnSala.Click += new System.EventHandler(this.btnSala_Click);
+            // 
+            // btnPelicula2
+            // 
+            this.btnPelicula2.FlatAppearance.BorderSize = 0;
+            this.btnPelicula2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPelicula2.ForeColor = System.Drawing.Color.White;
+            this.btnPelicula2.Location = new System.Drawing.Point(0, 0);
+            this.btnPelicula2.Name = "btnPelicula2";
+            this.btnPelicula2.Size = new System.Drawing.Size(127, 30);
+            this.btnPelicula2.TabIndex = 0;
+            this.btnPelicula2.Text = "Pelicula";
+            this.btnPelicula2.UseVisualStyleBackColor = true;
+            this.btnPelicula2.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // panellfet
             // 
             this.panellfet.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(72)))), ((int)(((byte)(21)))));
@@ -70,42 +217,6 @@
             this.panellfet.Name = "panellfet";
             this.panellfet.Size = new System.Drawing.Size(10, 74);
             this.panellfet.TabIndex = 1;
-            // 
-            // btnUsuarios
-            // 
-            this.btnUsuarios.FlatAppearance.BorderSize = 0;
-            this.btnUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUsuarios.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnUsuarios.ForeColor = System.Drawing.Color.White;
-            this.btnUsuarios.Image = global::AppDesktop.Properties.Resources.Empleado;
-            this.btnUsuarios.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUsuarios.Location = new System.Drawing.Point(3, 280);
-            this.btnUsuarios.Name = "btnUsuarios";
-            this.btnUsuarios.Size = new System.Drawing.Size(133, 71);
-            this.btnUsuarios.TabIndex = 3;
-            this.btnUsuarios.Text = "Usuarios";
-            this.btnUsuarios.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnUsuarios.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnUsuarios.UseVisualStyleBackColor = true;
-            this.btnUsuarios.Click += new System.EventHandler(this.btnUsuarios_Click);
-            // 
-            // btnPelicula
-            // 
-            this.btnPelicula.FlatAppearance.BorderSize = 0;
-            this.btnPelicula.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPelicula.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnPelicula.ForeColor = System.Drawing.Color.White;
-            this.btnPelicula.Image = global::AppDesktop.Properties.Resources.Flash;
-            this.btnPelicula.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPelicula.Location = new System.Drawing.Point(0, 120);
-            this.btnPelicula.Name = "btnPelicula";
-            this.btnPelicula.Size = new System.Drawing.Size(133, 71);
-            this.btnPelicula.TabIndex = 1;
-            this.btnPelicula.Text = "Catálogos";
-            this.btnPelicula.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnPelicula.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnPelicula.UseVisualStyleBackColor = true;
-            this.btnPelicula.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel3
             // 
@@ -132,139 +243,89 @@
             // 
             this.panelcine.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(10)))), ((int)(((byte)(18)))));
             this.panelcine.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panelcine.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelcine.Location = new System.Drawing.Point(133, 0);
+            this.panelcine.Location = new System.Drawing.Point(133, 64);
             this.panelcine.Name = "panelcine";
-            this.panelcine.Size = new System.Drawing.Size(906, 657);
+            this.panelcine.Size = new System.Drawing.Size(906, 593);
             this.panelcine.TabIndex = 0;
             this.panelcine.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panelcine_MouseMove);
             // 
-            // pnlCatalogos
+            // label3
             // 
-            this.pnlCatalogos.Controls.Add(this.button8);
-            this.pnlCatalogos.Controls.Add(this.button7);
-            this.pnlCatalogos.Controls.Add(this.button6);
-            this.pnlCatalogos.Controls.Add(this.button5);
-            this.pnlCatalogos.Controls.Add(this.button4);
-            this.pnlCatalogos.Controls.Add(this.button3);
-            this.pnlCatalogos.Controls.Add(this.button2);
-            this.pnlCatalogos.Controls.Add(this.button1);
-            this.pnlCatalogos.Location = new System.Drawing.Point(3, 3);
-            this.pnlCatalogos.Name = "pnlCatalogos";
-            this.pnlCatalogos.Size = new System.Drawing.Size(127, 271);
-            this.pnlCatalogos.TabIndex = 1;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 16F);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(975, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(23, 25);
+            this.label3.TabIndex = 15;
+            this.label3.Text = "_";
             // 
-            // button1
+            // label2
             // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(0, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(127, 30);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Pelicula";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 16F);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(1004, 2);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(25, 25);
+            this.label2.TabIndex = 14;
+            this.label2.Text = "X";
             // 
-            // button2
+            // label4
             // 
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(0, 25);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(127, 30);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Sala";
-            this.button2.UseVisualStyleBackColor = true;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 20F);
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(154, 26);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(205, 33);
+            this.label4.TabIndex = 16;
+            this.label4.Text = "Administrador:";
             // 
-            // button3
+            // btnUsuarios
             // 
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(0, 49);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(127, 30);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Género";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnUsuarios.FlatAppearance.BorderSize = 0;
+            this.btnUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUsuarios.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnUsuarios.ForeColor = System.Drawing.Color.White;
+            this.btnUsuarios.Image = global::AppDesktop.Properties.Resources.Empleado;
+            this.btnUsuarios.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUsuarios.Location = new System.Drawing.Point(3, 358);
+            this.btnUsuarios.Name = "btnUsuarios";
+            this.btnUsuarios.Size = new System.Drawing.Size(133, 71);
+            this.btnUsuarios.TabIndex = 3;
+            this.btnUsuarios.Text = "Usuarios";
+            this.btnUsuarios.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnUsuarios.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnUsuarios.UseVisualStyleBackColor = true;
+            this.btnUsuarios.Click += new System.EventHandler(this.btnUsuarios_Click);
             // 
-            // button4
+            // btnPelicula
             // 
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(0, 85);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(127, 30);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Asiento";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(0, 121);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(127, 30);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "Idioma";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(0, 164);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(127, 30);
-            this.button6.TabIndex = 5;
-            this.button6.Text = "Estado";
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // button7
-            // 
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.Location = new System.Drawing.Point(0, 192);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(127, 30);
-            this.button7.TabIndex = 6;
-            this.button7.Text = "Ciudad";
-            this.button7.UseVisualStyleBackColor = true;
-            // 
-            // button8
-            // 
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.ForeColor = System.Drawing.Color.White;
-            this.button8.Location = new System.Drawing.Point(0, 227);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(127, 30);
-            this.button8.TabIndex = 7;
-            this.button8.Text = "Sucursal";
-            this.button8.UseVisualStyleBackColor = true;
-            // 
-            // layout_Contenido
-            // 
-            this.layout_Contenido.Controls.Add(this.pnlCatalogos);
-            this.layout_Contenido.Controls.Add(this.btnUsuarios);
-            this.layout_Contenido.Location = new System.Drawing.Point(3, 187);
-            this.layout_Contenido.Name = "layout_Contenido";
-            this.layout_Contenido.Size = new System.Drawing.Size(131, 352);
-            this.layout_Contenido.TabIndex = 0;
+            this.btnPelicula.FlatAppearance.BorderSize = 0;
+            this.btnPelicula.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPelicula.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPelicula.ForeColor = System.Drawing.Color.White;
+            this.btnPelicula.Image = global::AppDesktop.Properties.Resources.Flash;
+            this.btnPelicula.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPelicula.Location = new System.Drawing.Point(3, 117);
+            this.btnPelicula.Name = "btnPelicula";
+            this.btnPelicula.Size = new System.Drawing.Size(133, 71);
+            this.btnPelicula.TabIndex = 1;
+            this.btnPelicula.Text = "Peliculas";
+            this.btnPelicula.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnPelicula.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnPelicula.UseVisualStyleBackColor = true;
+            this.btnPelicula.Click += new System.EventHandler(this.button1_Click);
             // 
             // MenuAdministrador
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(10)))), ((int)(((byte)(18)))));
             this.ClientSize = new System.Drawing.Size(1039, 657);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.panelcine);
             this.Controls.Add(this.pan);
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -275,11 +336,12 @@
             this.Text = "MenuAdministrador";
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.MenuAdministrador_MouseMove);
             this.pan.ResumeLayout(false);
+            this.layout_Contenido.ResumeLayout(false);
+            this.pnlCatalogos.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            this.pnlCatalogos.ResumeLayout(false);
-            this.layout_Contenido.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -293,14 +355,19 @@
         private System.Windows.Forms.Panel panelcine;
         private System.Windows.Forms.Panel panellfet;
         private System.Windows.Forms.Panel pnlCatalogos;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnPelicula2;
+        private System.Windows.Forms.Button btnAsiento;
+        private System.Windows.Forms.Button btnGenero;
+        private System.Windows.Forms.Button btnSala;
         private System.Windows.Forms.FlowLayoutPanel layout_Contenido;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnSucursal;
+        private System.Windows.Forms.Button btnCiudad;
+        private System.Windows.Forms.Button btnEstado;
+        private System.Windows.Forms.Button btnIdioma;
+        private System.Windows.Forms.Button btnClasificacion;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Timer timer1;
     }
 }

@@ -92,5 +92,18 @@ namespace AppDesktop.GUI
         {
             WindowState = FormWindowState.Minimized;
         }
+
+        private void txtUsuario_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            this.Hide();
+            MenuAdministrador obj = new MenuAdministrador();
+            obj.Show();
+        }
     }
 }
