@@ -116,6 +116,12 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="bin\Debug\AppDesktop.exe.config" />
+    <None Include="bin\Debug\appdesktop.InstallLog" />
+    <None Include="bin\Debug\InstallUtil.InstallLog" />
+    <None Include="bin_\Debug\AppDesktop.exe.config" />
+    <None Include="bin_\Debug\appdesktop.InstallLog" />
+    <None Include="bin_\Debug\InstallUtil.InstallLog" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -183,6 +189,7 @@
     <None Include="Resources\logo5.png" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="bin_\Release\" />
     <Folder Include="BO\" />
     <Folder Include="DAO\" />
   </ItemGroup>
@@ -212,6 +219,20 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Sala.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\AppDesktop.exe" />
+    <Content Include="bin\Debug\Bunifu_UI_v1.5.3.dll" />
+    <Content Include="bin\Debug\Imagenes.dll" />
+    <Content Include="bin\Debug\Imagenes.pdb" />
+    <Content Include="bin\Debug\Microsoft.VisualBasic.PowerPacks.Design.dll" />
+    <Content Include="bin\Debug\Microsoft.VisualBasic.PowerPacks.dll" />
+    <Content Include="bin_\Debug\AppDesktop.exe" />
+    <Content Include="bin_\Debug\Bunifu_UI_v1.5.3.dll" />
+    <Content Include="bin_\Debug\Imagenes.dll" />
+    <Content Include="bin_\Debug\Imagenes.pdb" />
+    <Content Include="bin_\Debug\Microsoft.VisualBasic.PowerPacks.Design.dll" />
+    <Content Include="bin_\Debug\Microsoft.VisualBasic.PowerPacks.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
