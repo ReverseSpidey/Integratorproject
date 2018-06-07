@@ -42,6 +42,10 @@
     <Reference Include="Microsoft.VisualBasic.PowerPacks.Design">
       <HintPath>..\Microsoft.VisualBasic.PowerPacks.Design.dll</HintPath>
     </Reference>
+    <Reference Include="MySql.Data, Version=8.0.11.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\MySql.Data.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -55,10 +59,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EmpleadoCinema.cs">
+    <Compile Include="BO\Tipo_SalaBO.cs" />
+    <Compile Include="DAO\Conexion.cs" />
+    <Compile Include="DAO\Tipo_SalaDAO.cs" />
+    <Compile Include="GUI\EmpleadoCinema.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EmpleadoCinema.Designer.cs">
+    <Compile Include="GUI\EmpleadoCinema.Designer.cs">
       <DependentUpon>EmpleadoCinema.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\Ciudad.cs">
@@ -139,9 +146,15 @@
     <Compile Include="GUI\TipoFuncion.Designer.cs">
       <DependentUpon>TipoFuncion.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\Tipo_Sala.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Tipo_Sala.Designer.cs">
+      <DependentUpon>Tipo_Sala.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="EmpleadoCinema.resx">
+    <EmbeddedResource Include="GUI\EmpleadoCinema.resx">
       <DependentUpon>EmpleadoCinema.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Ciudad.resx">
@@ -182,6 +195,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\TipoFuncion.resx">
       <DependentUpon>TipoFuncion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tipo_Sala.resx">
+      <DependentUpon>Tipo_Sala.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -254,10 +270,7 @@
   <ItemGroup>
     <None Include="Resources\logo5.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="BO\" />
-    <Folder Include="DAO\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Resources\usuario.png" />
   </ItemGroup>
