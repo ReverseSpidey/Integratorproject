@@ -89,6 +89,12 @@ namespace AppDesktop.GUI
             txtPrecio.Text =  dgvTipo_Sala.Rows[fila_sel].Cells[2].Value.ToString();
             codigo = int.Parse(dgvTipo_Sala.Rows[fila_sel].Cells[0].Value.ToString());
         }
+
+        private void btnNuevo_Click(object sender, EventArgs e)
+        {
+            txtNombre.Clear();
+            txtPrecio.Clear();
+        }
     }
 }
 

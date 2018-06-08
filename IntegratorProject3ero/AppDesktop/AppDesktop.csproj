@@ -59,8 +59,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BO\SalaBO.cs" />
     <Compile Include="BO\Tipo_SalaBO.cs" />
     <Compile Include="DAO\Conexion.cs" />
+    <Compile Include="DAO\SalaDAO.cs" />
     <Compile Include="DAO\Tipo_SalaDAO.cs" />
     <Compile Include="GUI\EmpleadoCinema.cs">
       <SubType>Form</SubType>

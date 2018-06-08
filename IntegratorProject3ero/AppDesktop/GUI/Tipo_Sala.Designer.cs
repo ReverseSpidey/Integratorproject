@@ -55,11 +55,12 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.txtPrecio);
             this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox1.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(12, 34);
+            this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(276, 302);
+            this.groupBox1.Size = new System.Drawing.Size(556, 183);
             this.groupBox1.TabIndex = 24;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Ingrese los datos";
@@ -71,7 +72,7 @@
             this.btnBorrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBorrar.Font = new System.Drawing.Font("Trebuchet MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBorrar.ForeColor = System.Drawing.Color.White;
-            this.btnBorrar.Location = new System.Drawing.Point(181, 198);
+            this.btnBorrar.Location = new System.Drawing.Point(280, 139);
             this.btnBorrar.Name = "btnBorrar";
             this.btnBorrar.Size = new System.Drawing.Size(75, 23);
             this.btnBorrar.TabIndex = 46;
@@ -86,7 +87,7 @@
             this.BtnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnModificar.Font = new System.Drawing.Font("Trebuchet MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnModificar.ForeColor = System.Drawing.Color.White;
-            this.BtnModificar.Location = new System.Drawing.Point(86, 198);
+            this.BtnModificar.Location = new System.Drawing.Point(387, 139);
             this.BtnModificar.Name = "BtnModificar";
             this.BtnModificar.Size = new System.Drawing.Size(75, 23);
             this.BtnModificar.TabIndex = 45;
@@ -101,12 +102,13 @@
             this.btnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNuevo.Font = new System.Drawing.Font("Trebuchet MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNuevo.ForeColor = System.Drawing.Color.White;
-            this.btnNuevo.Location = new System.Drawing.Point(181, 141);
+            this.btnNuevo.Location = new System.Drawing.Point(174, 139);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(75, 23);
             this.btnNuevo.TabIndex = 44;
             this.btnNuevo.Text = "Nuevo";
             this.btnNuevo.UseVisualStyleBackColor = false;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // btnValidar
             // 
@@ -115,7 +117,7 @@
             this.btnValidar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnValidar.Font = new System.Drawing.Font("Trebuchet MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnValidar.ForeColor = System.Drawing.Color.White;
-            this.btnValidar.Location = new System.Drawing.Point(86, 141);
+            this.btnValidar.Location = new System.Drawing.Point(72, 139);
             this.btnValidar.Name = "btnValidar";
             this.btnValidar.Size = new System.Drawing.Size(75, 23);
             this.btnValidar.TabIndex = 43;
@@ -126,7 +128,7 @@
             // txtNombre
             // 
             this.txtNombre.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombre.Location = new System.Drawing.Point(119, 50);
+            this.txtNombre.Location = new System.Drawing.Point(228, 23);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(137, 21);
             this.txtNombre.TabIndex = 17;
@@ -136,7 +138,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(7, 89);
+            this.label2.Location = new System.Drawing.Point(116, 62);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(106, 18);
             this.label2.TabIndex = 19;
@@ -145,7 +147,7 @@
             // txtPrecio
             // 
             this.txtPrecio.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPrecio.Location = new System.Drawing.Point(119, 86);
+            this.txtPrecio.Location = new System.Drawing.Point(228, 59);
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(137, 21);
             this.txtPrecio.TabIndex = 20;
@@ -155,7 +157,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(35, 53);
+            this.label1.Location = new System.Drawing.Point(144, 26);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(78, 18);
             this.label1.TabIndex = 18;
@@ -163,14 +165,17 @@
             // 
             // dgvTipo_Sala
             // 
+            this.dgvTipo_Sala.AllowUserToAddRows = false;
+            this.dgvTipo_Sala.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvTipo_Sala.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvTipo_Sala.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Codigo_sala,
             this.Nombre_sala,
             this.Precio_sala});
-            this.dgvTipo_Sala.Location = new System.Drawing.Point(294, 34);
+            this.dgvTipo_Sala.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.dgvTipo_Sala.Location = new System.Drawing.Point(0, 183);
             this.dgvTipo_Sala.Name = "dgvTipo_Sala";
-            this.dgvTipo_Sala.Size = new System.Drawing.Size(250, 302);
+            this.dgvTipo_Sala.Size = new System.Drawing.Size(556, 188);
             this.dgvTipo_Sala.TabIndex = 23;
             this.dgvTipo_Sala.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.SeleccionarRegistro);
             // 

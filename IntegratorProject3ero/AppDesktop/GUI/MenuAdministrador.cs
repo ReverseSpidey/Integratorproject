@@ -159,7 +159,7 @@ namespace AppDesktop.GUI
 
         private void btnSala_Click(object sender, EventArgs e)
         {
-
+            AbrirFormHija(new SALA());
         }
     }
 }
