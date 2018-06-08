@@ -68,9 +68,10 @@ namespace AppDesktop.DAO
             return conex.EjercutarSentecia(query);
         }
 
-        public int Alta_Tipo(PeliculaBO peli)
+        public int AgregarPeli(PeliculaBO peli)
         {
-            string comando = string.Format("");
+            string comando = string.Format("insert into pelicula (nombre_pelicula, duracion, sinopsis, id_genero, cod_idioma, id_clasif, imagen) " +
+                "values ('{0}','{1}','{2}',{3},{4},{5},'{6}')",peli.Nombre_peli, peli.Duracion_peli, peli.Sinopsis, peli.Id_genero, peli.Cod_idioma, peli.Id_clasif, peli.Image);
             return conex.EjecutarComando(comando);
 
         }
