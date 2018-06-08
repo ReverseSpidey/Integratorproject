@@ -59,9 +59,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BO\PeliculaBO.cs" />
     <Compile Include="BO\SalaBO.cs" />
     <Compile Include="BO\Tipo_SalaBO.cs" />
     <Compile Include="DAO\Conexion.cs" />
+    <Compile Include="DAO\PeliculaDAO.cs" />
     <Compile Include="DAO\SalaDAO.cs" />
     <Compile Include="DAO\Tipo_SalaDAO.cs" />
     <Compile Include="GUI\EmpleadoCinema.cs">
@@ -105,12 +107,6 @@
     </Compile>
     <Compile Include="GUI\Estado.Designer.cs">
       <DependentUpon>Estado.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\Genero.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\Genero.Designer.cs">
-      <DependentUpon>Genero.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\LOGIN.cs">
       <SubType>Form</SubType>
@@ -176,9 +172,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Estado.resx">
       <DependentUpon>Estado.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\Genero.resx">
-      <DependentUpon>Genero.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\LOGIN.resx">
       <DependentUpon>LOGIN.cs</DependentUpon>

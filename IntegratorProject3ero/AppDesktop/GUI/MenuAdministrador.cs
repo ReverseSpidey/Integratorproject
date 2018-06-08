@@ -139,7 +139,7 @@ namespace AppDesktop.GUI
 
         private void btnGenero_Click(object sender, EventArgs e)
         {
-            AbrirFormHija(new Genero());
+
         }
 
         private void btnSucursal_Click(object sender, EventArgs e)
