@@ -21,7 +21,7 @@ namespace AppDesktop.GUI
         {
             InitializeComponent();
             dgvSala.ReadOnly = true;
-            dgvSala.DataSource = salDAO.Recuperar_Sala();
+            dgvSala.DataSource = salDAO.Recuperar_Sala().Tables[0];
 
             #region Combo
             cboTipoSala.DataSource = salDAO.RecupTipo();
@@ -43,14 +43,11 @@ namespace AppDesktop.GUI
         private void btnValidar_Click(object sender, EventArgs e)
         {
             if (salDAO.Alta_Tipo(RecuperarInfo()) == 1)
-            {
+            
                 MessageBox.Show("Registro agregado.", "Mensaje del sistema", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            else
-            {
-                MessageBox.Show("No se pudo realizar la operación.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            dgvSala.DataSource = salDAO.Recuperar_Sala();
+
+
+            dgvSala.DataSource = salDAO.Recuperar_Sala().Tables[0];
         }
 
         private void dgvSala_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
@@ -65,15 +62,11 @@ namespace AppDesktop.GUI
 
         private void BtnModificar_Click(object sender, EventArgs e)
         {
-            if (salDAO.Modificar(RecuperarInfo()) == 1)
-            {
+            salDAO.Modificar(RecuperarInfo());
+            
                 MessageBox.Show("Registro agregado.", "Mensaje del sistema", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            else
-            {
-                MessageBox.Show("No se pudo realiar la operación.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            dgvSala.DataSource = salDAO.Recuperar_Sala();
+
+            dgvSala.DataSource = salDAO.Recuperar_Sala().Tables[0];
         }
 
         private void btnBorrar_Click(object sender, EventArgs e)
@@ -81,15 +74,10 @@ namespace AppDesktop.GUI
             if (MessageBox.Show("¿Estás seguro? El cambio será permanente", "Se requiere confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == System.Windows.Forms.DialogResult.Yes)
             {
                 // se la información se agrega mostramos un mensaje
-                if (salDAO.Eliminar(RecuperarInfo()) == 1)
-                {
+                salDAO.Eliminar(RecuperarInfo());
                     MessageBox.Show("Registro Borrado", "Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-                else
-                {
-                    MessageBox.Show("No se pudo realiar la operación.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                dgvSala.DataSource = salDAO.Recuperar_Sala();
+
+                dgvSala.DataSource = salDAO.Recuperar_Sala().Tables[0];
             }
         }
 

@@ -5,21 +5,22 @@ using System.Text;
 using System.Threading.Tasks;
 using AppDesktop.BO;
 using System.Data;
+using System.Data.SqlClient;
 
 namespace AppDesktop.DAO
 {
     class Tipo_SalaDAO
     {
-        Conexion conex;
+        ConexionSQL conex;
         public Tipo_SalaDAO()
         {
-            conex = new Conexion();
+            conex = new ConexionSQL();
         }
 
-        public DataTable Recup_Tipo()
+        public DataSet Recup_Tipo()
         {
             string query = string.Format("SELECT * FROM TIPO_SALA");
-            return conex.EjercutarSentecia(query);
+            return conex.EjecutarSentencia(query);
         }
 
         public int Alta_Tipo(Tipo_SalaBO tipo)

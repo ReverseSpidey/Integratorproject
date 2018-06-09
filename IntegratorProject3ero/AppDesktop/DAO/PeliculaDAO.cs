@@ -5,14 +5,15 @@ using System.Text;
 using System.Threading.Tasks;
 using AppDesktop.BO;
 using System.Data;
+using System.Data.SqlClient;
 namespace AppDesktop.DAO
 {
     class PeliculaDAO
     {
-        Conexion conex;
+        ConexionSQL conex;
         public PeliculaDAO()
         {
-            conex = new Conexion();
+            conex = new ConexionSQL();
         }
 
 
@@ -20,8 +21,9 @@ namespace AppDesktop.DAO
         {
             String ComandoSQL = string.Format("SELECT * FROM Genero");
             //llena el datatable con la información de la base de datos
-            DataTable datos = conex.EjercutarSentecia(ComandoSQL);
-            //creo un nueva fila al dataTable
+            DataSet senten = conex.EjecutarSentencia(ComandoSQL);
+
+            DataTable datos = senten.Tables[0];
             DataRow dr = datos.NewRow();
             dr["nombre_gen"] = "Seleccionar";
             dr["id_genero"] = 0;
@@ -35,7 +37,9 @@ namespace AppDesktop.DAO
         {
             String ComandoSQL = string.Format("SELECT * FROM idioma");
             //llena el datatable con la información de la base de datos
-            DataTable datos = conex.EjercutarSentecia(ComandoSQL);
+            DataSet dt = conex.EjecutarSentencia(ComandoSQL);
+
+            DataTable datos = dt.Tables[0];
             //creo un nueva fila al dataTable
             DataRow dr = datos.NewRow();
             dr["nombre_idioma"] = "Seleccionar";
@@ -50,7 +54,9 @@ namespace AppDesktop.DAO
         {
             string ComandoSQL = string.Format("SELECT id_clasif, nombre_clasif FROM clasificacion");
             //llena el datatable con la información de la base de datos
-            DataTable datos = conex.EjercutarSentecia(ComandoSQL);
+            DataSet dt = conex.EjecutarSentencia(ComandoSQL);
+
+            DataTable datos = dt.Tables[0];
             //creo un nueva fila al dataTable
             DataRow dr = datos.NewRow();
             dr["nombre_clasif"] = "Seleccionar";
@@ -62,10 +68,10 @@ namespace AppDesktop.DAO
         }
 
 
-        public DataTable Recuperar_Sala()
+        public DataSet Recuperar_Sala()
         {
             string query = string.Format("");
-            return conex.EjercutarSentecia(query);
+            return conex.EjecutarSentencia(query);
         }
 
         public int AgregarPeli(PeliculaBO peli)

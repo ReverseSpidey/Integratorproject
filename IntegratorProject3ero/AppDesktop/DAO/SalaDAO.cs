@@ -5,15 +5,16 @@ using System.Text;
 using System.Threading.Tasks;
 using AppDesktop.BO;
 using System.Data;
+using System.Data.SqlClient;
 
 namespace AppDesktop.DAO
 {
     class SalaDAO
     {
-        Conexion conex;
+        ConexionSQL conex;
         public SalaDAO()
         {
-            conex = new Conexion();
+            conex = new ConexionSQL();
         }
 
 
@@ -21,23 +22,24 @@ namespace AppDesktop.DAO
         {
             String ComandoSQL = string.Format("SELECT * FROM tipo_sala");
             //llena el datatable con la información de la base de datos
-            DataTable datos = conex.EjercutarSentecia(ComandoSQL);
+            DataSet datos = conex.EjecutarSentencia(ComandoSQL);
+            DataTable dt = datos.Tables[0];
             //creo un nueva fila al dataTable
-            DataRow dr = datos.NewRow();
+            DataRow dr = dt.NewRow();
             dr["nombre_sala"] = "Seleccionar";
             dr["cod_sala"] = 0;
             //inserto la fila en la primera posición
-            datos.Rows.InsertAt(dr, 0);
+            dt.Rows.InsertAt(dr, 0);
 
-            return datos;
+            return dt;
         }
 
 
-        public DataTable Recuperar_Sala()
+        public DataSet Recuperar_Sala()
         {
             string query = string.Format("select sala.cod_sala, num_sala, tipo_sala.nombre_sala from " +
                 "sala inner join tipo_sala on sala.cod_tipo = tipo_sala.cod_sala");
-            return conex.EjercutarSentecia(query);
+            return conex.EjecutarSentencia(query);
         }
 
         public int Alta_Tipo(SalaBO sal)

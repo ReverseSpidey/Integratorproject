@@ -20,7 +20,7 @@ namespace AppDesktop.GUI
         public Tipo_Sala()
         {
             InitializeComponent();
-            dgvTipo_Sala.DataSource = tiDAO.Recup_Tipo();
+            dgvTipo_Sala.DataSource = tiDAO.Recup_Tipo().Tables[0];
             dgvTipo_Sala.ReadOnly = true;
             dgvTipo_Sala.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvTipo_Sala.ReadOnly = true;
@@ -37,29 +37,20 @@ namespace AppDesktop.GUI
 
         private void btnValidar_Click(object sender, EventArgs e)
         {
-            if (tiDAO.Alta_Tipo(Recuperar_Info()) == 1)
-            {
+            tiDAO.Alta_Tipo(Recuperar_Info());
+            
                 MessageBox.Show("Registro agregado.", "Mensaje del sistema", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            else
-            {
-                MessageBox.Show("No se pudo realiar la operación.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            dgvTipo_Sala.DataSource = tiDAO.Recup_Tipo();
+            
+            dgvTipo_Sala.DataSource = tiDAO.Recup_Tipo().Tables[0];
 
         }
 
         private void BtnModificar_Click(object sender, EventArgs e)
         {
-            if (tiDAO.Modificar(Recuperar_Info()) == 1)
-            {
-                MessageBox.Show("Registro agregado.", "Mensaje del sistema", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            else
-            {
-                MessageBox.Show("No se pudo realiar la operación.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            dgvTipo_Sala.DataSource = tiDAO.Recup_Tipo();
+            tiDAO.Modificar(Recuperar_Info());
+                MessageBox.Show("Registro modificado exitosamente.", "Mensaje del sistema", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            
+            dgvTipo_Sala.DataSource = tiDAO.Recup_Tipo().Tables[0];
 
         }
 
@@ -68,15 +59,11 @@ namespace AppDesktop.GUI
             if (MessageBox.Show("¿Estás seguro? El cambio será permanente", "Se requiere confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == System.Windows.Forms.DialogResult.Yes)
             {
                 // se la información se agrega mostramos un mensaje
-                if (tiDAO.Eliminar(Recuperar_Info()) == 1)
-                {
-                    MessageBox.Show("Registro Borrado", "Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-                else
-                {
-                    MessageBox.Show("No se pudo realiar la operación.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                dgvTipo_Sala.DataSource = tiDAO.Recup_Tipo();
+                tiDAO.Eliminar(Recuperar_Info());
+                
+                    MessageBox.Show("Registro Borrado exitosamente", "Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                
+                dgvTipo_Sala.DataSource = tiDAO.Recup_Tipo().Tables[0];
             }
             
 
