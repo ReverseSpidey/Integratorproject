@@ -28,36 +28,91 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnBuscar = new System.Windows.Forms.Button();
+            this.nupCodigo = new System.Windows.Forms.NumericUpDown();
+            this.btnValidar = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.dgvSala = new System.Windows.Forms.DataGridView();
+            this.label3 = new System.Windows.Forms.Label();
             this.Cod_sala = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Num_sala = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cod_tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnBuscar = new System.Windows.Forms.Button();
-            this.btnValidar = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.cboTipo = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.nupCodigo = new System.Windows.Forms.NumericUpDown();
-            this.label3 = new System.Windows.Forms.Label();
+            this.Tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Ver = new System.Windows.Forms.DataGridViewButtonColumn();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvSala)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nupCodigo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSala)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.btnBuscar);
             this.panel1.Controls.Add(this.nupCodigo);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.cboTipo);
+            this.panel1.Controls.Add(this.btnValidar);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.dgvSala);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 54);
+            this.panel1.Location = new System.Drawing.Point(0, 60);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(545, 294);
+            this.panel1.Size = new System.Drawing.Size(586, 364);
             this.panel1.TabIndex = 0;
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(72)))), ((int)(((byte)(21)))));
+            this.btnBuscar.FlatAppearance.BorderSize = 0;
+            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscar.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscar.ForeColor = System.Drawing.Color.White;
+            this.btnBuscar.Location = new System.Drawing.Point(167, 23);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(84, 39);
+            this.btnBuscar.TabIndex = 56;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = false;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+            // 
+            // nupCodigo
+            // 
+            this.nupCodigo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.nupCodigo.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nupCodigo.Location = new System.Drawing.Point(102, 34);
+            this.nupCodigo.Name = "nupCodigo";
+            this.nupCodigo.Size = new System.Drawing.Size(50, 25);
+            this.nupCodigo.TabIndex = 5;
+            // 
+            // btnValidar
+            // 
+            this.btnValidar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(72)))), ((int)(((byte)(21)))));
+            this.btnValidar.FlatAppearance.BorderSize = 0;
+            this.btnValidar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnValidar.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnValidar.ForeColor = System.Drawing.Color.White;
+            this.btnValidar.Location = new System.Drawing.Point(433, 23);
+            this.btnValidar.Name = "btnValidar";
+            this.btnValidar.Size = new System.Drawing.Size(90, 39);
+            this.btnValidar.TabIndex = 55;
+            this.btnValidar.Text = "Nueva Sala";
+            this.btnValidar.UseVisualStyleBackColor = false;
+            this.btnValidar.Click += new System.EventHandler(this.btnValidar_Click);
+            // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.Control;
+            this.label1.Location = new System.Drawing.Point(17, 36);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(85, 20);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "N° de Sala:";
             // 
             // dgvSala
             // 
@@ -68,13 +123,27 @@
             this.dgvSala.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Cod_sala,
             this.Num_sala,
-            this.cod_tipo});
+            this.cod_tipo,
+            this.Tipo,
+            this.Ver});
             this.dgvSala.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dgvSala.Location = new System.Drawing.Point(0, 81);
+            this.dgvSala.Location = new System.Drawing.Point(0, 100);
             this.dgvSala.Name = "dgvSala";
             this.dgvSala.ReadOnly = true;
-            this.dgvSala.Size = new System.Drawing.Size(545, 213);
+            this.dgvSala.Size = new System.Drawing.Size(586, 264);
             this.dgvSala.TabIndex = 0;
+            this.dgvSala.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ClickColumn);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.Control;
+            this.label3.Location = new System.Drawing.Point(12, 12);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(67, 27);
+            this.label3.TabIndex = 59;
+            this.label3.Text = "SALAS";
             // 
             // Cod_sala
             // 
@@ -97,101 +166,45 @@
             this.cod_tipo.Name = "cod_tipo";
             this.cod_tipo.ReadOnly = true;
             // 
-            // btnBuscar
+            // Tipo
             // 
-            this.btnBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(72)))), ((int)(((byte)(21)))));
-            this.btnBuscar.FlatAppearance.BorderSize = 0;
-            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuscar.Font = new System.Drawing.Font("Trebuchet MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscar.ForeColor = System.Drawing.Color.White;
-            this.btnBuscar.Location = new System.Drawing.Point(434, 17);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(75, 23);
-            this.btnBuscar.TabIndex = 56;
-            this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.UseVisualStyleBackColor = false;
+            this.Tipo.DataPropertyName = "Tipo_sala";
+            this.Tipo.HeaderText = "Tipo de Sala";
+            this.Tipo.Name = "Tipo";
+            this.Tipo.ReadOnly = true;
             // 
-            // btnValidar
+            // Ver
             // 
-            this.btnValidar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(72)))), ((int)(((byte)(21)))));
-            this.btnValidar.FlatAppearance.BorderSize = 0;
-            this.btnValidar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnValidar.Font = new System.Drawing.Font("Trebuchet MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnValidar.ForeColor = System.Drawing.Color.White;
-            this.btnValidar.Location = new System.Drawing.Point(419, 11);
-            this.btnValidar.Name = "btnValidar";
-            this.btnValidar.Size = new System.Drawing.Size(90, 36);
-            this.btnValidar.TabIndex = 55;
-            this.btnValidar.Text = "Nueva Sala";
-            this.btnValidar.UseVisualStyleBackColor = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(40, 21);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(69, 18);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "N° de Sala:";
-            // 
-            // cboTipo
-            // 
-            this.cboTipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboTipo.Font = new System.Drawing.Font("Trebuchet MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboTipo.FormattingEnabled = true;
-            this.cboTipo.Location = new System.Drawing.Point(285, 16);
-            this.cboTipo.Name = "cboTipo";
-            this.cboTipo.Size = new System.Drawing.Size(121, 24);
-            this.cboTipo.TabIndex = 3;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.Control;
-            this.label2.Location = new System.Drawing.Point(200, 21);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(79, 18);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Tipo de Sala:";
-            // 
-            // nupCodigo
-            // 
-            this.nupCodigo.Location = new System.Drawing.Point(115, 18);
-            this.nupCodigo.Name = "nupCodigo";
-            this.nupCodigo.Size = new System.Drawing.Size(50, 20);
-            this.nupCodigo.TabIndex = 5;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.Control;
-            this.label3.Location = new System.Drawing.Point(12, 12);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(67, 27);
-            this.label3.TabIndex = 59;
-            this.label3.Text = "SALAS";
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(72)))), ((int)(((byte)(21)))));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.Ver.DefaultCellStyle = dataGridViewCellStyle1;
+            this.Ver.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Ver.HeaderText = "";
+            this.Ver.Name = "Ver";
+            this.Ver.ReadOnly = true;
+            this.Ver.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Ver.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.Ver.Text = "Ver";
+            this.Ver.UseColumnTextForButtonValue = true;
             // 
             // SALA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(10)))), ((int)(((byte)(18)))));
-            this.ClientSize = new System.Drawing.Size(545, 348);
+            this.ClientSize = new System.Drawing.Size(586, 424);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.btnValidar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "SALA";
             this.Text = "SALA";
             this.Load += new System.EventHandler(this.SALA_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvSala)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nupCodigo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSala)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -201,15 +214,15 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataGridView dgvSala;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Cod_sala;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Num_sala;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cod_tipo;
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.NumericUpDown nupCodigo;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox cboTipo;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnValidar;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Cod_sala;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Num_sala;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cod_tipo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Tipo;
+        private System.Windows.Forms.DataGridViewButtonColumn Ver;
     }
 }

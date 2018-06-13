@@ -85,6 +85,12 @@
     <Compile Include="GUI\MenuAdministrador.Designer.cs">
       <DependentUpon>MenuAdministrador.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\NuevaSala.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\NuevaSala.Designer.cs">
+      <DependentUpon>NuevaSala.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\Peliculas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,6 +119,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\MenuAdministrador.resx">
       <DependentUpon>MenuAdministrador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\NuevaSala.resx">
+      <DependentUpon>NuevaSala.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Peliculas.resx">
       <DependentUpon>Peliculas.cs</DependentUpon>

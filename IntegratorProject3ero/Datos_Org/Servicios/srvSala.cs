@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using System.Data.Entity.Core.Objects;
 using System.Data.Entity.Infrastructure;
 using Datos_Org.Modelo;
+using System.Windows.Forms;
+using System.Collections;
 
 namespace Datos_Org.Servicios
 {
@@ -19,17 +21,125 @@ namespace Datos_Org.Servicios
             }
         }
 
-
+        public List<Tipo_sala> getlistTipo_Sala()
+        {
+            using (var db = new Cinema_Model())
+            {
+                return db.Tipo_sala.ToList();
+            }
+        }
 
         public List<Sala> Salas()
         {
             List<Sala> obj = new List<Sala>();
             using (var db = new Cinema_Model())
             {
-               // var sala_tipo = db.Tipo_sala.Join(db.Sala, id => id.Cod_sala, sal => sal.Cod_sala, (id, sal) => new { id, sal }).ToList();
-                var sala_tipo = db.Sala.Join(db.Tipo_sala, id => id.Tipo_sala.Cod_sala, sal => sal.Cod_sala, (id, sal) => new { id, sal }).ToList();
-                return db.Sala.ToList();
+                // var sala_tipo = db.Tipo_sala.Join(db.Sala, id => id.Cod_sala, sal => sal.Cod_sala, (id, sal) => new { id, sal }).ToList();
+                // var sala_tipo = db.Sala.Join(db.Tipo_sala, id => id.Tipo_sala.Cod_sala, sal => sal.Cod_sala, (id, sal) => new { id, sal }).ToList();
+                obj = db.Sala.Include("Tipo_sala").ToList();
+                return obj;
             }
         }
+
+
+        public void AgregarSala(Sala item)
+        {
+            try
+            {
+                using (var db = new Cinema_Model())
+                {
+                    db.Sala.Add(item);
+                    db.SaveChanges();
+                }
+            }
+            catch (Exception e)
+            {
+                throw new Exception("Verifica los datos a Insertar");//es un error que yo creo
+
+            }
+        }
+
+        public void ModificarSala(Sala item)
+        {
+            try
+            {
+                using (var db = new Cinema_Model())
+                {
+                    Sala obj = db.Sala.Where(x => x.Cod_sala == item.Cod_sala).FirstOrDefault();
+                    if (obj != null)
+                    {
+                        obj.Num_sala = item.Num_sala;
+                        obj.cod_tipo = item.cod_tipo;
+                        db.SaveChanges();
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                throw new Exception("Verifica los datos a Actualizar");//es un error que yo creo
+
+            }
+        }
+
+
+        public void BorrarSala(Sala item)
+        {
+            try
+            {
+                using (var db = new Cinema_Model())
+                {
+                    Sala obj = db.Sala.Where(x => x.Num_sala == item.Num_sala).FirstOrDefault();
+                    if (obj != null)
+                    {
+                        MessageBox.Show("si entro");
+                        db.Sala.Remove(obj);
+                        db.SaveChanges();
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                throw new Exception("Verifica los datos a Eliminar");//es un error que yo creo
+
+            }
+        }
+
+        public List<Sala> getListSala(Hashtable datos)
+        {
+            try
+            {
+                using (var db = new Cinema_Model())
+                {
+                    string query = @"SELECT VALUE SALA FROM Cinema_Model.Sala As Sala";
+                    StringBuilder wheereis = new StringBuilder();
+                    List<ObjectParameter> parameters = new List<ObjectParameter>();
+                    if (datos.Contains("NUM_SALA"))
+                    {
+                        if (wheereis.Length > 0) wheereis.Append(" AND ");
+                        wheereis.Append("Sala.NUM_SALA=@NUM_SALA");
+                        parameters.Add(new ObjectParameter("NUM_SALA", datos["NUM_SALA"]));
+                    }
+                   
+                    if (wheereis.Length > 0)
+                        query += " WHERE " + wheereis.ToString();
+
+                    ObjectContext oc;
+                    oc = ((IObjectContextAdapter)db).ObjectContext;
+
+                    var q = new ObjectQuery<Sala>(query, oc);
+                    if (wheereis.Length > 0)
+                    {
+                        foreach (ObjectParameter parametro in parameters)
+                            q.Parameters.Add(parametro);
+                    }
+                    return q.ToList();
+                }
+            }
+            catch (Exception e)
+            {
+                throw new Exception("Verifica los datos a buscar");
+            }
+        }
+
     }
 }
