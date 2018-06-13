@@ -30,109 +30,86 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.dgvSala = new System.Windows.Forms.DataGridView();
-            this.cod_sala = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.num_sala = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nombre_sala = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.btnNuevo = new System.Windows.Forms.Button();
-            this.btnBorrar = new System.Windows.Forms.Button();
+            this.Cod_sala = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Num_sala = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cod_tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnBuscar = new System.Windows.Forms.Button();
             this.btnValidar = new System.Windows.Forms.Button();
-            this.BtnModificar = new System.Windows.Forms.Button();
-            this.txtNumsala = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.cboTipoSala = new System.Windows.Forms.ComboBox();
+            this.cboTipo = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.nupCodigo = new System.Windows.Forms.NumericUpDown();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSala)).BeginInit();
-            this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nupCodigo)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.btnBuscar);
+            this.panel1.Controls.Add(this.nupCodigo);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.cboTipo);
+            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.dgvSala);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(0, 54);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(556, 371);
+            this.panel1.Size = new System.Drawing.Size(545, 294);
             this.panel1.TabIndex = 0;
             // 
             // dgvSala
             // 
+            this.dgvSala.AllowUserToAddRows = false;
+            this.dgvSala.AllowUserToDeleteRows = false;
             this.dgvSala.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvSala.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvSala.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.cod_sala,
-            this.num_sala,
-            this.nombre_sala});
+            this.Cod_sala,
+            this.Num_sala,
+            this.cod_tipo});
             this.dgvSala.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dgvSala.Location = new System.Drawing.Point(0, 116);
+            this.dgvSala.Location = new System.Drawing.Point(0, 81);
             this.dgvSala.Name = "dgvSala";
-            this.dgvSala.Size = new System.Drawing.Size(556, 255);
+            this.dgvSala.ReadOnly = true;
+            this.dgvSala.Size = new System.Drawing.Size(545, 213);
             this.dgvSala.TabIndex = 0;
-            this.dgvSala.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvSala_CellMouseClick);
             // 
-            // cod_sala
+            // Cod_sala
             // 
-            this.cod_sala.DataPropertyName = "cod_sala";
-            this.cod_sala.HeaderText = "Codigo";
-            this.cod_sala.Name = "cod_sala";
-            this.cod_sala.Visible = false;
+            this.Cod_sala.DataPropertyName = "Cod_sala";
+            this.Cod_sala.HeaderText = "Código";
+            this.Cod_sala.Name = "Cod_sala";
+            this.Cod_sala.ReadOnly = true;
             // 
-            // num_sala
+            // Num_sala
             // 
-            this.num_sala.DataPropertyName = "num_sala";
-            this.num_sala.HeaderText = "N° de Sala";
-            this.num_sala.Name = "num_sala";
+            this.Num_sala.DataPropertyName = "Num_sala";
+            this.Num_sala.HeaderText = "N° Sala";
+            this.Num_sala.Name = "Num_sala";
+            this.Num_sala.ReadOnly = true;
             // 
-            // nombre_sala
+            // cod_tipo
             // 
-            this.nombre_sala.DataPropertyName = "nombre_sala";
-            this.nombre_sala.HeaderText = "Tipo de Sala";
-            this.nombre_sala.Name = "nombre_sala";
+            this.cod_tipo.DataPropertyName = "cod_tipo";
+            this.cod_tipo.HeaderText = "Código Tipo";
+            this.cod_tipo.Name = "cod_tipo";
+            this.cod_tipo.ReadOnly = true;
             // 
-            // panel2
+            // btnBuscar
             // 
-            this.panel2.Controls.Add(this.btnNuevo);
-            this.panel2.Controls.Add(this.btnBorrar);
-            this.panel2.Controls.Add(this.btnValidar);
-            this.panel2.Controls.Add(this.BtnModificar);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 307);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(556, 64);
-            this.panel2.TabIndex = 1;
-            // 
-            // btnNuevo
-            // 
-            this.btnNuevo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(72)))), ((int)(((byte)(21)))));
-            this.btnNuevo.FlatAppearance.BorderSize = 0;
-            this.btnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNuevo.Font = new System.Drawing.Font("Trebuchet MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNuevo.ForeColor = System.Drawing.Color.White;
-            this.btnNuevo.Location = new System.Drawing.Point(403, 20);
-            this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(75, 23);
-            this.btnNuevo.TabIndex = 52;
-            this.btnNuevo.Text = "Nuevo";
-            this.btnNuevo.UseVisualStyleBackColor = false;
-            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
-            // 
-            // btnBorrar
-            // 
-            this.btnBorrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(72)))), ((int)(((byte)(21)))));
-            this.btnBorrar.FlatAppearance.BorderSize = 0;
-            this.btnBorrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBorrar.Font = new System.Drawing.Font("Trebuchet MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBorrar.ForeColor = System.Drawing.Color.White;
-            this.btnBorrar.Location = new System.Drawing.Point(292, 20);
-            this.btnBorrar.Name = "btnBorrar";
-            this.btnBorrar.Size = new System.Drawing.Size(75, 23);
-            this.btnBorrar.TabIndex = 54;
-            this.btnBorrar.Text = "Eliminar";
-            this.btnBorrar.UseVisualStyleBackColor = false;
-            this.btnBorrar.Click += new System.EventHandler(this.btnBorrar_Click);
+            this.btnBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(72)))), ((int)(((byte)(21)))));
+            this.btnBuscar.FlatAppearance.BorderSize = 0;
+            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscar.Font = new System.Drawing.Font("Trebuchet MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscar.ForeColor = System.Drawing.Color.White;
+            this.btnBuscar.Location = new System.Drawing.Point(434, 17);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(75, 23);
+            this.btnBuscar.TabIndex = 56;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = false;
             // 
             // btnValidar
             // 
@@ -141,117 +118,98 @@
             this.btnValidar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnValidar.Font = new System.Drawing.Font("Trebuchet MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnValidar.ForeColor = System.Drawing.Color.White;
-            this.btnValidar.Location = new System.Drawing.Point(71, 20);
+            this.btnValidar.Location = new System.Drawing.Point(419, 11);
             this.btnValidar.Name = "btnValidar";
-            this.btnValidar.Size = new System.Drawing.Size(75, 23);
-            this.btnValidar.TabIndex = 51;
-            this.btnValidar.Text = "Agregar";
+            this.btnValidar.Size = new System.Drawing.Size(90, 36);
+            this.btnValidar.TabIndex = 55;
+            this.btnValidar.Text = "Nueva Sala";
             this.btnValidar.UseVisualStyleBackColor = false;
-            this.btnValidar.Click += new System.EventHandler(this.btnValidar_Click);
-            // 
-            // BtnModificar
-            // 
-            this.BtnModificar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(72)))), ((int)(((byte)(21)))));
-            this.BtnModificar.FlatAppearance.BorderSize = 0;
-            this.BtnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnModificar.Font = new System.Drawing.Font("Trebuchet MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnModificar.ForeColor = System.Drawing.Color.White;
-            this.BtnModificar.Location = new System.Drawing.Point(183, 20);
-            this.BtnModificar.Name = "BtnModificar";
-            this.BtnModificar.Size = new System.Drawing.Size(75, 23);
-            this.BtnModificar.TabIndex = 53;
-            this.BtnModificar.Text = "Modificar";
-            this.BtnModificar.UseVisualStyleBackColor = false;
-            this.BtnModificar.Click += new System.EventHandler(this.BtnModificar_Click);
-            // 
-            // txtNumsala
-            // 
-            this.txtNumsala.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNumsala.Location = new System.Drawing.Point(154, 26);
-            this.txtNumsala.Name = "txtNumsala";
-            this.txtNumsala.Size = new System.Drawing.Size(55, 21);
-            this.txtNumsala.TabIndex = 47;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(47, 71);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(79, 18);
-            this.label2.TabIndex = 49;
-            this.label2.Text = "Tipo de Sala:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(28, 26);
+            this.label1.ForeColor = System.Drawing.SystemColors.Control;
+            this.label1.Location = new System.Drawing.Point(40, 21);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(98, 18);
-            this.label1.TabIndex = 48;
-            this.label1.Text = "Número de Sala:";
+            this.label1.Size = new System.Drawing.Size(69, 18);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "N° de Sala:";
             // 
-            // panel3
+            // cboTipo
             // 
-            this.panel3.Controls.Add(this.cboTipoSala);
-            this.panel3.Controls.Add(this.txtNumsala);
-            this.panel3.Controls.Add(this.label2);
-            this.panel3.Controls.Add(this.label1);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(556, 110);
-            this.panel3.TabIndex = 2;
+            this.cboTipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboTipo.Font = new System.Drawing.Font("Trebuchet MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboTipo.FormattingEnabled = true;
+            this.cboTipo.Location = new System.Drawing.Point(285, 16);
+            this.cboTipo.Name = "cboTipo";
+            this.cboTipo.Size = new System.Drawing.Size(121, 24);
+            this.cboTipo.TabIndex = 3;
             // 
-            // cboTipoSala
+            // label2
             // 
-            this.cboTipoSala.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboTipoSala.FormattingEnabled = true;
-            this.cboTipoSala.Location = new System.Drawing.Point(154, 71);
-            this.cboTipoSala.Name = "cboTipoSala";
-            this.cboTipoSala.Size = new System.Drawing.Size(173, 21);
-            this.cboTipoSala.TabIndex = 50;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.Control;
+            this.label2.Location = new System.Drawing.Point(200, 21);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(79, 18);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Tipo de Sala:";
+            // 
+            // nupCodigo
+            // 
+            this.nupCodigo.Location = new System.Drawing.Point(115, 18);
+            this.nupCodigo.Name = "nupCodigo";
+            this.nupCodigo.Size = new System.Drawing.Size(50, 20);
+            this.nupCodigo.TabIndex = 5;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.Control;
+            this.label3.Location = new System.Drawing.Point(12, 12);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(67, 27);
+            this.label3.TabIndex = 59;
+            this.label3.Text = "SALAS";
             // 
             // SALA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(10)))), ((int)(((byte)(18)))));
-            this.ClientSize = new System.Drawing.Size(556, 371);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
+            this.ClientSize = new System.Drawing.Size(545, 348);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.btnValidar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "SALA";
             this.Text = "SALA";
+            this.Load += new System.EventHandler(this.SALA_Load);
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSala)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nupCodigo)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button btnNuevo;
-        private System.Windows.Forms.Button btnBorrar;
-        private System.Windows.Forms.Button btnValidar;
-        private System.Windows.Forms.Button BtnModificar;
-        private System.Windows.Forms.TextBox txtNumsala;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.ComboBox cboTipoSala;
         private System.Windows.Forms.DataGridView dgvSala;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cod_sala;
-        private System.Windows.Forms.DataGridViewTextBoxColumn num_sala;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nombre_sala;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Cod_sala;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Num_sala;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cod_tipo;
+        private System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.NumericUpDown nupCodigo;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox cboTipo;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnValidar;
+        private System.Windows.Forms.Label label3;
     }
 }

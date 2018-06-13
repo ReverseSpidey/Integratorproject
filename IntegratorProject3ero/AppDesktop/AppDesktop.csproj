@@ -36,6 +36,14 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\ProyectoFinal\IntegratorProject3ero\Bunifu_UI_v1.5.3.dll</HintPath>
     </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.VisualBasic.PowerPacks">
       <HintPath>..\Microsoft.VisualBasic.PowerPacks.dll</HintPath>
     </Reference>
@@ -59,54 +67,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BO\PeliculaBO.cs" />
-    <Compile Include="BO\SalaBO.cs" />
-    <Compile Include="BO\Tipo_SalaBO.cs" />
-    <Compile Include="DAO\ConexionSQL.cs" />
-    <Compile Include="DAO\PeliculaDAO.cs" />
-    <Compile Include="DAO\SalaDAO.cs" />
-    <Compile Include="DAO\Tipo_SalaDAO.cs" />
-    <Compile Include="GUI\EmpleadoCinema.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\EmpleadoCinema.Designer.cs">
-      <DependentUpon>EmpleadoCinema.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\Ciudad.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\Ciudad.Designer.cs">
-      <DependentUpon>Ciudad.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\Clasificacion.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\Clasificacion.Designer.cs">
-      <DependentUpon>Clasificacion.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\Idioma.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\Idioma.Designer.cs">
-      <DependentUpon>Idioma.cs</DependentUpon>
-    </Compile>
     <Compile Include="GUI\NuevaCompra.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GUI\NuevaCompra.Designer.cs">
       <DependentUpon>NuevaCompra.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\Sucursal.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\Sucursal.Designer.cs">
-      <DependentUpon>Sucursal.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\Estado.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\Estado.Designer.cs">
-      <DependentUpon>Estado.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\LOGIN.cs">
       <SubType>Form</SubType>
@@ -138,40 +103,10 @@
     <Compile Include="GUI\SALA.Designer.cs">
       <DependentUpon>SALA.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\TipoFuncion.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\TipoFuncion.Designer.cs">
-      <DependentUpon>TipoFuncion.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\Tipo_Sala.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\Tipo_Sala.Designer.cs">
-      <DependentUpon>Tipo_Sala.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="GUI\EmpleadoCinema.resx">
-      <DependentUpon>EmpleadoCinema.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\Ciudad.resx">
-      <DependentUpon>Ciudad.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\Clasificacion.resx">
-      <DependentUpon>Clasificacion.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\Idioma.resx">
-      <DependentUpon>Idioma.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="GUI\NuevaCompra.resx">
       <DependentUpon>NuevaCompra.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\Sucursal.resx">
-      <DependentUpon>Sucursal.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\Estado.resx">
-      <DependentUpon>Estado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\LOGIN.resx">
       <DependentUpon>LOGIN.cs</DependentUpon>
@@ -188,17 +123,14 @@
     <EmbeddedResource Include="GUI\SALA.resx">
       <DependentUpon>SALA.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\TipoFuncion.resx">
-      <DependentUpon>TipoFuncion.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\Tipo_Sala.resx">
-      <DependentUpon>Tipo_Sala.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="bin\Debug\AppDesktop.exe.config" />
+    <None Include="bin\Debug\appdesktop.InstallLog" />
+    <None Include="bin\Debug\InstallUtil.InstallLog" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -219,12 +151,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\SettingHover.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Imagenes\Imagenes.csproj">
-      <Project>{6E247D3F-928D-4919-BE50-7E6962089D75}</Project>
-      <Name>Imagenes</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\HomeHover.png" />
@@ -265,7 +191,16 @@
   <ItemGroup>
     <None Include="Resources\logo5.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="bin\Debug\AppDesktop.exe" />
+    <Content Include="bin\Debug\AppDesktop.pdb" />
+    <Content Include="bin\Debug\Bunifu_UI_v1.5.3.dll" />
+    <Content Include="bin\Debug\Microsoft.VisualBasic.PowerPacks.Design.dll" />
+    <Content Include="bin\Debug\Microsoft.VisualBasic.PowerPacks.dll" />
+    <Content Include="bin\Debug\MySql.Data.dll" />
+    <Content Include="bin\EntityFramework.dll" />
+    <Content Include="bin\EntityFramework.SqlServer.dll" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\usuario.png" />
   </ItemGroup>
@@ -307,6 +242,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\SUPER.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Datos_Org\Datos_Org.csproj">
+      <Project>{b5131367-bdd8-4d3b-989d-c0bcb3948b1f}</Project>
+      <Name>Datos_Org</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

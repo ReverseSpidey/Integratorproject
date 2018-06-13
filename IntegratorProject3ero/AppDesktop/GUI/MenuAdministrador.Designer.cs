@@ -32,13 +32,7 @@
             this.pan = new System.Windows.Forms.Panel();
             this.layout_Contenido = new System.Windows.Forms.FlowLayoutPanel();
             this.pnlCatalogos = new System.Windows.Forms.Panel();
-            this.btnClasificacion = new System.Windows.Forms.Button();
-            this.btnSucursal = new System.Windows.Forms.Button();
-            this.btnCiudad = new System.Windows.Forms.Button();
-            this.btnEstado = new System.Windows.Forms.Button();
-            this.btnIdioma = new System.Windows.Forms.Button();
             this.btnAsiento = new System.Windows.Forms.Button();
-            this.btnGenero = new System.Windows.Forms.Button();
             this.btnSala = new System.Windows.Forms.Button();
             this.btnPelicula2 = new System.Windows.Forms.Button();
             this.btnUsuarios = new System.Windows.Forms.Button();
@@ -80,109 +74,25 @@
             // 
             // pnlCatalogos
             // 
-            this.pnlCatalogos.Controls.Add(this.btnClasificacion);
-            this.pnlCatalogos.Controls.Add(this.btnSucursal);
-            this.pnlCatalogos.Controls.Add(this.btnCiudad);
-            this.pnlCatalogos.Controls.Add(this.btnEstado);
-            this.pnlCatalogos.Controls.Add(this.btnIdioma);
             this.pnlCatalogos.Controls.Add(this.btnAsiento);
-            this.pnlCatalogos.Controls.Add(this.btnGenero);
             this.pnlCatalogos.Controls.Add(this.btnSala);
             this.pnlCatalogos.Controls.Add(this.btnPelicula2);
             this.pnlCatalogos.Location = new System.Drawing.Point(3, 3);
             this.pnlCatalogos.Name = "pnlCatalogos";
-            this.pnlCatalogos.Size = new System.Drawing.Size(127, 349);
+            this.pnlCatalogos.Size = new System.Drawing.Size(127, 92);
             this.pnlCatalogos.TabIndex = 1;
-            // 
-            // btnClasificacion
-            // 
-            this.btnClasificacion.FlatAppearance.BorderSize = 0;
-            this.btnClasificacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClasificacion.ForeColor = System.Drawing.Color.White;
-            this.btnClasificacion.Location = new System.Drawing.Point(0, 306);
-            this.btnClasificacion.Name = "btnClasificacion";
-            this.btnClasificacion.Size = new System.Drawing.Size(127, 30);
-            this.btnClasificacion.TabIndex = 8;
-            this.btnClasificacion.Text = "Clasificación";
-            this.btnClasificacion.UseVisualStyleBackColor = true;
-            this.btnClasificacion.Click += new System.EventHandler(this.btnClasificacion_Click);
-            // 
-            // btnSucursal
-            // 
-            this.btnSucursal.FlatAppearance.BorderSize = 0;
-            this.btnSucursal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSucursal.ForeColor = System.Drawing.Color.White;
-            this.btnSucursal.Location = new System.Drawing.Point(0, 261);
-            this.btnSucursal.Name = "btnSucursal";
-            this.btnSucursal.Size = new System.Drawing.Size(127, 30);
-            this.btnSucursal.TabIndex = 7;
-            this.btnSucursal.Text = "Sucursal";
-            this.btnSucursal.UseVisualStyleBackColor = true;
-            this.btnSucursal.Click += new System.EventHandler(this.btnSucursal_Click);
-            // 
-            // btnCiudad
-            // 
-            this.btnCiudad.FlatAppearance.BorderSize = 0;
-            this.btnCiudad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCiudad.ForeColor = System.Drawing.Color.White;
-            this.btnCiudad.Location = new System.Drawing.Point(0, 216);
-            this.btnCiudad.Name = "btnCiudad";
-            this.btnCiudad.Size = new System.Drawing.Size(127, 30);
-            this.btnCiudad.TabIndex = 6;
-            this.btnCiudad.Text = "Ciudad";
-            this.btnCiudad.UseVisualStyleBackColor = true;
-            this.btnCiudad.Click += new System.EventHandler(this.btnCiudad_Click);
-            // 
-            // btnEstado
-            // 
-            this.btnEstado.FlatAppearance.BorderSize = 0;
-            this.btnEstado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEstado.ForeColor = System.Drawing.Color.White;
-            this.btnEstado.Location = new System.Drawing.Point(-3, 180);
-            this.btnEstado.Name = "btnEstado";
-            this.btnEstado.Size = new System.Drawing.Size(127, 30);
-            this.btnEstado.TabIndex = 5;
-            this.btnEstado.Text = "Estado";
-            this.btnEstado.UseVisualStyleBackColor = true;
-            this.btnEstado.Click += new System.EventHandler(this.btnEstado_Click);
-            // 
-            // btnIdioma
-            // 
-            this.btnIdioma.FlatAppearance.BorderSize = 0;
-            this.btnIdioma.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnIdioma.ForeColor = System.Drawing.Color.White;
-            this.btnIdioma.Location = new System.Drawing.Point(-3, 144);
-            this.btnIdioma.Name = "btnIdioma";
-            this.btnIdioma.Size = new System.Drawing.Size(127, 30);
-            this.btnIdioma.TabIndex = 4;
-            this.btnIdioma.Text = "Idioma";
-            this.btnIdioma.UseVisualStyleBackColor = true;
-            this.btnIdioma.Click += new System.EventHandler(this.btnIdioma_Click);
             // 
             // btnAsiento
             // 
             this.btnAsiento.FlatAppearance.BorderSize = 0;
             this.btnAsiento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAsiento.ForeColor = System.Drawing.Color.White;
-            this.btnAsiento.Location = new System.Drawing.Point(-3, 108);
+            this.btnAsiento.Location = new System.Drawing.Point(-3, 63);
             this.btnAsiento.Name = "btnAsiento";
             this.btnAsiento.Size = new System.Drawing.Size(127, 30);
             this.btnAsiento.TabIndex = 3;
             this.btnAsiento.Text = "Asiento";
             this.btnAsiento.UseVisualStyleBackColor = true;
-            // 
-            // btnGenero
-            // 
-            this.btnGenero.FlatAppearance.BorderSize = 0;
-            this.btnGenero.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGenero.ForeColor = System.Drawing.Color.White;
-            this.btnGenero.Location = new System.Drawing.Point(-3, 72);
-            this.btnGenero.Name = "btnGenero";
-            this.btnGenero.Size = new System.Drawing.Size(127, 30);
-            this.btnGenero.TabIndex = 2;
-            this.btnGenero.Text = "Género";
-            this.btnGenero.UseVisualStyleBackColor = true;
-            this.btnGenero.Click += new System.EventHandler(this.btnGenero_Click);
             // 
             // btnSala
             // 
@@ -218,7 +128,7 @@
             this.btnUsuarios.ForeColor = System.Drawing.Color.White;
             this.btnUsuarios.Image = global::AppDesktop.Properties.Resources.Empleado;
             this.btnUsuarios.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUsuarios.Location = new System.Drawing.Point(3, 358);
+            this.btnUsuarios.Location = new System.Drawing.Point(3, 101);
             this.btnUsuarios.Name = "btnUsuarios";
             this.btnUsuarios.Size = new System.Drawing.Size(133, 71);
             this.btnUsuarios.TabIndex = 3;
@@ -306,6 +216,7 @@
             this.label2.Size = new System.Drawing.Size(25, 25);
             this.label2.TabIndex = 14;
             this.label2.Text = "X";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label4
             // 
@@ -357,14 +268,8 @@
         private System.Windows.Forms.Panel pnlCatalogos;
         private System.Windows.Forms.Button btnPelicula2;
         private System.Windows.Forms.Button btnAsiento;
-        private System.Windows.Forms.Button btnGenero;
         private System.Windows.Forms.Button btnSala;
         private System.Windows.Forms.FlowLayoutPanel layout_Contenido;
-        private System.Windows.Forms.Button btnSucursal;
-        private System.Windows.Forms.Button btnCiudad;
-        private System.Windows.Forms.Button btnEstado;
-        private System.Windows.Forms.Button btnIdioma;
-        private System.Windows.Forms.Button btnClasificacion;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;

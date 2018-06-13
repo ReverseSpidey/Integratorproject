@@ -51,7 +51,7 @@ namespace AppDesktop.GUI
         private void btnDatos_Click(object sender, EventArgs e)
         {
 
-            AbrirFormHija(new Sucursal());
+
         }
 
         private void MenuAdministrador_MouseMove(object sender, MouseEventArgs e)
@@ -129,12 +129,10 @@ namespace AppDesktop.GUI
 
         private void btnIdioma_Click(object sender, EventArgs e)
         {
-            AbrirFormHija(new Idioma());
         }
 
         private void btnClasificacion_Click(object sender, EventArgs e)
         {
-            AbrirFormHija(new Clasificacion());
         }
 
         private void btnGenero_Click(object sender, EventArgs e)
@@ -144,22 +142,25 @@ namespace AppDesktop.GUI
 
         private void btnSucursal_Click(object sender, EventArgs e)
         {
-            AbrirFormHija(new Sucursal());
         }
 
         private void btnCiudad_Click(object sender, EventArgs e)
         {
-            AbrirFormHija(new Ciudad());
         }
 
         private void btnEstado_Click(object sender, EventArgs e)
         {
-            AbrirFormHija(new Estado());
         }
 
         private void btnSala_Click(object sender, EventArgs e)
         {
             AbrirFormHija(new SALA());
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+   
         }
     }
 }
