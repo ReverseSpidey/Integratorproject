@@ -30,7 +30,12 @@ namespace AppDesktop.GUI
         public void Listar()
         {
             dgvSala.AutoGenerateColumns = false;
-            dgvSala.DataSource = srv.Salas();
+            dgvSala.DataSource = srv.Sala_c_tipo();
+            dgvSala.Columns[0].Visible = false;
+            dgvSala.Columns[2].Visible = false;
+
+
+
         }
 
         private void btnValidar_Click(object sender, EventArgs e)
@@ -56,6 +61,7 @@ namespace AppDesktop.GUI
             Hashtable map = new Hashtable();
             if (this.nupCodigo.Value != 0)
                 map["NUM_SALA"] = Convert.ToInt16(nupCodigo.Value);
+
 
             dgvSala.AutoGenerateColumns = false;
             dgvSala.DataSource = srv.getListSala(map);

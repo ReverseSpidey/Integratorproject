@@ -51,6 +51,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="Entidades\vSala.cs" />
     <Compile Include="Modelo\Asiento.cs">
       <DependentUpon>EntidadesCinema.tt</DependentUpon>
     </Compile>
@@ -127,7 +128,6 @@
       <DependentUpon>EntidadesCinema.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Servicios\Sala_tipoSala.cs" />
     <Compile Include="Servicios\srvSala.cs" />
   </ItemGroup>
   <ItemGroup />

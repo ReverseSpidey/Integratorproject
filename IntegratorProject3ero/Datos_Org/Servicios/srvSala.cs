@@ -8,6 +8,7 @@ using System.Data.Entity.Infrastructure;
 using Datos_Org.Modelo;
 using System.Windows.Forms;
 using System.Collections;
+using Datos_Org.Entidades;
 
 namespace Datos_Org.Servicios
 {
@@ -29,17 +30,7 @@ namespace Datos_Org.Servicios
             }
         }
 
-        public List<Sala> Salas()
-        {
-            List<Sala> obj = new List<Sala>();
-            using (var db = new Cinema_Model())
-            {
-                // var sala_tipo = db.Tipo_sala.Join(db.Sala, id => id.Cod_sala, sal => sal.Cod_sala, (id, sal) => new { id, sal }).ToList();
-                // var sala_tipo = db.Sala.Join(db.Tipo_sala, id => id.Tipo_sala.Cod_sala, sal => sal.Cod_sala, (id, sal) => new { id, sal }).ToList();
-                obj = db.Sala.Include("Tipo_sala").ToList();
-                return obj;
-            }
-        }
+
 
 
         public void AgregarSala(Sala item)
@@ -119,7 +110,8 @@ namespace Datos_Org.Servicios
                         wheereis.Append("Sala.NUM_SALA=@NUM_SALA");
                         parameters.Add(new ObjectParameter("NUM_SALA", datos["NUM_SALA"]));
                     }
-                   
+                    
+                    
                     if (wheereis.Length > 0)
                         query += " WHERE " + wheereis.ToString();
 
@@ -138,6 +130,25 @@ namespace Datos_Org.Servicios
             catch (Exception e)
             {
                 throw new Exception("Verifica los datos a buscar");
+            }
+        }
+
+
+
+        public List<vSala> Sala_c_tipo()
+        {
+            List<vSala> obj = new List<vSala>();
+            using (var db = new Cinema_Model())
+            {
+                obj = (from x in db.Sala
+                       select new vSala
+                       {
+                           Cod_sala = x.Cod_sala,
+                           Num_sala = x.Num_sala,
+                           cod_tipo = x.cod_tipo,
+                           NombreSala_tipo = x.Tipo_sala.Nombre_sala
+                       }).ToList();
+                return obj;
             }
         }
 

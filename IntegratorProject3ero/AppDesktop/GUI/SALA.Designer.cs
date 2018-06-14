@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.nupCodigo = new System.Windows.Forms.NumericUpDown();
@@ -50,27 +50,24 @@
             // 
             this.panel1.Controls.Add(this.btnBuscar);
             this.panel1.Controls.Add(this.nupCodigo);
-            this.panel1.Controls.Add(this.btnValidar);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.dgvSala);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 60);
+            this.panel1.Location = new System.Drawing.Point(0, 84);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(586, 364);
+            this.panel1.Size = new System.Drawing.Size(616, 371);
             this.panel1.TabIndex = 0;
             // 
             // btnBuscar
             // 
-            this.btnBuscar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
             this.btnBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(72)))), ((int)(((byte)(21)))));
             this.btnBuscar.FlatAppearance.BorderSize = 0;
             this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscar.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscar.ForeColor = System.Drawing.Color.White;
-            this.btnBuscar.Location = new System.Drawing.Point(167, 23);
+            this.btnBuscar.Location = new System.Drawing.Point(194, 24);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(84, 39);
+            this.btnBuscar.Size = new System.Drawing.Size(84, 41);
             this.btnBuscar.TabIndex = 56;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = false;
@@ -81,7 +78,7 @@
             this.nupCodigo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.nupCodigo.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nupCodigo.Location = new System.Drawing.Point(102, 34);
+            this.nupCodigo.Location = new System.Drawing.Point(115, 31);
             this.nupCodigo.Name = "nupCodigo";
             this.nupCodigo.Size = new System.Drawing.Size(50, 25);
             this.nupCodigo.TabIndex = 5;
@@ -93,7 +90,7 @@
             this.btnValidar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnValidar.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnValidar.ForeColor = System.Drawing.Color.White;
-            this.btnValidar.Location = new System.Drawing.Point(433, 23);
+            this.btnValidar.Location = new System.Drawing.Point(502, 25);
             this.btnValidar.Name = "btnValidar";
             this.btnValidar.Size = new System.Drawing.Size(90, 39);
             this.btnValidar.TabIndex = 55;
@@ -127,10 +124,10 @@
             this.Tipo,
             this.Ver});
             this.dgvSala.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dgvSala.Location = new System.Drawing.Point(0, 100);
+            this.dgvSala.Location = new System.Drawing.Point(0, 133);
             this.dgvSala.Name = "dgvSala";
             this.dgvSala.ReadOnly = true;
-            this.dgvSala.Size = new System.Drawing.Size(586, 264);
+            this.dgvSala.Size = new System.Drawing.Size(616, 238);
             this.dgvSala.TabIndex = 0;
             this.dgvSala.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ClickColumn);
             // 
@@ -168,18 +165,18 @@
             // 
             // Tipo
             // 
-            this.Tipo.DataPropertyName = "Tipo_sala";
+            this.Tipo.DataPropertyName = "NombreSala_tipo";
             this.Tipo.HeaderText = "Tipo de Sala";
             this.Tipo.Name = "Tipo";
             this.Tipo.ReadOnly = true;
             // 
             // Ver
             // 
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(72)))), ((int)(((byte)(21)))));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.Ver.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(72)))), ((int)(((byte)(21)))));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.Ver.DefaultCellStyle = dataGridViewCellStyle4;
             this.Ver.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Ver.HeaderText = "";
             this.Ver.Name = "Ver";
@@ -194,9 +191,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(10)))), ((int)(((byte)(18)))));
-            this.ClientSize = new System.Drawing.Size(586, 424);
+            this.ClientSize = new System.Drawing.Size(616, 455);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.btnValidar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "SALA";
             this.Text = "SALA";
