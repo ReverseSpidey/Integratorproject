@@ -107,50 +107,12 @@ namespace AppDesktop.GUI
 
         }
 
-        private void btnSalas_Click(object sender, EventArgs e)
-        {
-
-            AbrirFormHija(new SALA());
-        }
-
-        private void btnPelicula_MouseEnter(object sender, EventArgs e)
-        {
-        }
-
-        private void panellfet_MouseEnter(object sender, EventArgs e)
-        {
-
-        }
 
         private void button1_Click_1(object sender, EventArgs e)
         {
             AbrirFormHija(new Peliculas());
         }
 
-        private void btnIdioma_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void btnClasificacion_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void btnGenero_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnSucursal_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void btnCiudad_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void btnEstado_Click(object sender, EventArgs e)
-        {
-        }
 
         private void btnSala_Click(object sender, EventArgs e)
         {
@@ -161,6 +123,12 @@ namespace AppDesktop.GUI
         {
             this.Close();
    
+        }
+
+        private void btnAsiento_Click(object sender, EventArgs e)
+        {
+            AbrirFormHija(new frmAsiento());
+
         }
     }
 }

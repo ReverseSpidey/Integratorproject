@@ -46,16 +46,16 @@ namespace AppDesktop.GUI
         {
             if (nuevo == true)
             {
-                cboTipo.DataSource = serv.getlistTipo_Sala();
-                cboTipo.DisplayMember = "nombre_sala";
-                cboTipo.ValueMember = "cod_sala";
+                cboSala.DataSource = serv.getlistTipo_Sala();
+                cboSala.DisplayMember = "nombre_sala";
+                cboSala.ValueMember = "cod_sala";
             }
             else
             {
-                cboTipo.DataSource = serv.getlistTipo_Sala();
-                cboTipo.DisplayMember = "nombre_sala";
-                cboTipo.ValueMember = "cod_sala";
-                cboTipo.SelectedValue = sal.cod_tipo;
+                cboSala.DataSource = serv.getlistTipo_Sala();
+                cboSala.DisplayMember = "nombre_sala";
+                cboSala.ValueMember = "cod_sala";
+                cboSala.SelectedValue = sal.cod_tipo;
 
             }
 
@@ -63,16 +63,16 @@ namespace AppDesktop.GUI
 
         private void limpiar()
         {
-            txtFilas.Clear();
             txtNumSala.Clear();
-            cboTipo.SelectedIndex = 0;
+            txtNumSala.Clear();
+            cboSala.SelectedIndex = 0;
         }
 
 
         public Sala RecuperarDatos()
         {
             sal = new Sala();
-            sal.cod_tipo = Convert.ToInt32(cboTipo.SelectedValue);
+            sal.cod_tipo = Convert.ToInt32(cboSala.SelectedValue);
             sal.Num_sala = Convert.ToInt32(txtNumSala.Text);
             return sal;
         }

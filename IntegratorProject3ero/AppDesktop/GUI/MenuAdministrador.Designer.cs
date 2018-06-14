@@ -93,6 +93,7 @@
             this.btnAsiento.TabIndex = 3;
             this.btnAsiento.Text = "Asiento";
             this.btnAsiento.UseVisualStyleBackColor = true;
+            this.btnAsiento.Click += new System.EventHandler(this.btnAsiento_Click);
             // 
             // btnSala
             // 
