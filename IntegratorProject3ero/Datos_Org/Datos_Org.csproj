@@ -51,6 +51,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="Entidades\vAsiento.cs" />
     <Compile Include="Entidades\vSala.cs" />
     <Compile Include="Modelo\Asiento.cs">
       <DependentUpon>EntidadesCinema.tt</DependentUpon>
@@ -110,6 +111,9 @@
       <DependentUpon>EntidadesCinema.tt</DependentUpon>
     </Compile>
     <Compile Include="Modelo\Sucursal.cs">
+      <DependentUpon>EntidadesCinema.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\sysdiagrams.cs">
       <DependentUpon>EntidadesCinema.tt</DependentUpon>
     </Compile>
     <Compile Include="Modelo\Tarjeta_credito.cs">

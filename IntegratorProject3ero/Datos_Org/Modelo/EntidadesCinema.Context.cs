@@ -45,5 +45,6 @@ namespace Datos_Org.Modelo
         public virtual DbSet<Tipo_pago> Tipo_pago { get; set; }
         public virtual DbSet<Tipo_sala> Tipo_sala { get; set; }
         public virtual DbSet<Usuario> Usuario { get; set; }
+        public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
     }
 }

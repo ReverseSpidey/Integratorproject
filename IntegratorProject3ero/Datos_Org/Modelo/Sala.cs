@@ -19,6 +19,7 @@ namespace Datos_Org.Modelo
         {
             this.Funcion = new HashSet<Funcion>();
             this.Sucursal = new HashSet<Sucursal>();
+            this.Asiento = new HashSet<Asiento>();
         }
     
         public int Cod_sala { get; set; }
@@ -30,5 +31,7 @@ namespace Datos_Org.Modelo
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Sucursal> Sucursal { get; set; }
         public virtual Tipo_sala Tipo_sala { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Asiento> Asiento { get; set; }
     }
 }

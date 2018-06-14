@@ -30,5 +30,6 @@ namespace Datos_Org.Modelo
         public virtual ICollection<Detalle_compra> Detalle_compra { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Tipo_boleto> Tipo_boleto { get; set; }
+        public virtual Sala Sala { get; set; }
     }
 }

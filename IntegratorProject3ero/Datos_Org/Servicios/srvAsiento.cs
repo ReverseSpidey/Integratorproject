@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Datos_Org.Entidades;
 using Datos_Org.Modelo;
 
 
@@ -41,6 +42,26 @@ namespace Datos_Org.Servicios
             catch (Exception e)
             {
                 throw new Exception("Verifica los datos a Insertar");//es un error que yo creo
+            }
+        }
+
+
+        public List<vAsiento> AsientoComplete()
+        {
+            List<vAsiento> obj = new List<vAsiento>();
+            using (var db = new Cinema_Model())
+            {
+                obj = (from x in db.Asiento
+                       select new vAsiento
+                       {
+                           id_siento = x.id_siento,
+                           fila = x.fila,
+                           columna = x.columna,
+                           Cod_sala = x.Cod_sala,
+                           Num_sala = x.Sala.Cod_sala
+
+                       }).ToList();
+                return obj;
             }
         }
     }

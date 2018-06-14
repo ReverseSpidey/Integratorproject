@@ -193,6 +193,18 @@
           <Property Name="id_perfil" Type="int" />
           <Property Name="id_persona" Type="int" />
         </EntityType>
+        <Association Name="FK__Asiento__Cod_sal__607251E5">
+          <End Role="Sala" Type="Self.Sala" Multiplicity="1" />
+          <End Role="Asiento" Type="Self.Asiento" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Sala">
+              <PropertyRef Name="Cod_sala" />
+            </Principal>
+            <Dependent Role="Asiento">
+              <PropertyRef Name="Cod_sala" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <Association Name="FK__Compra__ID_DETAL__4D5F7D71">
           <End Role="Detalle_compra" Type="Self.Detalle_compra" Multiplicity="0..1" />
           <End Role="Compra" Type="Self.Compra" Multiplicity="*" />
@@ -455,6 +467,10 @@
           <EntitySet Name="Tipo_pago" EntityType="Self.Tipo_pago" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Tipo_sala" EntityType="Self.Tipo_sala" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Usuario" EntityType="Self.Usuario" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__Asiento__Cod_sal__607251E5" Association="Self.FK__Asiento__Cod_sal__607251E5">
+            <End Role="Sala" EntitySet="Sala" />
+            <End Role="Asiento" EntitySet="Asiento" />
+          </AssociationSet>
           <AssociationSet Name="FK__Compra__ID_DETAL__4D5F7D71" Association="Self.FK__Compra__ID_DETAL__4D5F7D71">
             <End Role="Detalle_compra" EntitySet="Detalle_compra" />
             <End Role="Compra" EntitySet="Compra" />
@@ -550,6 +566,7 @@
           <Property Name="Cod_sala" Type="Int32" Nullable="false" />
           <NavigationProperty Name="Detalle_compra" Relationship="Self.FK__Detalle_c__id_as__3C34F16F" FromRole="Asiento" ToRole="Detalle_compra" />
           <NavigationProperty Name="Tipo_boleto" Relationship="Self.RefAsiento8" FromRole="Asiento" ToRole="Tipo_boleto" />
+          <NavigationProperty Name="Sala" Relationship="Cinema_Modelo.FK__Asiento__Cod_sal__607251E5" FromRole="Asiento" ToRole="Sala" />
         </EntityType>
         <EntityType Name="Ciudad">
           <Key>
@@ -688,6 +705,7 @@
           <NavigationProperty Name="Funcion" Relationship="Self.FK__Funcion__Cod_sal__4E53A1AA" FromRole="Sala" ToRole="Funcion" />
           <NavigationProperty Name="Sucursal" Relationship="Self.FK__Sucursal__Cod_sa__59C55456" FromRole="Sala" ToRole="Sucursal" />
           <NavigationProperty Name="Tipo_sala" Relationship="Self.fk_cod_tipo" FromRole="Sala" ToRole="Tipo_sala" />
+          <NavigationProperty Name="Asiento" Relationship="Cinema_Modelo.FK__Asiento__Cod_sal__607251E5" FromRole="Sala" ToRole="Asiento" />
         </EntityType>
         <EntityType Name="Sucursal">
           <Key>
@@ -1100,6 +1118,10 @@
             <End Role="Tipo_pago" EntitySet="Tipo_pago" />
           </AssociationSet>
           <EntitySet Name="sysdiagrams" EntityType="Cinema_Modelo.sysdiagrams" />
+          <AssociationSet Name="FK__Asiento__Cod_sal__607251E5" Association="Cinema_Modelo.FK__Asiento__Cod_sal__607251E5">
+            <End Role="Sala" EntitySet="Sala" />
+            <End Role="Asiento" EntitySet="Asiento" />
+          </AssociationSet>
         </EntityContainer>
         <EntityType Name="sysdiagrams">
           <Key>
@@ -1111,6 +1133,18 @@
           <Property Name="version" Type="Int32" />
           <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
         </EntityType>
+        <Association Name="FK__Asiento__Cod_sal__607251E5">
+          <End Type="Cinema_Modelo.Sala" Role="Sala" Multiplicity="1" />
+          <End Type="Cinema_Modelo.Asiento" Role="Asiento" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Sala">
+              <PropertyRef Name="Cod_sala" />
+            </Principal>
+            <Dependent Role="Asiento">
+              <PropertyRef Name="Cod_sala" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->

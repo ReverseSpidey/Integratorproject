@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnNuevo = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
@@ -37,6 +38,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtFila = new System.Windows.Forms.TextBox();
+            this.id_asiento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fila = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Columna = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cod_sala = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Num_sala = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnVer = new System.Windows.Forms.DataGridViewButtonColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAsiento)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nupCodigo)).BeginInit();
@@ -85,12 +92,20 @@
             this.dgvAsiento.AllowUserToDeleteRows = false;
             this.dgvAsiento.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvAsiento.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvAsiento.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.id_asiento,
+            this.fila,
+            this.Columna,
+            this.cod_sala,
+            this.Num_sala,
+            this.btnVer});
             this.dgvAsiento.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dgvAsiento.Location = new System.Drawing.Point(0, 188);
             this.dgvAsiento.Name = "dgvAsiento";
             this.dgvAsiento.ReadOnly = true;
             this.dgvAsiento.Size = new System.Drawing.Size(600, 228);
             this.dgvAsiento.TabIndex = 1;
+            this.dgvAsiento.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Click_Registro);
             // 
             // btnBuscar
             // 
@@ -150,6 +165,54 @@
             this.txtFila.Size = new System.Drawing.Size(49, 22);
             this.txtFila.TabIndex = 61;
             // 
+            // id_asiento
+            // 
+            this.id_asiento.DataPropertyName = "id_siento";
+            this.id_asiento.HeaderText = "ID Asiento";
+            this.id_asiento.Name = "id_asiento";
+            this.id_asiento.ReadOnly = true;
+            // 
+            // fila
+            // 
+            this.fila.DataPropertyName = "fila";
+            this.fila.HeaderText = "Fila";
+            this.fila.Name = "fila";
+            this.fila.ReadOnly = true;
+            // 
+            // Columna
+            // 
+            this.Columna.DataPropertyName = "Columna";
+            this.Columna.HeaderText = "Columna";
+            this.Columna.Name = "Columna";
+            this.Columna.ReadOnly = true;
+            // 
+            // cod_sala
+            // 
+            this.cod_sala.DataPropertyName = "cod_sala";
+            this.cod_sala.HeaderText = "Código de Sala";
+            this.cod_sala.Name = "cod_sala";
+            this.cod_sala.ReadOnly = true;
+            // 
+            // Num_sala
+            // 
+            this.Num_sala.DataPropertyName = "Num_sala";
+            this.Num_sala.HeaderText = "N° de Sala";
+            this.Num_sala.Name = "Num_sala";
+            this.Num_sala.ReadOnly = true;
+            // 
+            // btnVer
+            // 
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(72)))), ((int)(((byte)(21)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnVer.DefaultCellStyle = dataGridViewCellStyle2;
+            this.btnVer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVer.HeaderText = "";
+            this.btnVer.Name = "btnVer";
+            this.btnVer.ReadOnly = true;
+            this.btnVer.Text = "Ver";
+            this.btnVer.UseColumnTextForButtonValue = true;
+            // 
             // frmAsiento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -166,6 +229,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmAsiento";
             this.Text = "frmSala";
+            this.Load += new System.EventHandler(this.frmAsiento_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAsiento)).EndInit();
@@ -186,5 +250,11 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtFila;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id_asiento;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fila;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Columna;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cod_sala;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Num_sala;
+        private System.Windows.Forms.DataGridViewButtonColumn btnVer;
     }
 }

@@ -15,17 +15,32 @@ namespace AppDesktop.GUI
 {
     public partial class newAsiento : Form
     {
-        Asiento_Columna col;
+        Asiento_Columna padre;
         srvAsiento asiento = new srvAsiento();
         char letter = 'A';
         ArrayList sent = new ArrayList();        
         int cont;
         Asiento asi;
-        public newAsiento(Asiento_Columna obj)
+        frmAsiento frmPadre;
+        public newAsiento(Asiento_Columna col)
         {
             InitializeComponent();
-            col = obj;
-            
+            padre = col;
+
+        }
+        public newAsiento(frmAsiento asient)
+        {
+            InitializeComponent();
+            frmPadre = asient;
+
+
+
+        }
+        public newAsiento(Asiento asii,frmAsiento obj)
+        {
+            InitializeComponent();
+            frmPadre = obj;
+            asi = asii;
         }
 
         private void newAsiento_Load(object sender, EventArgs e)
@@ -97,11 +112,11 @@ namespace AppDesktop.GUI
 
         private Asiento RecuperarInfo()
         {
-            asi = new Asiento();
+            /*asi = new Asiento();
             for (int i = 0; i < col.columns; i++)
             {
 
-            }
+            }*/
 
             return asi;
         }
@@ -120,6 +135,11 @@ namespace AppDesktop.GUI
         }
 
         private void btnterminar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
         {
             this.Close();
         }
