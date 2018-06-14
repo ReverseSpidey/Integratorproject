@@ -64,5 +64,26 @@ namespace Datos_Org.Servicios
                 return obj;
             }
         }
+
+        public void AgregarSala(Asiento item)
+        {
+            try
+            {
+                using (var db = new Cinema_Model())
+                {
+                    db.Asiento.Add(item);
+                    db.SaveChanges();
+                }
+            }
+            catch (Exception e)
+            {
+                throw new Exception("Verifica los datos a Insertar");//es un error que yo creo
+
+            }
+        }
+
+
+
     }
 }
+

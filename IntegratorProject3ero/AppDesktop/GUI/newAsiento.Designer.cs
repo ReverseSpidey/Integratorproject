@@ -29,11 +29,13 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnterminar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.txtCod_sala = new System.Windows.Forms.TextBox();
             this.lblFilas = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txtFilas = new System.Windows.Forms.TextBox();
@@ -41,8 +43,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.cboFilas = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.btnterminar = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel2.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -59,6 +59,21 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(558, 70);
             this.panel2.TabIndex = 60;
+            // 
+            // btnterminar
+            // 
+            this.btnterminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(72)))), ((int)(((byte)(21)))));
+            this.btnterminar.FlatAppearance.BorderSize = 0;
+            this.btnterminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnterminar.Font = new System.Drawing.Font("Trebuchet MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnterminar.ForeColor = System.Drawing.Color.White;
+            this.btnterminar.Location = new System.Drawing.Point(108, 21);
+            this.btnterminar.Name = "btnterminar";
+            this.btnterminar.Size = new System.Drawing.Size(90, 36);
+            this.btnterminar.TabIndex = 59;
+            this.btnterminar.Text = "Terminar";
+            this.btnterminar.UseVisualStyleBackColor = false;
+            this.btnterminar.Click += new System.EventHandler(this.btnterminar_Click);
             // 
             // btnCancelar
             // 
@@ -117,7 +132,7 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(10)))), ((int)(((byte)(18)))));
-            this.tabPage1.Controls.Add(this.textBox1);
+            this.tabPage1.Controls.Add(this.txtCod_sala);
             this.tabPage1.Controls.Add(this.lblFilas);
             this.tabPage1.Controls.Add(this.label1);
             this.tabPage1.Controls.Add(this.txtFilas);
@@ -131,6 +146,14 @@
             this.tabPage1.Size = new System.Drawing.Size(550, 158);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "     Editar     ";
+            // 
+            // txtCod_sala
+            // 
+            this.txtCod_sala.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCod_sala.Location = new System.Drawing.Point(67, 40);
+            this.txtCod_sala.Name = "txtCod_sala";
+            this.txtCod_sala.Size = new System.Drawing.Size(111, 22);
+            this.txtCod_sala.TabIndex = 28;
             // 
             // lblFilas
             // 
@@ -207,29 +230,6 @@
             this.label5.TabIndex = 21;
             this.label5.Text = "N° de sala:";
             // 
-            // btnterminar
-            // 
-            this.btnterminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(72)))), ((int)(((byte)(21)))));
-            this.btnterminar.FlatAppearance.BorderSize = 0;
-            this.btnterminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnterminar.Font = new System.Drawing.Font("Trebuchet MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnterminar.ForeColor = System.Drawing.Color.White;
-            this.btnterminar.Location = new System.Drawing.Point(108, 21);
-            this.btnterminar.Name = "btnterminar";
-            this.btnterminar.Size = new System.Drawing.Size(90, 36);
-            this.btnterminar.TabIndex = 59;
-            this.btnterminar.Text = "Terminar";
-            this.btnterminar.UseVisualStyleBackColor = false;
-            this.btnterminar.Click += new System.EventHandler(this.btnterminar_Click);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(67, 40);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(111, 22);
-            this.textBox1.TabIndex = 28;
-            // 
             // newAsiento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -267,6 +267,6 @@
         private System.Windows.Forms.Label lblFilas;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnterminar;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtCod_sala;
     }
 }

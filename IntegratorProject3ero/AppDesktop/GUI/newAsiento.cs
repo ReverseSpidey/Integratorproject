@@ -15,6 +15,7 @@ namespace AppDesktop.GUI
 {
     public partial class newAsiento : Form
     {
+        public bool es_nuevo;
         Asiento_Columna padre;
         srvAsiento asiento = new srvAsiento();
         char letter = 'A';
@@ -22,6 +23,7 @@ namespace AppDesktop.GUI
         int cont;
         Asiento asi;
         frmAsiento frmPadre;
+        int cant_colum;
         public newAsiento(Asiento_Columna col)
         {
             InitializeComponent();
@@ -32,7 +34,7 @@ namespace AppDesktop.GUI
         {
             InitializeComponent();
             frmPadre = asient;
-
+            es_nuevo = true;
 
 
         }
@@ -41,6 +43,7 @@ namespace AppDesktop.GUI
             InitializeComponent();
             frmPadre = obj;
             asi = asii;
+            es_nuevo = false;//no es nueevo porque recibe datos del primer formulario
         }
 
         private void newAsiento_Load(object sender, EventArgs e)
@@ -112,11 +115,16 @@ namespace AppDesktop.GUI
 
         private Asiento RecuperarInfo()
         {
-            /*asi = new Asiento();
-            for (int i = 0; i < col.columns; i++)
+            cant_colum = padre.columns;
+            for (int i = 0; i <= cant_colum; i++)
             {
+                asi.Cod_sala = Convert.ToInt32(txtCod_sala.Text);
+                asi.fila = cboFilas.Text;
+                asi.columna = i.ToString();
 
-            }*/
+            }
+
+
 
             return asi;
         }
@@ -130,8 +138,10 @@ namespace AppDesktop.GUI
             }
             else
             {
-
             }
+            asiento.AgregarAsiento(RecuperarInfo());
+
+
         }
 
         private void btnterminar_Click(object sender, EventArgs e)

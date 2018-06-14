@@ -15,6 +15,7 @@ namespace AppDesktop.GUI
         int posY = 0;
         int posX = 0;
         int cont = 0;
+        bool panel;
 
         public MenuAdministrador()
         {
@@ -43,8 +44,7 @@ namespace AppDesktop.GUI
 
         private void btnUsuarios_Click(object sender, EventArgs e)
         {
-            panellfet.Height = btnUsuarios.Height;
-            panellfet.Top = btnUsuarios.Top;
+
             AbrirFormHija(new frm_PERSONA());
         }
 
@@ -87,8 +87,7 @@ namespace AppDesktop.GUI
         private void button1_Click(object sender, EventArgs e)
         {
             
-            panellfet.Height = btnPelicula.Height;
-            panellfet.Top = btnPelicula.Top;
+
             pnlCatalogos.Visible = false;
             
 

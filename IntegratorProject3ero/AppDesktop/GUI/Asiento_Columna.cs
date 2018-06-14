@@ -26,7 +26,7 @@ namespace AppDesktop.GUI
             this.DialogResult = DialogResult.OK;
 
             txtColumnas.Clear();
-            jeje =new newAsiento(this);
+            jeje = new newAsiento(this);
         }
     }
 }

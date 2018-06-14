@@ -79,6 +79,12 @@
     <Compile Include="GUI\frmAsiento.Designer.cs">
       <DependentUpon>frmAsiento.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\MenuEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\MenuEmpleado.Designer.cs">
+      <DependentUpon>MenuEmpleado.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\NuevaCompra.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,6 +140,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmAsiento.resx">
       <DependentUpon>frmAsiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\MenuEmpleado.resx">
+      <DependentUpon>MenuEmpleado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\NuevaCompra.resx">
       <DependentUpon>NuevaCompra.cs</DependentUpon>
@@ -236,6 +245,8 @@
     <Content Include="bin\Debug\MySql.Data.dll" />
     <Content Include="bin\EntityFramework.dll" />
     <Content Include="bin\EntityFramework.SqlServer.dll" />
+    <None Include="Resources\listaa.png" />
+    <None Include="Resources\manage.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\usuario.png" />
