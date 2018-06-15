@@ -58,7 +58,6 @@
             // 
             // pictureBox5
             // 
-            this.pictureBox5.Image = global::AppDesktop.Properties.Resources.logo5;
             this.pictureBox5.Location = new System.Drawing.Point(69, 94);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(127, 109);

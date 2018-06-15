@@ -50,8 +50,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="Entidades\vAsiento.cs" />
+    <Compile Include="Entidades\vFuncion.cs" />
     <Compile Include="Entidades\vSala.cs" />
     <Compile Include="Modelo\Asiento.cs">
       <DependentUpon>EntidadesCinema.tt</DependentUpon>
@@ -133,6 +133,7 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Servicios\srvAsiento.cs" />
+    <Compile Include="Servicios\srvFuncion.cs" />
     <Compile Include="Servicios\srvSala.cs" />
   </ItemGroup>
   <ItemGroup />

@@ -103,6 +103,16 @@ namespace AppDesktop.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap deadpool {
+            get {
+                object obj = ResourceManager.GetObject("deadpool", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Detective_50px {
             get {
                 object obj = ResourceManager.GetObject("Detective_50px", resourceCulture);
@@ -136,6 +146,16 @@ namespace AppDesktop.Properties {
         internal static System.Drawing.Bitmap Empleado {
             get {
                 object obj = ResourceManager.GetObject("Empleado", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap filme {
+            get {
+                object obj = ResourceManager.GetObject("filme", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -223,9 +243,19 @@ namespace AppDesktop.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap logo5 {
+        internal static System.Drawing.Bitmap logo2 {
             get {
-                object obj = ResourceManager.GetObject("logo5", resourceCulture);
+                object obj = ResourceManager.GetObject("logo2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logo3 {
+            get {
+                object obj = ResourceManager.GetObject("logo3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -266,6 +296,16 @@ namespace AppDesktop.Properties {
         internal static System.Drawing.Bitmap MinimizarNormal {
             get {
                 object obj = ResourceManager.GetObject("MinimizarNormal", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap overboard {
+            get {
+                object obj = ResourceManager.GetObject("overboard", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -343,6 +383,16 @@ namespace AppDesktop.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap tsubasa {
+            get {
+                object obj = ResourceManager.GetObject("tsubasa", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap UserHover {
             get {
                 object obj = ResourceManager.GetObject("UserHover", resourceCulture);
@@ -376,6 +426,16 @@ namespace AppDesktop.Properties {
         internal static System.Drawing.Bitmap usuario2 {
             get {
                 object obj = ResourceManager.GetObject("usuario2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap waar {
+            get {
+                object obj = ResourceManager.GetObject("waar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -28,19 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.nupCodigo = new System.Windows.Forms.NumericUpDown();
-            this.btnValidar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvSala = new System.Windows.Forms.DataGridView();
-            this.label3 = new System.Windows.Forms.Label();
             this.Cod_sala = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Num_sala = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cod_tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Ver = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.btnValidar = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nupCodigo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSala)).BeginInit();
@@ -50,6 +50,7 @@
             // 
             this.panel1.Controls.Add(this.btnBuscar);
             this.panel1.Controls.Add(this.nupCodigo);
+            this.panel1.Controls.Add(this.btnValidar);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.dgvSala);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -82,21 +83,6 @@
             this.nupCodigo.Name = "nupCodigo";
             this.nupCodigo.Size = new System.Drawing.Size(50, 25);
             this.nupCodigo.TabIndex = 5;
-            // 
-            // btnValidar
-            // 
-            this.btnValidar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(72)))), ((int)(((byte)(21)))));
-            this.btnValidar.FlatAppearance.BorderSize = 0;
-            this.btnValidar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnValidar.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnValidar.ForeColor = System.Drawing.Color.White;
-            this.btnValidar.Location = new System.Drawing.Point(502, 25);
-            this.btnValidar.Name = "btnValidar";
-            this.btnValidar.Size = new System.Drawing.Size(90, 39);
-            this.btnValidar.TabIndex = 55;
-            this.btnValidar.Text = "Nueva Sala";
-            this.btnValidar.UseVisualStyleBackColor = false;
-            this.btnValidar.Click += new System.EventHandler(this.btnValidar_Click);
             // 
             // label1
             // 
@@ -131,17 +117,6 @@
             this.dgvSala.TabIndex = 0;
             this.dgvSala.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ClickColumn);
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.Control;
-            this.label3.Location = new System.Drawing.Point(12, 12);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(67, 27);
-            this.label3.TabIndex = 59;
-            this.label3.Text = "SALAS";
-            // 
             // Cod_sala
             // 
             this.Cod_sala.DataPropertyName = "Cod_sala";
@@ -172,11 +147,12 @@
             // 
             // Ver
             // 
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(72)))), ((int)(((byte)(21)))));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.Ver.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(72)))), ((int)(((byte)(21)))));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            this.Ver.DefaultCellStyle = dataGridViewCellStyle1;
             this.Ver.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Ver.HeaderText = "";
             this.Ver.Name = "Ver";
@@ -186,6 +162,32 @@
             this.Ver.Text = "Ver";
             this.Ver.UseColumnTextForButtonValue = true;
             // 
+            // btnValidar
+            // 
+            this.btnValidar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(72)))), ((int)(((byte)(21)))));
+            this.btnValidar.FlatAppearance.BorderSize = 0;
+            this.btnValidar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnValidar.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnValidar.ForeColor = System.Drawing.Color.White;
+            this.btnValidar.Location = new System.Drawing.Point(501, 28);
+            this.btnValidar.Name = "btnValidar";
+            this.btnValidar.Size = new System.Drawing.Size(90, 39);
+            this.btnValidar.TabIndex = 55;
+            this.btnValidar.Text = "Nueva Sala";
+            this.btnValidar.UseVisualStyleBackColor = false;
+            this.btnValidar.Click += new System.EventHandler(this.btnValidar_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.Control;
+            this.label3.Location = new System.Drawing.Point(12, 12);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(67, 27);
+            this.label3.TabIndex = 59;
+            this.label3.Text = "SALAS";
+            // 
             // SALA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -194,7 +196,6 @@
             this.ClientSize = new System.Drawing.Size(616, 455);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.btnValidar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "SALA";
             this.Text = "SALA";

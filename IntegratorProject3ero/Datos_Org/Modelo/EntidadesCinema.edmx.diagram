@@ -45,7 +45,7 @@
         <AssociationConnector Association="Cinema_Modelo.FK__Sucursal__Cod_sa__59C55456" ManuallyRouted="false" />
         <AssociationConnector Association="Cinema_Modelo.fk_cod_tipo" ManuallyRouted="false" />
         <AssociationConnector Association="Cinema_Modelo.RefTarjeta_credito21" ManuallyRouted="false" />
-        <EntityTypeShape EntityType="Cinema_Modelo.sysdiagrams" Width="1.5" PointX="7.375" PointY="4.75" />
+        <EntityTypeShape EntityType="Cinema_Modelo.sysdiagrams" Width="1.5" PointX="7.5" PointY="4.25" />
         <AssociationConnector Association="Cinema_Modelo.FK__Asiento__Cod_sal__607251E5" />
       </Diagram>
     </edmx:Diagrams>

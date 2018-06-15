@@ -70,7 +70,7 @@
           </Key>
           <Property Name="Cod_sala" Type="int" Nullable="false" />
           <Property Name="Id_pelicula" Type="int" Nullable="false" />
-          <Property Name="Hora_ini" Type="varchar" MaxLength="5" />
+          <Property Name="Hora_ini" Type="varchar" MaxLength="10" />
           <Property Name="ID_funcion" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
         </EntityType>
         <EntityType Name="Genero">
@@ -94,8 +94,8 @@
           </Key>
           <Property Name="Id_pelicula" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="nombre_pelicula" Type="varchar" MaxLength="10" />
-          <Property Name="Duracion" Type="datetime" />
-          <Property Name="Sinopsis" Type="varchar" MaxLength="10" />
+          <Property Name="Duracion" Type="varchar" MaxLength="20" />
+          <Property Name="Sinopsis" Type="varchar" MaxLength="200" />
           <Property Name="ID_genero" Type="int" Nullable="false" />
           <Property Name="Cod_idioma" Type="int" Nullable="false" />
           <Property Name="id_clasif" Type="int" />
@@ -636,7 +636,7 @@
           </Key>
           <Property Name="Cod_sala" Type="Int32" Nullable="false" />
           <Property Name="Id_pelicula" Type="Int32" Nullable="false" />
-          <Property Name="Hora_ini" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Hora_ini" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
           <Property Name="ID_funcion" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <NavigationProperty Name="Compra" Relationship="Self.FK__Compra__ID_funci__3D2915A8" FromRole="Funcion" ToRole="Compra" />
           <NavigationProperty Name="Sala" Relationship="Self.FK__Funcion__Cod_sal__4E53A1AA" FromRole="Funcion" ToRole="Sala" />
@@ -665,8 +665,8 @@
           </Key>
           <Property Name="Id_pelicula" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="nombre_pelicula" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
-          <Property Name="Duracion" Type="DateTime" Precision="3" />
-          <Property Name="Sinopsis" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Duracion" Type="String" />
+          <Property Name="Sinopsis" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
           <Property Name="ID_genero" Type="Int32" Nullable="false" />
           <Property Name="Cod_idioma" Type="Int32" Nullable="false" />
           <Property Name="id_clasif" Type="Int32" />

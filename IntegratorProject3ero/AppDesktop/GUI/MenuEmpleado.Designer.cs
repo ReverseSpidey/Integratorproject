@@ -29,26 +29,26 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
             this.pan = new System.Windows.Forms.Panel();
             this.layout_Contenido = new System.Windows.Forms.FlowLayoutPanel();
             this.pnlCatalogos = new System.Windows.Forms.Panel();
             this.btnAsiento = new System.Windows.Forms.Button();
             this.btnSala = new System.Windows.Forms.Button();
             this.btnPelicula2 = new System.Windows.Forms.Button();
-            this.btnUsuarios = new System.Windows.Forms.Button();
-            this.btnPelicula = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panelcine = new System.Windows.Forms.Panel();
+            this.btnUsuarios = new System.Windows.Forms.Button();
+            this.btnPelicula = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.pan.SuspendLayout();
             this.layout_Contenido.SuspendLayout();
             this.pnlCatalogos.SuspendLayout();
             this.panel5.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -60,46 +60,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(135, 618);
             this.panel1.TabIndex = 0;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(10)))), ((int)(((byte)(18)))));
-            this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.panel4);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(135, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(888, 67);
-            this.panel2.TabIndex = 1;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(10)))), ((int)(((byte)(18)))));
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(135, 67);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(888, 551);
-            this.panel3.TabIndex = 2;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(72)))), ((int)(((byte)(21)))));
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(0, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(888, 28);
-            this.panel4.TabIndex = 0;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 20F);
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(3, 31);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(216, 33);
-            this.label4.TabIndex = 17;
-            this.label4.Text = "NameEmleado";
             // 
             // pan
             // 
@@ -117,9 +77,9 @@
             // 
             this.layout_Contenido.Controls.Add(this.pnlCatalogos);
             this.layout_Contenido.Controls.Add(this.btnUsuarios);
-            this.layout_Contenido.Location = new System.Drawing.Point(3, 187);
+            this.layout_Contenido.Location = new System.Drawing.Point(3, 182);
             this.layout_Contenido.Name = "layout_Contenido";
-            this.layout_Contenido.Size = new System.Drawing.Size(158, 458);
+            this.layout_Contenido.Size = new System.Drawing.Size(132, 393);
             this.layout_Contenido.TabIndex = 0;
             // 
             // pnlCatalogos
@@ -142,7 +102,7 @@
             this.btnAsiento.Name = "btnAsiento";
             this.btnAsiento.Size = new System.Drawing.Size(127, 30);
             this.btnAsiento.TabIndex = 3;
-            this.btnAsiento.Text = "Asiento";
+            this.btnAsiento.Text = "Reservas";
             this.btnAsiento.UseVisualStyleBackColor = true;
             // 
             // btnSala
@@ -155,7 +115,7 @@
             this.btnSala.Name = "btnSala";
             this.btnSala.Size = new System.Drawing.Size(127, 30);
             this.btnSala.TabIndex = 1;
-            this.btnSala.Text = "Sala";
+            this.btnSala.Text = "Compras";
             this.btnSala.UseVisualStyleBackColor = true;
             // 
             // btnPelicula2
@@ -168,43 +128,9 @@
             this.btnPelicula2.Name = "btnPelicula2";
             this.btnPelicula2.Size = new System.Drawing.Size(127, 30);
             this.btnPelicula2.TabIndex = 0;
-            this.btnPelicula2.Text = "Pelicula";
+            this.btnPelicula2.Text = "Nueva ";
             this.btnPelicula2.UseVisualStyleBackColor = true;
-            // 
-            // btnUsuarios
-            // 
-            this.btnUsuarios.FlatAppearance.BorderSize = 0;
-            this.btnUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUsuarios.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnUsuarios.ForeColor = System.Drawing.Color.White;
-            this.btnUsuarios.Image = global::AppDesktop.Properties.Resources.Empleado;
-            this.btnUsuarios.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUsuarios.Location = new System.Drawing.Point(3, 101);
-            this.btnUsuarios.Name = "btnUsuarios";
-            this.btnUsuarios.Size = new System.Drawing.Size(133, 71);
-            this.btnUsuarios.TabIndex = 3;
-            this.btnUsuarios.Text = "Usuarios";
-            this.btnUsuarios.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnUsuarios.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnUsuarios.UseVisualStyleBackColor = true;
-            // 
-            // btnPelicula
-            // 
-            this.btnPelicula.FlatAppearance.BorderSize = 0;
-            this.btnPelicula.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPelicula.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPelicula.ForeColor = System.Drawing.Color.White;
-            this.btnPelicula.Image = global::AppDesktop.Properties.Resources.listaa;
-            this.btnPelicula.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPelicula.Location = new System.Drawing.Point(3, 117);
-            this.btnPelicula.Name = "btnPelicula";
-            this.btnPelicula.Size = new System.Drawing.Size(158, 71);
-            this.btnPelicula.TabIndex = 1;
-            this.btnPelicula.Text = "Compras";
-            this.btnPelicula.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnPelicula.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnPelicula.UseVisualStyleBackColor = true;
-            this.btnPelicula.Click += new System.EventHandler(this.btnPelicula_Click);
+            this.btnPelicula2.Click += new System.EventHandler(this.btnPelicula2_Click);
             // 
             // panel5
             // 
@@ -226,25 +152,99 @@
             this.label1.Size = new System.Drawing.Size(0, 117);
             this.label1.TabIndex = 0;
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(10)))), ((int)(((byte)(18)))));
+            this.panel2.Controls.Add(this.label4);
+            this.panel2.Controls.Add(this.panel4);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(135, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(888, 67);
+            this.panel2.TabIndex = 1;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 20F);
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(3, 31);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(216, 33);
+            this.label4.TabIndex = 17;
+            this.label4.Text = "NameEmleado";
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(72)))), ((int)(((byte)(21)))));
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(888, 28);
+            this.panel4.TabIndex = 0;
+            // 
+            // panelcine
+            // 
+            this.panelcine.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(10)))), ((int)(((byte)(18)))));
+            this.panelcine.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelcine.Location = new System.Drawing.Point(135, 67);
+            this.panelcine.Name = "panelcine";
+            this.panelcine.Size = new System.Drawing.Size(888, 551);
+            this.panelcine.TabIndex = 2;
+            this.panelcine.Paint += new System.Windows.Forms.PaintEventHandler(this.panelcine_Paint);
+            // 
+            // btnUsuarios
+            // 
+            this.btnUsuarios.FlatAppearance.BorderSize = 0;
+            this.btnUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUsuarios.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnUsuarios.ForeColor = System.Drawing.Color.White;
+            this.btnUsuarios.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUsuarios.Location = new System.Drawing.Point(3, 101);
+            this.btnUsuarios.Name = "btnUsuarios";
+            this.btnUsuarios.Size = new System.Drawing.Size(133, 71);
+            this.btnUsuarios.TabIndex = 3;
+            this.btnUsuarios.Text = "Usuarios";
+            this.btnUsuarios.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnUsuarios.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnUsuarios.UseVisualStyleBackColor = true;
+            // 
+            // btnPelicula
+            // 
+            this.btnPelicula.FlatAppearance.BorderSize = 0;
+            this.btnPelicula.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPelicula.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPelicula.ForeColor = System.Drawing.Color.White;
+            this.btnPelicula.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPelicula.Location = new System.Drawing.Point(3, 117);
+            this.btnPelicula.Name = "btnPelicula";
+            this.btnPelicula.Size = new System.Drawing.Size(158, 71);
+            this.btnPelicula.TabIndex = 1;
+            this.btnPelicula.Text = "Compras";
+            this.btnPelicula.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnPelicula.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnPelicula.UseVisualStyleBackColor = true;
+            this.btnPelicula.Click += new System.EventHandler(this.btnPelicula_Click);
+            // 
             // MenuEmpleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1023, 618);
-            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panelcine);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MenuEmpleado";
             this.Text = "MenuEmpleado";
             this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.pan.ResumeLayout(false);
             this.layout_Contenido.ResumeLayout(false);
             this.pnlCatalogos.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -253,7 +253,7 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panelcine;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel pan;

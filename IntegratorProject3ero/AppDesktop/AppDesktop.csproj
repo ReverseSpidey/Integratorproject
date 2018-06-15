@@ -79,11 +79,23 @@
     <Compile Include="GUI\frmAsiento.Designer.cs">
       <DependentUpon>frmAsiento.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\HorariosGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\HorariosGUI.Designer.cs">
+      <DependentUpon>HorariosGUI.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\MenuEmpleado.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GUI\MenuEmpleado.Designer.cs">
       <DependentUpon>MenuEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\MenuPeliculas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\MenuPeliculas.Designer.cs">
+      <DependentUpon>MenuPeliculas.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\NuevaCompra.cs">
       <SubType>Form</SubType>
@@ -133,6 +145,12 @@
     <Compile Include="GUI\SALA.Designer.cs">
       <DependentUpon>SALA.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\SeccionAsientos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\SeccionAsientos.Designer.cs">
+      <DependentUpon>SeccionAsientos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="GUI\Asiento_Columna.resx">
@@ -141,8 +159,14 @@
     <EmbeddedResource Include="GUI\frmAsiento.resx">
       <DependentUpon>frmAsiento.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\HorariosGUI.resx">
+      <DependentUpon>HorariosGUI.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\MenuEmpleado.resx">
       <DependentUpon>MenuEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\MenuPeliculas.resx">
+      <DependentUpon>MenuPeliculas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\NuevaCompra.resx">
       <DependentUpon>NuevaCompra.cs</DependentUpon>
@@ -167,6 +191,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\SALA.resx">
       <DependentUpon>SALA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\SeccionAsientos.resx">
+      <DependentUpon>SeccionAsientos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -234,9 +261,6 @@
     <None Include="Resources\icon minimizar.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\logo5.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="bin\Debug\AppDesktop.exe" />
     <Content Include="bin\Debug\AppDesktop.pdb" />
     <Content Include="bin\Debug\Bunifu_UI_v1.5.3.dll" />
@@ -245,6 +269,12 @@
     <Content Include="bin\Debug\MySql.Data.dll" />
     <Content Include="bin\EntityFramework.dll" />
     <Content Include="bin\EntityFramework.SqlServer.dll" />
+    <None Include="Resources\Banner\filme.png" />
+    <None Include="Resources\Banner\logo.png" />
+    <None Include="Resources\Banner\tsubasa.png" />
+    <None Include="Resources\Banner\waar.jpg" />
+    <None Include="Resources\Banner\overboard.jpg" />
+    <None Include="Resources\Banner\deadpool.png" />
     <None Include="Resources\listaa.png" />
     <None Include="Resources\manage.png" />
   </ItemGroup>

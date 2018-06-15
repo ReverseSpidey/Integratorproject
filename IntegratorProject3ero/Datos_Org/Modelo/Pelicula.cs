@@ -22,7 +22,7 @@ namespace Datos_Org.Modelo
     
         public int Id_pelicula { get; set; }
         public string nombre_pelicula { get; set; }
-        public Nullable<System.DateTime> Duracion { get; set; }
+        public string Duracion { get; set; }
         public string Sinopsis { get; set; }
         public int ID_genero { get; set; }
         public int Cod_idioma { get; set; }

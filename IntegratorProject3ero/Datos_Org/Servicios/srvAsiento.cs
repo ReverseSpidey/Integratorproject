@@ -65,25 +65,19 @@ namespace Datos_Org.Servicios
             }
         }
 
-        public void AgregarSala(Asiento item)
+        public List<Asiento> CantAsientos(int num_sala)
         {
-            try
+            List<Asiento> obj = new List<Asiento>();
+            using (var item = new Cinema_Model())
             {
-                using (var db = new Cinema_Model())
-                {
-                    db.Asiento.Add(item);
-                    db.SaveChanges();
-                }
-            }
-            catch (Exception e)
-            {
-                throw new Exception("Verifica los datos a Insertar");//es un error que yo creo
-
+                obj = (from x in item.Asiento.GroupBy(p => p.fila).Where(a => a.Cod_sala == num_sala)
+                return obj;
             }
         }
-
-
-
+        (from prod in db.Products
+    where !prod.Discontinued
+    select prod)
+    .Count();
     }
 }
 

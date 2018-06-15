@@ -37,5 +37,29 @@ namespace AppDesktop.GUI
 
             cont++;
         }
+
+        private void AddFormInPanel(object formHijo)
+        {
+            if (this.panelcine.Controls.Count > 0)
+                this.panelcine.Controls.RemoveAt(0);
+            Form fh = formHijo as Form;
+            fh.TopLevel = false;
+            fh.FormBorderStyle = FormBorderStyle.None;
+            fh.Dock = DockStyle.Fill;
+            this.panelcine.Controls.Add(fh);
+            this.panelcine.Tag = fh;
+            fh.Show();
+
+        }
+
+        private void btnPelicula2_Click(object sender, EventArgs e)
+        {
+            AddFormInPanel(new MenuPeliculas());
+        }
+
+        private void panelcine_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
