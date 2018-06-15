@@ -35,14 +35,14 @@
             this.btnAsiento = new System.Windows.Forms.Button();
             this.btnSala = new System.Windows.Forms.Button();
             this.btnPelicula2 = new System.Windows.Forms.Button();
+            this.btnUsuarios = new System.Windows.Forms.Button();
+            this.btnPelicula = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panelcine = new System.Windows.Forms.Panel();
-            this.btnUsuarios = new System.Windows.Forms.Button();
-            this.btnPelicula = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.pan.SuspendLayout();
             this.layout_Contenido.SuspendLayout();
@@ -132,6 +132,39 @@
             this.btnPelicula2.UseVisualStyleBackColor = true;
             this.btnPelicula2.Click += new System.EventHandler(this.btnPelicula2_Click);
             // 
+            // btnUsuarios
+            // 
+            this.btnUsuarios.FlatAppearance.BorderSize = 0;
+            this.btnUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUsuarios.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnUsuarios.ForeColor = System.Drawing.Color.White;
+            this.btnUsuarios.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUsuarios.Location = new System.Drawing.Point(3, 101);
+            this.btnUsuarios.Name = "btnUsuarios";
+            this.btnUsuarios.Size = new System.Drawing.Size(133, 71);
+            this.btnUsuarios.TabIndex = 3;
+            this.btnUsuarios.Text = "Usuarios";
+            this.btnUsuarios.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnUsuarios.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnUsuarios.UseVisualStyleBackColor = true;
+            // 
+            // btnPelicula
+            // 
+            this.btnPelicula.FlatAppearance.BorderSize = 0;
+            this.btnPelicula.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPelicula.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPelicula.ForeColor = System.Drawing.Color.White;
+            this.btnPelicula.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPelicula.Location = new System.Drawing.Point(3, 120);
+            this.btnPelicula.Name = "btnPelicula";
+            this.btnPelicula.Size = new System.Drawing.Size(132, 59);
+            this.btnPelicula.TabIndex = 1;
+            this.btnPelicula.Text = "Compras";
+            this.btnPelicula.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnPelicula.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.btnPelicula.UseVisualStyleBackColor = true;
+            this.btnPelicula.Click += new System.EventHandler(this.btnPelicula_Click);
+            // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(72)))), ((int)(((byte)(21)))));
@@ -192,39 +225,6 @@
             this.panelcine.Size = new System.Drawing.Size(888, 551);
             this.panelcine.TabIndex = 2;
             this.panelcine.Paint += new System.Windows.Forms.PaintEventHandler(this.panelcine_Paint);
-            // 
-            // btnUsuarios
-            // 
-            this.btnUsuarios.FlatAppearance.BorderSize = 0;
-            this.btnUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUsuarios.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnUsuarios.ForeColor = System.Drawing.Color.White;
-            this.btnUsuarios.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUsuarios.Location = new System.Drawing.Point(3, 101);
-            this.btnUsuarios.Name = "btnUsuarios";
-            this.btnUsuarios.Size = new System.Drawing.Size(133, 71);
-            this.btnUsuarios.TabIndex = 3;
-            this.btnUsuarios.Text = "Usuarios";
-            this.btnUsuarios.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnUsuarios.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnUsuarios.UseVisualStyleBackColor = true;
-            // 
-            // btnPelicula
-            // 
-            this.btnPelicula.FlatAppearance.BorderSize = 0;
-            this.btnPelicula.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPelicula.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPelicula.ForeColor = System.Drawing.Color.White;
-            this.btnPelicula.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPelicula.Location = new System.Drawing.Point(3, 117);
-            this.btnPelicula.Name = "btnPelicula";
-            this.btnPelicula.Size = new System.Drawing.Size(158, 71);
-            this.btnPelicula.TabIndex = 1;
-            this.btnPelicula.Text = "Compras";
-            this.btnPelicula.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnPelicula.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnPelicula.UseVisualStyleBackColor = true;
-            this.btnPelicula.Click += new System.EventHandler(this.btnPelicula_Click);
             // 
             // MenuEmpleado
             // 

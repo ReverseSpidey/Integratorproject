@@ -65,19 +65,27 @@ namespace Datos_Org.Servicios
             }
         }
 
-        public List<Asiento> CantAsientos(int num_sala)
+        public List<vAsiento> CantAsientos(int num_sala)
         {
-            List<Asiento> obj = new List<Asiento>();
-            using (var item = new Cinema_Model())
+            List<vAsiento> obj = new List<vAsiento>();
+            using (var db = new Cinema_Model())
             {
-                obj = (from x in item.Asiento.GroupBy(p => p.fila).Where(a => a.Cod_sala == num_sala)
+              obj= (from x in db.Asiento
+                 where
+                   x.Cod_sala == num_sala
+                 group x by new
+                 {
+                     x.fila
+                 } into g
+                 select new vAsiento
+                 {
+                     cant_colum = g.Count(p => p.columna != null)
+                 }).ToList();
                 return obj;
             }
+
         }
-        (from prod in db.Products
-    where !prod.Discontinued
-    select prod)
-    .Count();
+
     }
 }
 

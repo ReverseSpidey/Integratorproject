@@ -14,10 +14,25 @@ namespace AppDesktop.GUI
     public partial class SeccionAsientos : Form
     {
         srvAsiento asi = new srvAsiento();
+        int nume;
+        int cont = 0;
+        char leter = 'A';
+        int n;
         public SeccionAsientos(int num)
         {
             InitializeComponent();
-            MessageBox.Show(""+ asi.CantAsientos(num));
+            nume = num;
+            dgvLista.AutoGenerateColumns = false;
+            dgvLista.DataSource = asi.CantAsientos(num);
+        }
+
+
+        private void VerificarLista()
+        {
+            foreach (var b in asi.CantAsientos(nume))
+            {
+                
+            }
         }
     }
 }

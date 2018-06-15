@@ -90,7 +90,7 @@
             this.btnEstablecer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEstablecer.Font = new System.Drawing.Font("Trebuchet MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEstablecer.ForeColor = System.Drawing.Color.White;
-            this.btnEstablecer.Location = new System.Drawing.Point(432, 252);
+            this.btnEstablecer.Location = new System.Drawing.Point(394, 243);
             this.btnEstablecer.Name = "btnEstablecer";
             this.btnEstablecer.Size = new System.Drawing.Size(183, 30);
             this.btnEstablecer.TabIndex = 52;
@@ -100,7 +100,7 @@
             // 
             // picPelicula
             // 
-            this.picPelicula.Location = new System.Drawing.Point(447, 12);
+            this.picPelicula.Location = new System.Drawing.Point(409, 3);
             this.picPelicula.Name = "picPelicula";
             this.picPelicula.Size = new System.Drawing.Size(161, 225);
             this.picPelicula.TabIndex = 25;

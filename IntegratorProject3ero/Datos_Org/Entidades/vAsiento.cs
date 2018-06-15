@@ -15,6 +15,7 @@ namespace Datos_Org.Entidades
         public int Cod_sala { get; set; }
         public Nullable<int> Num_sala { get; set; }
         public virtual Sala Sala_REL { get; set; }
+        public int cant_colum { get; set; }
 
 
     }
