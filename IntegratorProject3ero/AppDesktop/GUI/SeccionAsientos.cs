@@ -18,21 +18,12 @@ namespace AppDesktop.GUI
         int cont = 0;
         char leter = 'A';
         int n;
-        public SeccionAsientos(int num)
+        public SeccionAsientos()
         {
             InitializeComponent();
-            nume = num;
-            dgvLista.AutoGenerateColumns = false;
-            dgvLista.DataSource = asi.CantAsientos(num);
-        }
 
 
-        private void VerificarLista()
-        {
-            foreach (var b in asi.CantAsientos(nume))
-            {
-                
-            }
         }
+
     }
 }

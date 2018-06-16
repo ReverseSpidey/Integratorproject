@@ -15,36 +15,51 @@ namespace AppDesktop.GUI
 {
     public partial class MenuPeliculas : Form
     {
-        int Contador = 0;
-        string name = "Deadpool 2";
+        int id;
+        srvPelicula peli = new srvPelicula();
+        srvFuncion fun = new srvFuncion();
+        
         public MenuPeliculas()
         {
             InitializeComponent();
-            banner.Enabled = true;
+        }
+        private void MenuPeliculas_Load(object sender, EventArgs e)
+        {
+            cboPeliculas.Items.Add("Seleccionar");
+        }
+       
+        private void CargarCombo()
+        {
+            cboPeliculas.DataSource = peli.GetPeliculas();
+            cboPeliculas.DisplayMember = "nombre_pelicula";
+            cboPeliculas.ValueMember = "ID_pelicula";
+            
+        }
+        private void cboPeliculas_Click(object sender, EventArgs e)
+        {
+            CargarCombo();
         }
 
-        private void banner_Tick(object sender, EventArgs e)
+        private void btnBuscar_Click(object sender, EventArgs e)
         {
-            Contador++;
+            id = Convert.ToInt32(cboPeliculas.SelectedValue);
+            LlenarData();
+        }
+        private void LlenarData()
+        {
+            dgvHorarios.AutoGenerateColumns = false;
+            dgvHorarios.DataSource = fun.Horario(id);
+            dgvHorarios.Columns[0].Visible = false;
+        }
 
-            if (Contador == 1)
-                picBanner.Image = Properties.Resources.waar;
-            else if (Contador == 2)
-                picBanner.Image = Properties.Resources.overboard;
-            else if (Contador == 3)
+        private void dgvHorarios_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            SeccionAsientos selec = new SeccionAsientos();
+            if (e.ColumnIndex == 5)
             {
-                picBanner.Image = Properties.Resources.deadpool;
+                Funcion func = new Funcion();
+                selec.ShowDialog();
             }
-            else {
-                picBanner.Image = Properties.Resources.tsubasa;
-                Contador = 0;
-            }
-        }
-
-        private void btnVer_Click(object sender, EventArgs e)
-        {
-            HorariosGUI hora = new HorariosGUI(name);
-            hora.ShowDialog();
         }
     }
 }

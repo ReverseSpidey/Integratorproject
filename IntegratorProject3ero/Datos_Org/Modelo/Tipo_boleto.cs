@@ -17,9 +17,5 @@ namespace Datos_Org.Modelo
         public int id_tipo { get; set; }
         public string nombre_tipo { get; set; }
         public Nullable<decimal> Precio_tipo { get; set; }
-        public Nullable<int> cantidad_tipo { get; set; }
-        public Nullable<int> id_siento { get; set; }
-    
-        public virtual Asiento Asiento { get; set; }
     }
 }

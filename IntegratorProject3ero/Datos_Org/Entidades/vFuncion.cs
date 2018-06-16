@@ -14,6 +14,8 @@ namespace Datos_Org.Entidades
         public string Hora_ini { get; set; }
         public int ID_funcion { get; set; }
         public string nombre_peli { get; set; }
+        public string tipo_sala { get; set; }
+
 
 
         public virtual ICollection<Compra> Compra { get; set; }

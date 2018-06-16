@@ -79,12 +79,6 @@
     <Compile Include="GUI\frmAsiento.Designer.cs">
       <DependentUpon>frmAsiento.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\HorariosGUI.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\HorariosGUI.Designer.cs">
-      <DependentUpon>HorariosGUI.cs</DependentUpon>
-    </Compile>
     <Compile Include="GUI\MenuEmpleado.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -151,12 +145,6 @@
     <Compile Include="GUI\SeccionAsientos.Designer.cs">
       <DependentUpon>SeccionAsientos.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\SeleccionarPleicula.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\SeleccionarPleicula.Designer.cs">
-      <DependentUpon>SeleccionarPleicula.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="GUI\Asiento_Columna.resx">
@@ -164,9 +152,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmAsiento.resx">
       <DependentUpon>frmAsiento.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\HorariosGUI.resx">
-      <DependentUpon>HorariosGUI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\MenuEmpleado.resx">
       <DependentUpon>MenuEmpleado.cs</DependentUpon>
@@ -200,9 +185,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\SeccionAsientos.resx">
       <DependentUpon>SeccionAsientos.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\SeleccionarPleicula.resx">
-      <DependentUpon>SeleccionarPleicula.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

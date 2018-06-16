@@ -109,7 +109,7 @@ namespace AppDesktop.GUI
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            AbrirFormHija(new GUI.Peliculas());
+            //AbrirFormHija(new GUI.Peliculas());
         }
 
 

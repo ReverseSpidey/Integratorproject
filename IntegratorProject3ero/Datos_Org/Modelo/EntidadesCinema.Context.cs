@@ -13,10 +13,10 @@ namespace Datos_Org.Modelo
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class Cinema_Model : DbContext
+    public partial class Entidades_Cinema : DbContext
     {
-        public Cinema_Model()
-            : base("name=Cinema_Model")
+        public Entidades_Cinema()
+            : base("name=Entidades_Cinema")
         {
         }
     
@@ -40,11 +40,11 @@ namespace Datos_Org.Modelo
         public virtual DbSet<Persona> Persona { get; set; }
         public virtual DbSet<Sala> Sala { get; set; }
         public virtual DbSet<Sucursal> Sucursal { get; set; }
+        public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
         public virtual DbSet<Tarjeta_credito> Tarjeta_credito { get; set; }
         public virtual DbSet<Tipo_boleto> Tipo_boleto { get; set; }
         public virtual DbSet<Tipo_pago> Tipo_pago { get; set; }
         public virtual DbSet<Tipo_sala> Tipo_sala { get; set; }
         public virtual DbSet<Usuario> Usuario { get; set; }
-        public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
     }
 }

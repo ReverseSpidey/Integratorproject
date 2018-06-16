@@ -16,9 +16,9 @@ namespace Datos_Org.Entidades
     {
 
 
-        public List<Pelicula> getListSALAS()
+        public List<Pelicula> GetPeliculas()
         {
-            using (var db = new Cinema_Model())
+            using (var db = new Entidades_Cinema())
             {
                 return db.Pelicula.ToList();
             }
@@ -26,7 +26,7 @@ namespace Datos_Org.Entidades
 
         public List<Clasificacion> GetClasificacions()
         {
-            using (var db = new Cinema_Model())
+            using (var db = new Entidades_Cinema())
             {
                 return db.Clasificacion.ToList();
             }
@@ -35,7 +35,7 @@ namespace Datos_Org.Entidades
 
         public List<Genero> GetGeneros()
         {
-            using (var db = new Cinema_Model())
+            using (var db = new Entidades_Cinema())
             {
                 return db.Genero.ToList();
             }
@@ -43,7 +43,7 @@ namespace Datos_Org.Entidades
 
         public List<Idioma> GetIdiomas()
         {
-            using (var db = new Cinema_Model())
+            using (var db = new Entidades_Cinema())
             {
                 return db.Idioma.ToList();
             }
@@ -58,7 +58,7 @@ namespace Datos_Org.Entidades
         {
             try
             {
-                using (var db = new Cinema_Model())
+                using (var db = new Entidades_Cinema())
                 {
                     db.Pelicula.Add(item);
                     db.SaveChanges();
@@ -75,7 +75,7 @@ namespace Datos_Org.Entidades
         {
             try
             {
-                using (var db = new Cinema_Model())
+                using (var db = new Entidades_Cinema())
                 {
                     Pelicula obj = db.Pelicula.Where(x => x.Id_pelicula == item.Id_pelicula).FirstOrDefault();
                     if (obj != null)
@@ -104,7 +104,7 @@ namespace Datos_Org.Entidades
         {
             try
             {
-                using (var db = new Cinema_Model())
+                using (var db = new Entidades_Cinema())
                 {
                     Pelicula obj = db.Pelicula.Where(x => x.Id_pelicula == item.Id_pelicula).FirstOrDefault();
                     if (obj != null)
