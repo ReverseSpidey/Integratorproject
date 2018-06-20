@@ -245,6 +245,16 @@
     <Content Include="bin\Debug\MySql.Data.dll" />
     <Content Include="bin\EntityFramework.dll" />
     <Content Include="bin\EntityFramework.SqlServer.dll" />
+    <None Include="Resources\icons8-salir-redondeado-80.png" />
+    <None Include="Resources\icons8-accesorios-de-interior-80.png" />
+    <None Include="Resources\icons8-accesorios-de-interior-50.png" />
+    <None Include="Resources\icons8-asiento-central-del-avión-80.png" />
+    <None Include="Resources\icons8-caja-registradora-80.png" />
+    <None Include="Resources\icons8-1-temporada-50.png" />
+    <None Include="Resources\icons8-1-temporada-filled-50.png" />
+    <None Include="Resources\icons8-superman-64.png" />
+    <None Include="Resources\salauno.png" />
+    <None Include="Resources\popcorn.png" />
     <None Include="Resources\listaa.png" />
     <None Include="Resources\manage.png" />
   </ItemGroup>
